@@ -1,0 +1,18 @@
+
+A verseny eredménye:
+Bodri      42 pont
+Rexi       36 pont
+Cirmos     70 pont
+Pamacs     74 pont
+Bolhazsák  50 pont
+Bukso      91 pont
+Picúr      37 pont
+
+Pontszám szerint rendezve:
+Bukso      91 pont
+Pamacs     74 pont
+Cirmos     70 pont
+Bolhazsák  50 pont
+Bodri      42 pont
+Picúr      37 pont
+Rexi       36 pont
