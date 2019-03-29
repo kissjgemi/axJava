@@ -1,0 +1,67 @@
+
+A 2019. évi szezonban játszó focisták:
+	 4556677 Dibusz Dénes
+	 4533112 Botka Endre
+	 1988556 Batik Bence
+	 2345678 Takács Zsombor
+	 8976543 Csonka András
+	 1112233 Gera Zoltán
+	  442044 Hajnal Tamás
+	 3612456 Nagy Dominik
+	   22315 Böde Dániel
+	 2335679 Szabó Roland
+
+
+20 forduló után a játékosok statisztikái:
+Dibusz Dénes ebben a szezonban
+		81 órát edzett,
+		18 meccsen játszott,
+		11 gólt rúgott,
+		4900000 Forintot keresett.
+Botka Endre ebben a szezonban
+		90 órát edzett,
+		17 meccsen játszott,
+		7 gólt rúgott,
+		4850000 Forintot keresett.
+Batik Bence ebben a szezonban
+		78 órát edzett,
+		14 meccsen játszott,
+		9 gólt rúgott,
+		4700000 Forintot keresett.
+Takács Zsombor ebben a szezonban
+		93 órát edzett,
+		16 meccsen játszott,
+		13 gólt rúgott,
+		4800000 Forintot keresett.
+Csonka András ebben a szezonban
+		78 órát edzett,
+		16 meccsen játszott,
+		9 gólt rúgott,
+		4800000 Forintot keresett.
+Gera Zoltán ebben a szezonban
+		83 órát edzett,
+		14 meccsen játszott,
+		8 gólt rúgott,
+		4700000 Forintot keresett.
+Hajnal Tamás ebben a szezonban
+		59 órát edzett,
+		14 meccsen játszott,
+		2 gólt rúgott,
+		4000000 Forintot keresett.
+Nagy Dominik ebben a szezonban
+		81 órát edzett,
+		11 meccsen játszott,
+		6 gólt rúgott,
+		4550000 Forintot keresett.
+Böde Dániel ebben a szezonban
+		95 órát edzett,
+		15 meccsen játszott,
+		8 gólt rúgott,
+		4750000 Forintot keresett.
+Szabó Roland ebben a szezonban
+		105 órát edzett,
+		12 meccsen játszott,
+		6 gólt rúgott,
+		5230000 Forintot keresett.
+
+
