@@ -1,0 +1,27 @@
+Dalverseny
+
+
+Divatja van a különféle tévés vetélkedőknek (A dal, X faktor és társai). De muszáj mindig tévé előtt ülni? Szervezzünk meg egy házi dalversenyt. A versenyen bármelyik szak diákjai indulhatnak, produkciójukat egy zsűri értékeli majd.
+
+A versenyre jelentkező énekeseknek meg kell adniuk a nevüket és a szakjukat, és regisztráláskor mindegyikük kap egy egyedi rajtszámot is. A verseny során egy zsűri tagjai pontozzák őket, minden egyes zsűritag hatására a versenyzők pontszáma a metódus paraméterében megadott értékkel növekszik.
+
+A verseny adminisztrálását segítő program a következőket tudja:
+
+– Olvassuk be a versenyzők adatait (a versenyzok.txt adatfájlból – adatszerkezet: név;szak) – rajtszámuk a beolvasás sorszáma legyen. (Ez nem garantálja a rajtszám egyediségét, de most csak ennyit veszünk.)
+
+– Már a verseny megkezdése előtt láthassuk a konzolon az adataikat, azaz a versenyző rajtszámát, nevét, szakját és pontszámát. (Így is ellenőrizhető, hogy nincs korrupció, vagyis valóban nulláról indul-e mindenki.)
+
+– A verseny most annyiból áll, hogy minden egyes versenyzőt pontoz a zsűri, azaz annyi véletlen pontszámot kap, ahány zsűritag van (a zsűritagok számát, és az adható maximális pontszámot konstansként megadhatjuk a program elején).
+
+Természetesen a verseny végén is kíváncsiak vagyunk a kijelzőre.
+
+– Állapítsuk meg az eredményeket, vagyis azt, hogy
+
+a) Kik kapták a legtöbb pontszámot.
+
+b) Mi a verseny végeredménye – azaz rendezzük pontszám szerint csökkenő sorrendbe a versenyzőket.
+
+– Ki lehessen keresni a begépelt szakhoz tartozó versenyzőket. Arra is adjon lehetőséget, hogy a keresést meg lehessen ismételni. Természetesen azt is írja ki, ha senkit sem talál.
+
+A korábbiakhoz képest nincs benne új, próbálja önállóan megoldani.
+

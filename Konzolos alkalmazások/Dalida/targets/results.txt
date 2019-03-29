@@ -1,0 +1,120 @@
+A 2019. évi DALIDA dalverseny:
+  1: Baranyai Anna (építész)            :    0 pont.
+  2: Tolnai Edit (építész)              :    0 pont.
+  3: Somogyi Norbert (építész)          :    0 pont.
+  4: Fejér Károly (gépész)              :    0 pont.
+  5: Békési EmQke (gépész)              :    0 pont.
+  6: Borsodi Gábor (környezetmérnök)    :    0 pont.
+  7: Vas Ágnes (környezetmérnök)        :    0 pont.
+  8: Komáromi Konrád (környezetmérnök)  :    0 pont.
+  9: Pesti Bence (informatikus)         :    0 pont.
+ 10: Nógrádi Viktor (informatikus)      :    0 pont.
+ 11: Hajdú Sándor (informatikus)        :    0 pont.
+ 12: Csongrádi Rózsa (informatikus)     :    0 pont.
+ 13: Hevesi Béla (informatikus)         :    0 pont.
+ 14: Szabolcs Andrea (informatikus)     :    0 pont.
+ 15: Zalai Zalán (informatikus)         :    0 pont.
+
+
+A 2019. évi DALIDA dalverseny pontszámai:
+  1: Baranyai Anna (építész)            :   24 pont.
+  2: Tolnai Edit (építész)              :   19 pont.
+  3: Somogyi Norbert (építész)          :    7 pont.
+  4: Fejér Károly (gépész)              :   11 pont.
+  5: Békési EmQke (gépész)              :   13 pont.
+  6: Borsodi Gábor (környezetmérnök)    :   14 pont.
+  7: Vas Ágnes (környezetmérnök)        :    7 pont.
+  8: Komáromi Konrád (környezetmérnök)  :   19 pont.
+  9: Pesti Bence (informatikus)         :   13 pont.
+ 10: Nógrádi Viktor (informatikus)      :   12 pont.
+ 11: Hajdú Sándor (informatikus)        :   25 pont.
+ 12: Csongrádi Rózsa (informatikus)     :   29 pont.
+ 13: Hevesi Béla (informatikus)         :   15 pont.
+ 14: Szabolcs Andrea (informatikus)     :   15 pont.
+ 15: Zalai Zalán (informatikus)         :   14 pont.
+
+
+A 2019. évi DALIDA dalverseny nyertese(i):
+    Csongrádi Rózsa (informatikus)     :   29 pont.
+
+
+A 2019. évi DALIDA dalverseny rangsora:
+  1. Csongrádi Rózsa (informatikus)     :   29 pont.
+  2. Hajdú Sándor (informatikus)        :   25 pont.
+  3. Baranyai Anna (építész)            :   24 pont.
+  4. Tolnai Edit (építész)              :   19 pont.
+  4. Komáromi Konrád (környezetmérnök)  :   19 pont.
+  6. Hevesi Béla (informatikus)         :   15 pont.
+  6. Szabolcs Andrea (informatikus)     :   15 pont.
+  8. Borsodi Gábor (környezetmérnök)    :   14 pont.
+  8. Zalai Zalán (informatikus)         :   14 pont.
+ 10. Békési EmQke (gépész)              :   13 pont.
+ 10. Pesti Bence (informatikus)         :   13 pont.
+ 12. Nógrádi Viktor (informatikus)      :   12 pont.
+ 13. Fejér Károly (gépész)              :   11 pont.
+ 14. Somogyi Norbert (építész)          :    7 pont.
+ 14. Vas Ágnes (környezetmérnök)        :    7 pont.
+
+
+Keresés szakok szerint:
+
+válasszon:
+1-építész 2-gépész 3-informatikus 4-környezetmérnök 5-közgazdász 0-kilép
+a
+*** Nincs ilyen szak!?!
+
+válasszon:
+1-építész 2-gépész 3-informatikus 4-környezetmérnök 5-közgazdász 0-kilép
+9
+*** Nincs ilyen szak!?!
+
+válasszon:
+1-építész 2-gépész 3-informatikus 4-környezetmérnök 5-közgazdász 0-kilép
+1
+A építész szakma képviseletében
+    Baranyai Anna (építész)            :   24 pont.
+    Tolnai Edit (építész)              :   19 pont.
+    Somogyi Norbert (építész)          :    7 pont.
+    szerepeltek.
+
+válasszon:
+1-építész 2-gépész 3-informatikus 4-környezetmérnök 5-közgazdász 0-kilép
+2
+A gépész szakma képviseletében
+    Békési EmQke (gépész)              :   13 pont.
+    Fejér Károly (gépész)              :   11 pont.
+    szerepeltek.
+
+válasszon:
+1-építész 2-gépész 3-informatikus 4-környezetmérnök 5-közgazdász 0-kilép
+3
+A informatikus szakma képviseletében
+    Csongrádi Rózsa (informatikus)     :   29 pont.
+    Hajdú Sándor (informatikus)        :   25 pont.
+    Hevesi Béla (informatikus)         :   15 pont.
+    Szabolcs Andrea (informatikus)     :   15 pont.
+    Zalai Zalán (informatikus)         :   14 pont.
+    Pesti Bence (informatikus)         :   13 pont.
+    Nógrádi Viktor (informatikus)      :   12 pont.
+    szerepeltek.
+
+válasszon:
+1-építész 2-gépész 3-informatikus 4-környezetmérnök 5-közgazdász 0-kilép
+4
+A környezetmérnök szakma képviseletében
+    Komáromi Konrád (környezetmérnök)  :   19 pont.
+    Borsodi Gábor (környezetmérnök)    :   14 pont.
+    Vas Ágnes (környezetmérnök)        :    7 pont.
+    szerepeltek.
+
+válasszon:
+1-építész 2-gépész 3-informatikus 4-környezetmérnök 5-közgazdász 0-kilép
+5
+A közgazdász szakma képviseletében
+    senki nem szerepelt.
+
+válasszon:
+1-építész 2-gépész 3-informatikus 4-környezetmérnök 5-közgazdász 0-kilép
+0
+
+
