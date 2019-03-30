@@ -15,10 +15,14 @@ public class Olimpikon {
     private int ezustErem;
     private int bronzErem;
 
+    private static int szorzo;
+    private int rang;
+
     public Olimpikon(String nev, String versenySzam, int rajtSzam) {
         this.nev = nev;
         this.versenySzam = versenySzam;
         this.rajtSzam = rajtSzam;
+        this.rang = 0;
     }
 
     public String getNev() {
@@ -45,16 +49,31 @@ public class Olimpikon {
         return bronzErem;
     }
 
+    public int getRang() {
+        return rang;
+    }
+
+    public static void setSzorzo(int szorzo) {
+        Olimpikon.szorzo = szorzo;
+    }
+
+    private void rangot_szamol() {
+        rang = aranyErem * szorzo * szorzo + ezustErem * szorzo + bronzErem;
+    }
+
     public void arany() {
         aranyErem++;
+        rangot_szamol();
     }
 
     public void ezust() {
         ezustErem++;
+        rangot_szamol();
     }
 
     public void bronz() {
         bronzErem++;
+        rangot_szamol();
     }
 
     @Override
