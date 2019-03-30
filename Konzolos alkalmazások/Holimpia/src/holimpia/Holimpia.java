@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
 import java.util.logging.Level;
@@ -150,6 +151,7 @@ public class Holimpia {
         nyertesek(str);
         str = "rövidpályás gyorskorcsolya";
         sor(str);
+        nyertesek(str);
     }
 
     private void hany_verseny() {
@@ -159,13 +161,13 @@ public class Holimpia {
     }
 
     private void hiba() {
-        String str = "Hibás adat!";
+        String str = "Hibás adat!\n";
         sor(str);
         hany_verseny();
     }
 
     private void tobb_kell() {
-        String str = "!!! legalább " + VERSENYEK_SZAMA + " !!!";
+        String str = "!!! legalább " + VERSENYEK_SZAMA + " !!!\n";
         sor(str);
         hany_verseny();
     }
@@ -179,36 +181,150 @@ public class Holimpia {
             while (bevitel < VERSENYEK_SZAMA) {
                 try {
                     bevitel = SC.nextInt();
+                    appendFile(DATARESULTS, MODE_RW, "\t" + bevitel);
                     if (bevitel < VERSENYEK_SZAMA) {
                         tobb_kell();
-                    } else {
-                        appendFile(DATARESULTS, MODE_RW, "\t" + bevitel + "\n");
+                        SC.nextLine();
                     }
                 } catch (Exception e) {
+                    appendFile(DATARESULTS, MODE_RW, "\t" + SC.nextLine());
                     hiba();
                 }
-                SC.nextLine();
             }
             for (int ii = 0; ii < bevitel; ii++) {
                 String str = "\t" + (ii + 1) + ". versenynap:";
                 sor(str);
                 versenyszamok();
+                str = "\n";
+                sor(str);
             }
             bevitel_ok = true;
             if (bevitel_ok) {
+                SC.nextLine();
                 break;
             }
         }
-        String str = "\n";
+    }
+
+    public class Sorrend implements Comparator<Olimpikon> {
+
+        @Override
+        public int compare(Olimpikon o1, Olimpikon o2) {
+            return o2.getRang() - o1.getRang();
+        }
+    }
+
+    private void rendez() {
+        OLIMPIKONS.sort(new Sorrend());
+    }
+
+    private void rangsor(String label) {
+        sor(label);
+        int rang = 0;
+        String str;
+        int lastPontszam = 0;
+        int rangEgyezes = 1;
+        for (Olimpikon olimpikon : OLIMPIKONS) {
+            rang++;
+            if (olimpikon.getRang() == lastPontszam) {
+                str = String.format("%3s. ", rangEgyezes);
+            } else {
+                str = String.format("%3s. ", rang);
+                rangEgyezes = rang;
+            }
+            str += olimpikon;
+            lastPontszam = olimpikon.getRang();
+            sor(str);
+        }
+        str = "\n";
+        sor(str);
+    }
+
+    private void lista(String versenySzam) {
+        String str = "A " + versenySzam + " versenyszámban";
+        sor(str);
+        int jelen = 0;
+        for (Olimpikon olimpikon : OLIMPIKONS) {
+            if (olimpikon.getVersenySzam().equals(versenySzam)) {
+                jelen++;
+                str = "    " + olimpikon;
+                sor(str);
+            }
+        }
+        if (jelen == 0) {
+            str = "    senki nem szerepelt.\n";
+        } else {
+            str = "    szerepelt.\n";
+        }
+        sor(str);
+    }
+
+    private void keres() {
+        String hiba = "*** Nincs ilyen !?!\n";
+        String str = "Keresés versenyszámok szerint:\n";
+        sor(str);
+        str = "válasszon:\n"
+                + "1-alpesi sízés "
+                + "2-sílövészet "
+                + "3-északi sízés "
+                + "4-gyorskorcsolya "
+                + "5-rövidpályás gyorskorcsolya "
+                + "0-kilép";
+        sor(str);
+        while (SC.hasNextLine()) {
+            String input = SC.nextLine();
+            if (input.length() == 0) {
+                appendFile(DATARESULTS, MODE_RW, "\n");
+                break;
+            }
+            char menuett = input.charAt(0);
+            appendFile(DATARESULTS, MODE_RW, input);
+            if (menuett == '0') {
+                break;
+            }
+
+            switch (menuett) {
+                case '1': {
+                    lista("alpesi sízés");
+                    break;
+                }
+                case '2': {
+                    lista("sílövészet");
+                    break;
+                }
+                case '3': {
+                    lista("északi sízés");
+                    break;
+                }
+                case '4': {
+                    lista("gyorskorcsolya");
+                    break;
+                }
+                case '5': {
+                    lista("rövidpályás gyorskorcsolya");
+                    break;
+                }
+                default: {
+                    sor(hiba);
+                    break;
+                }
+            }
+            sor(str);
+        }
+        str = "\n";
         sor(str);
     }
 
     private void start() {
         deleteFile(DATARESULTS);
         insertDatas(DATASOURCE, OLIMPIKONS);
+        Olimpikon.setSzorzo(dontosok_szama);
         nevsor("A " + thisYear + ". évi téli olimpia magyar döntősei:");
         verseny();
         nevsor("A " + thisYear + ". évi téli olimpián elért eredmények:");
+        rendez();
+        rangsor("A " + thisYear + ". évi téli olimpián a versenyzőink rangsora:");
+        keres();
     }
 
     public static void main(String[] args) {
