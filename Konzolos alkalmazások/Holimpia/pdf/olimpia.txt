@@ -1,0 +1,26 @@
+ Téli olimpia
+
+
+Ne csak a tévé előtt ülve figyeljük a téli sportokat, hanem vegyünk részt mi is egy kisebb szellemi olimpián, és írjunk programot az olimpikonok adatainak és eredményeinek kezelésére.
+
+A sportolóknak regisztráláskor sokféle adatot kell megadniuk, ezek közül most csak a rajtszámukat, nevüket és sportágukat kérjük. Természetesen mindegyikük érmet szeretne szerezni. Az egyszerűség kedvéért most nem teszünk különbséget az érmek között, pusztán annyit akarunk megoldani, hogy amikor a sportoló érmet kap, akkor az érmei száma eggyel növekedjen.
+
+Az olimpia lebonyolításakor használt rendszer a következőket tudja:
+
+– Olvassuk be a sportolók adatait (adatfájlból – adatszerkezet: név;sportág) – rajtszámuk a beolvasás sorszáma legyen
+
+– Már a verseny megkezdése előtt láthassuk a kijelzőn az adataikat, azaz a sportoló rajtszámát, nevét, sportágát és érmeinek számat.
+
+– A verseny most annyiból áll, hogy megkérdezzük, hány versenyszám van, és ennyiszer véletlenül generáljuk a nyertest, vagyis azt, aki érmet kap. Természetesen a verseny végén is kíváncsiak vagyunk a kijelzőre.
+
+– Állapítsuk meg az eredményeket, vagyis azt, hogy
+
+a) Kik kapták a legtöbb érmet.
+
+b) Mi a verseny végeredménye – azaz rendezzük éremszám szerint csökkenő sorrend­be a sportolókat.
+
+– Különböző szempontok szerint lehessen keresni – pl. keressük ki a begépelt sportághoz tartozó sportolókat. (De a fantáziája szerint módosíthatja majd a keresés célját.) Arra is adjon lehetőséget, hogy a keresést meg lehessen ismételni. Természetesen azt is írja ki, ha senkit sem talál.
+
+
+A korábbiakhoz képest nincs benne új, próbálja önállóan megoldani.
+

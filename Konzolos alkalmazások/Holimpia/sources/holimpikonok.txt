@@ -1,0 +1,16 @@
+Berecz Anna;alpesi sízés
+Miklós Edit;alpesi sízés
+Farkas Norbert;alpesi sízés
+Gombos Károly;sílövészet
+Szőcs Emőke;sílövészet
+Szabó Milán Gábor;északi sízés
+Simon Ágnes;északi sízés
+Nagy Konrád;gyorskorcsolya
+Béres Bence;rövidpályás gyorskorcsolya
+Knoch Viktor;rövidpályás gyorskorcsolya
+Liu Shaolin Sándor;rövidpályás gyorskorcsolya
+Darázs Rózsa;rövidpályás gyorskorcsolya
+Heidum Bernadett;rövidpályás gyorskorcsolya
+Keszler Andrea;rövidpályás gyorskorcsolya
+Kónya Zsófia Lilla;rövidpályás gyorskorcsolya
+Lajtos Szandra;rövidpályás gyorskorcsolya

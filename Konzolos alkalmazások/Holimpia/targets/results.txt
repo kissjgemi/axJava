@@ -1,0 +1,133 @@
+A 2019. évi téli olimpia magyar döntõsei:
+  1: Berecz Anna (alpesi sízés)                        :   0 arany   0 ezüst   0 bronz.
+  2: Miklós Edit (alpesi sízés)                        :   0 arany   0 ezüst   0 bronz.
+  3: Farkas Norbert (alpesi sízés)                     :   0 arany   0 ezüst   0 bronz.
+  4: Gombos Károly (sílövészet)                        :   0 arany   0 ezüst   0 bronz.
+  5: Szõcs Emõke (sílövészet)                          :   0 arany   0 ezüst   0 bronz.
+  6: Szabó Milán Gábor (északi sízés)                  :   0 arany   0 ezüst   0 bronz.
+  7: Simon Ágnes (északi sízés)                        :   0 arany   0 ezüst   0 bronz.
+  8: Nagy Konrád (gyorskorcsolya)                      :   0 arany   0 ezüst   0 bronz.
+  9: Béres Bence (rövidpályás gyorskorcsolya)          :   0 arany   0 ezüst   0 bronz.
+ 10: Knoch Viktor (rövidpályás gyorskorcsolya)         :   0 arany   0 ezüst   0 bronz.
+ 11: Liu Shaolin Sándor (rövidpályás gyorskorcsolya)   :   0 arany   0 ezüst   0 bronz.
+ 12: Darázs Rózsa (rövidpályás gyorskorcsolya)         :   0 arany   0 ezüst   0 bronz.
+ 13: Heidum Bernadett (rövidpályás gyorskorcsolya)     :   0 arany   0 ezüst   0 bronz.
+ 14: Keszler Andrea (rövidpályás gyorskorcsolya)       :   0 arany   0 ezüst   0 bronz.
+ 15: Kónya Zsófia Lilla (rövidpályás gyorskorcsolya)   :   0 arany   0 ezüst   0 bronz.
+ 16: Lajtos Szandra (rövidpályás gyorskorcsolya)       :   0 arany   0 ezüst   0 bronz.
+
+
+Hány versenysorozat van az idényben? (legalább 4)
+	5
+
+	1. versenynap:
+alpesi sízés
+ 1.helyezett: a(z) 13. versenyzõ.
+ 2.helyezett: a(z) 3. versenyzõ.
+ 3.helyezett: Berecz Anna
+sílövészet
+ 1.helyezett: a(z) 14. versenyzõ.
+ 2.helyezett: a(z) 15. versenyzõ.
+ 3.helyezett: a(z) 9. versenyzõ.
+északi sízés
+ 1.helyezett: a(z) 14. versenyzõ.
+ 2.helyezett: a(z) 12. versenyzõ.
+ 3.helyezett: a(z) 1. versenyzõ.
+gyorskorcsolya
+ 1.helyezett: a(z) 2. versenyzõ.
+ 2.helyezett: a(z) 12. versenyzõ.
+ 3.helyezett: a(z) 4. versenyzõ.
+rövidpályás gyorskorcsolya
+	2. versenynap:
+alpesi sízés
+ 1.helyezett: Farkas Norbert
+ 2.helyezett: a(z) 5. versenyzõ.
+ 3.helyezett: a(z) 4. versenyzõ.
+sílövészet
+ 1.helyezett: a(z) 14. versenyzõ.
+ 2.helyezett: Szõcs Emõke
+ 3.helyezett: a(z) 13. versenyzõ.
+északi sízés
+ 1.helyezett: a(z) 2. versenyzõ.
+ 2.helyezett: a(z) 13. versenyzõ.
+ 3.helyezett: Simon Ágnes
+gyorskorcsolya
+ 1.helyezett: a(z) 4. versenyzõ.
+ 2.helyezett: a(z) 5. versenyzõ.
+ 3.helyezett: a(z) 1. versenyzõ.
+rövidpályás gyorskorcsolya
+	3. versenynap:
+alpesi sízés
+ 1.helyezett: a(z) 10. versenyzõ.
+ 2.helyezett: a(z) 7. versenyzõ.
+ 3.helyezett: Berecz Anna
+sílövészet
+ 1.helyezett: a(z) 6. versenyzõ.
+ 2.helyezett: a(z) 8. versenyzõ.
+ 3.helyezett: a(z) 2. versenyzõ.
+északi sízés
+ 1.helyezett: a(z) 9. versenyzõ.
+ 2.helyezett: a(z) 14. versenyzõ.
+ 3.helyezett: a(z) 13. versenyzõ.
+gyorskorcsolya
+ 1.helyezett: a(z) 4. versenyzõ.
+ 2.helyezett: a(z) 11. versenyzõ.
+ 3.helyezett: a(z) 13. versenyzõ.
+rövidpályás gyorskorcsolya
+	4. versenynap:
+alpesi sízés
+ 1.helyezett: a(z) 13. versenyzõ.
+ 2.helyezett: a(z) 11. versenyzõ.
+ 3.helyezett: a(z) 7. versenyzõ.
+sílövészet
+ 1.helyezett: Szõcs Emõke
+ 2.helyezett: a(z) 1. versenyzõ.
+ 3.helyezett: a(z) 15. versenyzõ.
+északi sízés
+ 1.helyezett: a(z) 8. versenyzõ.
+ 2.helyezett: Simon Ágnes
+ 3.helyezett: a(z) 0. versenyzõ.
+gyorskorcsolya
+ 1.helyezett: a(z) 9. versenyzõ.
+ 2.helyezett: Nagy Konrád
+ 3.helyezett: a(z) 8. versenyzõ.
+rövidpályás gyorskorcsolya
+	5. versenynap:
+alpesi sízés
+ 1.helyezett: Miklós Edit
+ 2.helyezett: a(z) 4. versenyzõ.
+ 3.helyezett: Berecz Anna
+sílövészet
+ 1.helyezett: a(z) 12. versenyzõ.
+ 2.helyezett: a(z) 1. versenyzõ.
+ 3.helyezett: a(z) 10. versenyzõ.
+északi sízés
+ 1.helyezett: a(z) 3. versenyzõ.
+ 2.helyezett: a(z) 8. versenyzõ.
+ 3.helyezett: a(z) 7. versenyzõ.
+gyorskorcsolya
+ 1.helyezett: a(z) 11. versenyzõ.
+ 2.helyezett: a(z) 6. versenyzõ.
+ 3.helyezett: a(z) 13. versenyzõ.
+rövidpályás gyorskorcsolya
+
+
+A 2019. évi téli olimpián elért eredmények:
+  1: Berecz Anna (alpesi sízés)                        :   0 arany   0 ezüst   3 bronz.
+  2: Miklós Edit (alpesi sízés)                        :   1 arany   0 ezüst   0 bronz.
+  3: Farkas Norbert (alpesi sízés)                     :   1 arany   0 ezüst   0 bronz.
+  4: Gombos Károly (sílövészet)                        :   0 arany   0 ezüst   0 bronz.
+  5: Szõcs Emõke (sílövészet)                          :   1 arany   1 ezüst   0 bronz.
+  6: Szabó Milán Gábor (északi sízés)                  :   0 arany   0 ezüst   0 bronz.
+  7: Simon Ágnes (északi sízés)                        :   0 arany   1 ezüst   1 bronz.
+  8: Nagy Konrád (gyorskorcsolya)                      :   0 arany   1 ezüst   0 bronz.
+  9: Béres Bence (rövidpályás gyorskorcsolya)          :   0 arany   0 ezüst   0 bronz.
+ 10: Knoch Viktor (rövidpályás gyorskorcsolya)         :   0 arany   0 ezüst   0 bronz.
+ 11: Liu Shaolin Sándor (rövidpályás gyorskorcsolya)   :   0 arany   0 ezüst   0 bronz.
+ 12: Darázs Rózsa (rövidpályás gyorskorcsolya)         :   0 arany   0 ezüst   0 bronz.
+ 13: Heidum Bernadett (rövidpályás gyorskorcsolya)     :   0 arany   0 ezüst   0 bronz.
+ 14: Keszler Andrea (rövidpályás gyorskorcsolya)       :   0 arany   0 ezüst   0 bronz.
+ 15: Kónya Zsófia Lilla (rövidpályás gyorskorcsolya)   :   0 arany   0 ezüst   0 bronz.
+ 16: Lajtos Szandra (rövidpályás gyorskorcsolya)       :   0 arany   0 ezüst   0 bronz.
+
+
