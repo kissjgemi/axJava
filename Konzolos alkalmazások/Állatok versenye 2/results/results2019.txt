@@ -1,0 +1,14 @@
+
+A verseny eredménye:
+Bodri      75 pont
+Cirmos     54 pont
+Pamacs     58 pont
+Buksi      87 pont
+Picúr       0 pont
+
+Pontszám szerint rendezve:
+Buksi      87 pont
+Bodri      75 pont
+Pamacs     58 pont
+Cirmos     54 pont
+Picúr       0 pont
