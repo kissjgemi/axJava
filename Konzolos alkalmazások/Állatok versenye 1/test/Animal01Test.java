@@ -16,7 +16,7 @@ import static org.junit.Assert.*;
  *
  * @author KjG
  */
-public class animalTest {
+public class Animal01Test {
 // run with 'Test File         Ctrl+F6'
 
     private final int thisYear = 2018;
@@ -28,7 +28,7 @@ public class animalTest {
 
     private Animal animal;
 
-    public animalTest() {
+    public Animal01Test() {
     }
 
     @BeforeClass
