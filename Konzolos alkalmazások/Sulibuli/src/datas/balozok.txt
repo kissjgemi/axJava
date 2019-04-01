@@ -1,0 +1,10 @@
+Kata;lány;2000
+Béla;fiú;3000
+Mari;lány;3000
+Anna;lány;2500
+Zoli;fiú;3800
+Csaba;fiú;4000
+Sára;lány;4000
+Gábor;fiú;3500
+Feri;fiú;4000
+Gizi;lány;2000
