@@ -68,6 +68,14 @@ public abstract class Dancer {
         str += " sorszáma:" + String.format("%4s", number + ",");
         return str + " neve: " + name;
     }
+    
+    @Override
+    public int hashCode() {
+        //ha egyedi hashCode-ot akarok
+        int hash = 115;
+        hash = hash + Objects.hashCode(this.name);
+        return hash;
+    }        
 
     @Override
     public boolean equals(Object obj) {

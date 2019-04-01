@@ -13,134 +13,301 @@ Gizi    :   0 tánc,    0 Ft fogyasztás 0 szavazat
 
 	Bál szimuláció:
 Szavazás:
-Csaba szavazott
-Sára szavazetot kapott
-Feri táncol
-Gizi táncol
-Gizi táncol
-Gábor rendelt egy koktélt
-Gábor rendelt egy perecet és fröccsöt
-Szavazás:
-Anna szavazott
-Mari szavazetot kapott
-Béla táncol
-Béla táncol
-Feri rendelt két üdítõt
-Gábor rendelt két üdítõt
+Mari szavazott
+Kata szavazetot kapott
+Anna táncol
+Gizi rendelt egy koktélt
+Béla rendelt egy perecet és fröccsöt
+Sára rendelt egy rövidet
+Mari rendelt egy rövidet
+Zoli rendelt két üdítõt
+Gizi rendelt két üdítõt
+Sára rendelt egy kört a barátainak
 Szavazás:
 Akárki is szavazott
-Na-ne, hiszen Csaba fiú
+Na-ne, hiszen Béla fiú
 Anna táncol
+Gizi táncol
+Zoli táncol
+Kata rendelt egy ásványvizet
+Anna rendelt két üdítõt
+Béla rendelt egy kört a barátainak
+Szavazás:
+Feri szavazott
+Sára szavazetot kapott
+Gábor táncol
+Sára táncol
+Anna rendelt egy kört a barátainak
+Szavazás:
+Akárki is szavazott
+Na-ne, hiszen Zoli fiú
+Béla táncol
+Sára táncol
+Anna táncol
+Csaba táncol
+Mari rendelt egy rövidet
+Szavazás:
+Akárki is szavazott
+Na-ne, hiszen Gábor fiú
+Feri táncol
+Béla táncol
+Feri táncol
+Mari rendelt egy üdítõt
+Mari rendelt egy üdítõt
+Szavazás:
+Akárki is szavazott
+Na-ne, hiszen Gábor fiú
+Mari táncol
+Sára táncol
+Csaba táncol
+Béla táncol
+Feri rendelt egy rövidet
+Szavazás:
+Akárki is szavazott
+Na-ne, hiszen Gábor fiú
+Gábor táncol
+Anna rendelt egy kört a barátainak
+Csaba rendelt egy ásványvizet
+Sára rendelt egy üdítõt
+Szavazás:
+Akárki is szavazott
+Na-ne, hiszen Zoli fiú
+Sára táncol
+Zoli táncol
+Mari táncol
+Feri rendelt egy üdítõt
+Szavazás:
+Akárki is szavazott
+Na-ne, hiszen Gábor fiú
+Gizi táncol
+Sára rendelt egy perecet és fröccsöt
+Szavazás:
+Akárki is szavazott
+Na-ne, hiszen Feri fiú
+Csaba táncol
+Sára táncol
+Zoli táncol
+Szavazás:
+Kata szavazott
+Kata szavazetot kapott
+Gizi táncol
+Sára táncol
+Sára rendelt egy üdítõt
+Mari rendelt egy üdítõt
+Mari rendelt egy kört a barátainak
+Zoli rendelt két üdítõt
+Mari rendelt egy ásványvizet
+Szavazás:
+Gizi szavazott
+Kata szavazetot kapott
+Sára táncol
+Kata rendelt egy koktélt
+Béla rendelt egy ásványvizet
+Mari rendelt egy ásványvizet
 Csaba rendelt egy kört a barátainak
-Gábor rendelt egy ásványvizet
+Szavazás:
+Mari szavazott
+Mari szavazetot kapott
+Feri táncol
+Szavazás:
+Gizi szavazott
+Kata szavazetot kapott
+Feri rendelt egy kört a barátainak
+Béla rendelt egy szedvicset
+Mari rendelt sósmogyorót és rövedet kisérõvel
+Csaba rendelt egy kört a barátainak
+Gábor rendelt egy szedvicset
+Gizi rendelt egy szedvicset
+Szavazás:
+Akárki is szavazott
+Na-ne, hiszen Feri fiú
+Anna táncol
+Béla táncol
+Anna táncol
+Gizi táncol
+Csaba rendelt egy rövidet
 Anna rendelt egy rövidet
 Szavazás:
 Akárki is szavazott
 Na-ne, hiszen Csaba fiú
-Gizi táncol
-Csaba rendelt egy kört a barátainak
-Gizi rendelt egy perecet és fröccsöt
-Sára rendelt egy ásványvizet
+Feri táncol
+Csaba táncol
+Béla rendelt egy kört a barátainak
+Zoli rendelt egy üdítõt
+Gábor rendelt egy kört a barátainak
+Zoli rendelt egy üdítõt
 Szavazás:
-Feri szavazott
+Anna szavazott
 Kata szavazetot kapott
+Béla táncol
+Anna táncol
+Mari rendelt egy kört a barátainak
+Anna rendelt egy rövidet
+Sára rendelt egy kört a barátainak
+Csaba rendelt sósmogyorót és rövedet kisérõvel
+Kata rendelt egy ásványvizet
+Mari rendelt két üdítõt
+Zoli rendelt egy üdítõt
+Szavazás:
+Sára szavazott
+Kata szavazetot kapott
+Zoli táncol
+Gizi rendelt egy ásványvizet
+Csaba rendelt egy koktélt
+Szavazás:
+Akárki is szavazott
+Na-ne, hiszen Béla fiú
+Anna táncol
+Zoli táncol
+Anna táncol
+Gizi rendelt egy perecet és fröccsöt
+Anna rendelt egy ásványvizet
+Szavazás:
+Csaba szavazott
+Gizi szavazetot kapott
+Feri táncol
+Sára rendelt egy kört a barátainak
+Gizi rendelt egy rövidet
+Anna rendelt egy perecet és fröccsöt
+Gábor rendelt egy kört a barátainak
+Szavazás:
+Anna szavazott
+Kata szavazetot kapott
+Mari táncol
+Sára táncol
+Anna rendelt egy kört a barátainak
+Gizi rendelt egy kört a barátainak
+Szavazás:
+Akárki is szavazott
+Na-ne, hiszen Béla fiú
+Sára táncol
 Kata táncol
-Gizi táncol
+Gábor rendelt két üdítõt
+Csaba rendelt egy ásványvizet
+Mari rendelt egy kört a barátainak
+Gizi rendelt egy ásványvizet
+Béla rendelt egy ásványvizet
+Szavazás:
+Mari szavazott
+Anna szavazetot kapott
+Feri táncol
+Csaba táncol
+Gábor táncol
+Kata rendelt egy perecet és fröccsöt
+Anna rendelt egy ásványvizet
+Béla rendelt egy perecet és fröccsöt
+Sára rendelt egy koktélt
+Anna rendelt egy szedvicset
+Szavazás:
+Mari szavazott
+Anna szavazetot kapott
+Kata táncol
+Sára rendelt egy kört a barátainak
+Béla rendelt sósmogyorót és rövedet kisérõvel
+Kata rendelt két üdítõt
+Gábor rendelt két üdítõt
+Szavazás:
+Csaba szavazott
+Anna szavazetot kapott
+Mari táncol
+Gizi rendelt egy kört a barátainak
+Mari rendelt egy kört a barátainak
+Szavazás:
+Akárki is szavazott
+Na-ne, hiszen Csaba fiú
+Gábor táncol
+Gábor táncol
+Sára táncol
+Kata táncol
+Anna táncol
+Gizi rendelt két üdítõt
+Anna rendelt egy rövidet
+Anna rendelt sósmogyorót és rövedet kisérõvel
+Béla rendelt egy kört a barátainak
 	Vége a bálnak
 
 A sulibuli büfé bevétele:
-	53 Ft
+	421 Ft
 
 A bulizók fogyasztása:
-Kata    : 0 Ft-ot költött
-Béla    : 0 Ft-ot költött
-Mari    : 0 Ft-ot költött
-Anna    : 5 Ft-ot költött
-Zoli    : 0 Ft-ot költött
-Csaba   : 18 Ft-ot költött
-Sára    : 1 Ft-ot költött
-Gábor   : 19 Ft-ot költött
-Feri    : 4 Ft-ot költött
-Gizi    : 6 Ft-ot költött
+Kata    : 20 Ft-ot költött
+Béla    : 52 Ft-ot költött
+Mari    : 66 Ft-ot költött
+Anna    : 66 Ft-ot költött
+Zoli    : 14 Ft-ot költött
+Csaba   : 42 Ft-ot költött
+Sára    : 62 Ft-ot költött
+Gábor   : 31 Ft-ot költött
+Feri    : 17 Ft-ot költött
+Gizi    : 51 Ft-ot költött
 
 A lányok szavazatai:
-Kata    :1 szavazatot kapott
+Kata    :7 szavazatot kapott
 Mari    :1 szavazatot kapott
-Anna    :0 szavazatot kapott
+Anna    :3 szavazatot kapott
 Sára    :1 szavazatot kapott
-Gizi    :0 szavazatot kapott
+Gizi    :1 szavazatot kapott
 
-A legnépszerûbb lány(ok): 1 szavazattal:
+A legnépszerûbb lány(ok): 7 szavazattal:
 Kata
-Mari
-Sára
 
 A táncok száma szerint rendezve:
-Gizi    :   4 tánc,    6 Ft fogyasztás 0 szavazat
-Béla    :   2 tánc,    0 Ft fogyasztás
-Kata    :   1 tánc,    0 Ft fogyasztás 1 szavazat
-Anna    :   1 tánc,    5 Ft fogyasztás 0 szavazat
-Feri    :   1 tánc,    4 Ft fogyasztás
-Mari    :   0 tánc,    0 Ft fogyasztás 1 szavazat
-Zoli    :   0 tánc,    0 Ft fogyasztás
-Csaba   :   0 tánc,   18 Ft fogyasztás
-Sára    :   0 tánc,    1 Ft fogyasztás 1 szavazat
-Gábor   :   0 tánc,   19 Ft fogyasztás
+Sára    :  10 tánc,   62 Ft fogyasztás 1 szavazat
+Anna    :   9 tánc,   66 Ft fogyasztás 3 szavazat
+Feri    :   6 tánc,   17 Ft fogyasztás
+Béla    :   5 tánc,   52 Ft fogyasztás
+Zoli    :   5 tánc,   14 Ft fogyasztás
+Csaba   :   5 tánc,   42 Ft fogyasztás
+Gábor   :   5 tánc,   31 Ft fogyasztás
+Mari    :   4 tánc,   66 Ft fogyasztás 1 szavazat
+Gizi    :   4 tánc,   51 Ft fogyasztás 1 szavazat
+Kata    :   3 tánc,   20 Ft fogyasztás 7 szavazat
 
 A fogyasztás szerint rendezve:
-Béla    :   2 tánc,    0 Ft fogyasztás
-Kata    :   1 tánc,    0 Ft fogyasztás 1 szavazat
-Mari    :   0 tánc,    0 Ft fogyasztás 1 szavazat
-Zoli    :   0 tánc,    0 Ft fogyasztás
-Sára    :   0 tánc,    1 Ft fogyasztás 1 szavazat
-Feri    :   1 tánc,    4 Ft fogyasztás
-Anna    :   1 tánc,    5 Ft fogyasztás 0 szavazat
-Gizi    :   4 tánc,    6 Ft fogyasztás 0 szavazat
-Csaba   :   0 tánc,   18 Ft fogyasztás
-Gábor   :   0 tánc,   19 Ft fogyasztás
+Zoli    :   5 tánc,   14 Ft fogyasztás
+Feri    :   6 tánc,   17 Ft fogyasztás
+Kata    :   3 tánc,   20 Ft fogyasztás 7 szavazat
+Gábor   :   5 tánc,   31 Ft fogyasztás
+Csaba   :   5 tánc,   42 Ft fogyasztás
+Gizi    :   4 tánc,   51 Ft fogyasztás 1 szavazat
+Béla    :   5 tánc,   52 Ft fogyasztás
+Sára    :  10 tánc,   62 Ft fogyasztás 1 szavazat
+Anna    :   9 tánc,   66 Ft fogyasztás 3 szavazat
+Mari    :   4 tánc,   66 Ft fogyasztás 1 szavazat
 
 A szavazatok száma szerint rendezve:
-Kata    :   1 tánc,    0 Ft fogyasztás 1 szavazat
-Mari    :   0 tánc,    0 Ft fogyasztás 1 szavazat
-Sára    :   0 tánc,    1 Ft fogyasztás 1 szavazat
-Béla    :   2 tánc,    0 Ft fogyasztás
-Zoli    :   0 tánc,    0 Ft fogyasztás
-Feri    :   1 tánc,    4 Ft fogyasztás
-Anna    :   1 tánc,    5 Ft fogyasztás 0 szavazat
-Gizi    :   4 tánc,    6 Ft fogyasztás 0 szavazat
-Csaba   :   0 tánc,   18 Ft fogyasztás
-Gábor   :   0 tánc,   19 Ft fogyasztás
+Kata    :   3 tánc,   20 Ft fogyasztás 7 szavazat
+Anna    :   9 tánc,   66 Ft fogyasztás 3 szavazat
+Gizi    :   4 tánc,   51 Ft fogyasztás 1 szavazat
+Sára    :  10 tánc,   62 Ft fogyasztás 1 szavazat
+Mari    :   4 tánc,   66 Ft fogyasztás 1 szavazat
+Zoli    :   5 tánc,   14 Ft fogyasztás
+Feri    :   6 tánc,   17 Ft fogyasztás
+Gábor   :   5 tánc,   31 Ft fogyasztás
+Csaba   :   5 tánc,   42 Ft fogyasztás
+Béla    :   5 tánc,   52 Ft fogyasztás
 
 Hölgyem Ön kit választ?
-Csaba
-Csaba táncra fel'
-
-Keressek még valakit? (i/n)
-E
+Mari
+Mari nem kérhetõ fel...
 
 Keressek még valakit? (i/n)
 i
 Hölgyem Ön kit választ?
-Elemér
-Elemér nem kérhetõ fel...
+Gábor
+Gábor táncra fel'
 
 Keressek még valakit? (i/n)
-É
+7
 
 Keressek még valakit? (i/n)
-i
-Hölgyem Ön kit választ?
-Éva
-Éva nem kérhetõ fel...
+r
 
 Keressek még valakit? (i/n)
 i
 Hölgyem Ön kit választ?
-Sára
-Sára nem kérhetõ fel...
-
-Keressek még valakit? (i/n)
-k
+Zoli
+Zoli táncra fel'
 
 Keressek még valakit? (i/n)
 n

@@ -280,6 +280,7 @@ public class Main {
                 appendFile(DATARESULTS, MODE_RW, String.valueOf(c));
             } while (!"in".contains(String.valueOf(c)));
         } while ("i".equals(String.valueOf(c)));
+        printLine("");
     }
 
     private void start() {
