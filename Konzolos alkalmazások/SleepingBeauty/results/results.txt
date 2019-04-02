@@ -3,3 +3,50 @@
 ************************************************************
 
 
+=============== A meghívott hölgyek névsora ================
+	Borcsa(tündér)      : varázsereje: 4 egység
+	Julcsa(boszorkány)  : varázsereje: 5 egység
+	Marcsa(tündér)      : varázsereje: 2 egység
+	Bözsi(boszorkány)   : varázsereje: 3 egység
+	Ilus(boszorkány)    : varázsereje: 5 egység
+	Katus(boszorkány)   : varázsereje: 2 egység
+	Pannus(boszorkány)  : varázsereje: 4 egység
+	Jucus(boszorkány)   : varázsereje: 3 egység
+
+************************************************************
+*           Csiribú-csiribá varázsol a Vili bá'            *
+************************************************************
+
+
+==================== A résztvevõk ereje ====================
+	Borcsa    mágiájának mértéke:  25 egység
+	Julcsa    mágiájának mértéke: -16 egység
+	Marcsa    mágiájának mértéke:  15 egység
+	Bözsi     mágiájának mértéke:  -8 egység
+	Ilus      mágiájának mértéke: -16 egység
+	Katus     mágiájának mértéke:  -4 egység
+	Pannus    mágiájának mértéke: -12 egység
+	Jucus     mágiájának mértéke:  -8 egység
+
+************************************************************
+*            Az átlagos varázserõ:  3,00 egység            *
+************************************************************
+
+
+====== Az elsõ varázslás utáni kialakult erõviszonyok ======
+	Borcsa(tündér)      : varázsereje: 5 egység
+	Julcsa(boszorkány)  : varázsereje: 4 egység
+	Marcsa(tündér)      : varázsereje: 3 egység
+	Bözsi(boszorkány)   : varázsereje: 2 egység
+	Ilus(boszorkány)    : varázsereje: 4 egység
+	Katus(boszorkány)   : varázsereje: 1 egység
+	Pannus(boszorkány)  : varázsereje: 3 egység
+	Jucus(boszorkány)   : varázsereje: 2 egység
+
+====== A leggonoszabb boszorkány(ok) 4 egység erõvel: ======
+	Julcsa
+	Ilus
+
+===== A legvarázslatosabb tündér(ek) 5 egység erõvel: ======
+	Borcsa
+
