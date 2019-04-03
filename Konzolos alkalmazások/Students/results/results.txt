@@ -3,9 +3,9 @@
 ************************************************************
 
 
-============================================================
-=         Egyetemisták regisztrálása a felmérésbe          =
-============================================================
+************************************************************
+*         Egyetemisták regisztrálása a felmérésbe          *
+************************************************************
 
 	Hibás azonosító az adatok között: 123
 
@@ -20,21 +20,21 @@ K003 Középkori egyetemiste, tudása 0 egység
 K004 Középkori egyetemiste, tudása 0 egység
 M005 Mai egyetemiste, tudása 0 egység 	0 alkalommal használt egy kütyüt.
 
-============================================================
-=                Szimuláció folyamatban ...                =
-============================================================
+************************************************************
+*                Szimuláció folyamatban ...                *
+************************************************************
 
 
 ================== A szimuláció eredménye ==================
-M001 Mai egyetemiste, tudása 1027 egység 	33 alkalommal használt egy kütyüt.
-M002 Mai egyetemiste, tudása 396 egység 	33 alkalommal használt egy kütyüt.
-M003 Mai egyetemiste, tudása 620 egység 	22 alkalommal használt egy kütyüt.
-K001 Középkori egyetemiste, tudása 504 egység
-K002 Középkori egyetemiste, tudása -64 egység
-M004 Mai egyetemiste, tudása 570 egység 	33 alkalommal használt egy kütyüt.
-K003 Középkori egyetemiste, tudása -21 egység
-K004 Középkori egyetemiste, tudása 715 egység
-M005 Mai egyetemiste, tudása 1039 egység 	55 alkalommal használt egy kütyüt.
+M001 Mai egyetemiste, tudása 792 egység 	66 alkalommal használt egy kütyüt.
+M002 Mai egyetemiste, tudása 3017 egység 	132 alkalommal használt egy kütyüt.
+M003 Mai egyetemiste, tudása 1531 egység 	77 alkalommal használt egy kütyüt.
+K001 Középkori egyetemiste, tudása 1119 egység
+K002 Középkori egyetemiste, tudása 1901 egység
+M004 Mai egyetemiste, tudása 593 egység 	66 alkalommal használt egy kütyüt.
+K003 Középkori egyetemiste, tudása 1027 egység
+K004 Középkori egyetemiste, tudása 134 egység
+M005 Mai egyetemiste, tudása 2101 egység 	88 alkalommal használt egy kütyüt.
 
 ======= A középkori és a mai diákok összehasonlítása =======
 A mai diákok tudásszintje jobb
@@ -42,5 +42,5 @@ A mai diákok tudásszintje jobb
 =============== A legnagyobb tudású diák(ok) ===============
 
 ========= A kocsmai hatástanulmány összefoglalása ==========
-Összesen 2 diák itta el az eszét
+Senki nem itta el az eszét.
 
