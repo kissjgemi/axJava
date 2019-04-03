@@ -121,7 +121,7 @@ public class Main {
     }
 
     public void entrance(String str) {
-        printLine(head(60, '=', str));
+        printLine(head(60, '*', str));
         try (InputStream ins = this.getClass().getResourceAsStream(DATASOURCE);
                 Scanner sc = new Scanner(ins, CHAR_SET_FILE)) {
             String identity;
@@ -159,7 +159,7 @@ public class Main {
     }
 
     private void simulation(String str) {
-        printLine(head(60, '=', str));
+        printLine(head(60, '*', str));
         Random rnd = new Random();
         int n = rnd.nextInt(SIMULATION_LIMIT);
         int randomStudentIndex;
