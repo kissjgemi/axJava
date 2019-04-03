@@ -1,0 +1,46 @@
+************************************************************
+*                       Egyetemisták                       *
+************************************************************
+
+
+============================================================
+=         Egyetemisták regisztrálása a felmérésbe          =
+============================================================
+
+	Hibás azonosító az adatok között: 123
+
+============= A felmérésben résztvevõk listája =============
+M001 Mai egyetemiste, tudása 0 egység 	0 alkalommal használt egy kütyüt.
+M002 Mai egyetemiste, tudása 0 egység 	0 alkalommal használt egy kütyüt.
+M003 Mai egyetemiste, tudása 0 egység 	0 alkalommal használt egy kütyüt.
+K001 Középkori egyetemiste, tudása 0 egység
+K002 Középkori egyetemiste, tudása 0 egység
+M004 Mai egyetemiste, tudása 0 egység 	0 alkalommal használt egy kütyüt.
+K003 Középkori egyetemiste, tudása 0 egység
+K004 Középkori egyetemiste, tudása 0 egység
+M005 Mai egyetemiste, tudása 0 egység 	0 alkalommal használt egy kütyüt.
+
+============================================================
+=                Szimuláció folyamatban ...                =
+============================================================
+
+
+================== A szimuláció eredménye ==================
+M001 Mai egyetemiste, tudása 1027 egység 	33 alkalommal használt egy kütyüt.
+M002 Mai egyetemiste, tudása 396 egység 	33 alkalommal használt egy kütyüt.
+M003 Mai egyetemiste, tudása 620 egység 	22 alkalommal használt egy kütyüt.
+K001 Középkori egyetemiste, tudása 504 egység
+K002 Középkori egyetemiste, tudása -64 egység
+M004 Mai egyetemiste, tudása 570 egység 	33 alkalommal használt egy kütyüt.
+K003 Középkori egyetemiste, tudása -21 egység
+K004 Középkori egyetemiste, tudása 715 egység
+M005 Mai egyetemiste, tudása 1039 egység 	55 alkalommal használt egy kütyüt.
+
+======= A középkori és a mai diákok összehasonlítása =======
+A mai diákok tudásszintje jobb
+
+=============== A legnagyobb tudású diák(ok) ===============
+
+========= A kocsmai hatástanulmány összefoglalása ==========
+Összesen 2 diák itta el az eszét
+
