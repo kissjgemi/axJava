@@ -1,0 +1,42 @@
+************************************************************
+*                    Muzsikás találkozó                    *
+************************************************************
+
+
+************************************************************
+*         A zenészek jelentkeznek a találkozóra...         *
+************************************************************
+
+
+============== A zenész találkozó résztvevõi ===============
+Nagy Tamás (K1), Pannon Filharmonikusok
+Kovács Dezsõ (U1)
+Kelemen Zoltán (U2)
+Takács Gáspár (K2), Mecsek együttes
+Balogh Orsolya (K3), Pannon Filharmonikusok
+Halász Edit (U3)
+Horváth Árpád (K4), Pannon Filharmonikusok
+Kiss Péter (K5), Mecsek együttes
+Varga Gábor (U4)
+Takács Éva (K6), Pannon Filharmonikusok
+
+============================================================
+=                A zenészek szerepelnek...                 =
+============================================================
+
+
+============= A zenészek bevétele a találkozón =============
+Nagy Tamás, Pannon Filharmonikusok, 199750 Ft
+Kovács Dezsõ, 172113 Ft
+Kelemen Zoltán, 168889 Ft
+Takács Gáspár, Mecsek együttes, 170000 Ft
+Balogh Orsolya, Pannon Filharmonikusok, 233750 Ft
+Halász Edit, 188871 Ft
+Horváth Árpád, Pannon Filharmonikusok, 178500 Ft
+Kiss Péter, Mecsek együttes, 191250 Ft
+Varga Gábor, 164037 Ft
+Takács Éva, Pannon Filharmonikusok, 153000 Ft
+
+============== A leggazdagabb utcazenész(ek): ==============
+	Halász Edit
+

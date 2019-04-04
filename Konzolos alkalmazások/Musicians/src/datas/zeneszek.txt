@@ -1,0 +1,10 @@
+Nagy Tamás;20;Pannon Filharmonikusok
+Kovács Dezső;10
+Kelemen Zoltán;25
+Takács Gáspár;15;Mecsek együttes
+Balogh Orsolya;30;Pannon Filharmonikusok
+Halász Edit;12
+Horváth Árpád;15;Pannon Filharmonikusok
+Kiss Péter;22;Mecsek együttes
+Varga Gábor;18
+Takács Éva;10;Pannon Filharmonikusok
