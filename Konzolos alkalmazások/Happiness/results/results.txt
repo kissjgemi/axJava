@@ -1,0 +1,229 @@
+************************************************************
+*               Március 20 a boldogság napja               *
+************************************************************
+
+
+************************************************************
+*          A jelentkezõk adatainak beolvasása...           *
+************************************************************
+
+
+================== A felmérés résztvevõi ===================
+F001 (férfi) 
+F002 (férfi) 
+F003 (férfi) 
+N001 (nõ)  2 gyermeke van
+N002 (nõ)  0 gyermeke van
+N003 (nõ)  4 gyermeke van
+F004 (férfi) 
+N004 (nõ)  1 gyermeke van
+N005 (nõ)  1 gyermeke van
+
+============================================================
+=                 A felmérések elkezdõdtek                 =
+============================================================
+
+PromotionIndex: 33
+ChildHappinessIndex: 5
+
+F001  -3 pont  +1 pont
+F002   4 pont  +8 pont
+F003  10 pont  +6 pont
+N001   3 pont
+N002  -2 pont
+N003  -6 pont
+F004   8 pont  +2 pont
+N004  -7 pont
+N005  -1 pont
+
+1: 
+F004 (férfi)   9 egység boldogság
+F004 (férfi)   9 egység boldogság
+2: 
+F002 (férfi)   7 egység boldogság
+F002 (férfi)   7 egység boldogság
+3: 
+N003 (nõ)  14 egység boldogság 4 gyermeke van
+N003 (nõ)  14 egység boldogság 4 gyermeke van
+N005 (nõ)   4 egység boldogság 1 gyermeke van
+N005 (nõ)   4 egység boldogság 1 gyermeke van
+4: 
+N004 (nõ)  -2 egység boldogság 1 gyermeke van
+N004 (nõ)  -2 egység boldogság 1 gyermeke van
+5: 
+F001 (férfi)  -2 egység boldogság
+F001 (férfi)  -1 egység boldogság
+6: 
+F004 (férfi)   9 egység boldogság
+F004 (férfi)  10 egység boldogság
+7: 
+N005 (nõ)   4 egység boldogság 1 gyermeke van
+N005 (nõ)   5 egység boldogság 1 gyermeke van
+8: 
+N003 (nõ)  14 egység boldogság 4 gyermeke van
+N003 (nõ)  15 egység boldogság 4 gyermeke van
+9: 
+F002 (férfi)   7 egység boldogság
+F002 (férfi)   7 egység boldogság
+N005 (nõ)   5 egység boldogság 1 gyermeke van
+N005 (nõ)  20 egység boldogság 4 gyermeke van
+10: 
+N001 (nõ)  13 egység boldogság 2 gyermeke van
+N001 (nõ)  13 egység boldogság 2 gyermeke van
+11: 
+N002 (nõ)  -2 egység boldogság 0 gyermeke van
+N002 (nõ)  -1 egység boldogság 0 gyermeke van
+N002 (nõ)  -1 egység boldogság 0 gyermeke van
+N002 (nõ)  14 egység boldogság 3 gyermeke van
+12: 
+F003 (férfi)  13 egység boldogság
+F003 (férfi)  13 egység boldogság
+13: 
+N004 (nõ)  -2 egység boldogság 1 gyermeke van
+N004 (nõ)  -2 egység boldogság 1 gyermeke van
+14: 
+N005 (nõ)  20 egység boldogság 4 gyermeke van
+N005 (nõ)  21 egység boldogság 4 gyermeke van
+15: 
+F004 (férfi)  10 egység boldogság
+F004 (férfi)  11 egység boldogság
+16: 
+N005 (nõ)  21 egység boldogság 4 gyermeke van
+N005 (nõ)  22 egység boldogság 4 gyermeke van
+N001 (nõ)  13 egység boldogság 2 gyermeke van
+N001 (nõ)  18 egység boldogság 3 gyermeke van
+17: 
+F004 (férfi)  11 egység boldogság
+F004 (férfi)  12 egység boldogság
+18: 
+F002 (férfi)   7 egység boldogság
+F002 (férfi)   8 egység boldogság
+N005 (nõ)  22 egység boldogság 4 gyermeke van
+N005 (nõ)  32 egység boldogság 6 gyermeke van
+19: 
+N002 (nõ)  14 egység boldogság 3 gyermeke van
+N002 (nõ)  15 egység boldogság 3 gyermeke van
+N002 (nõ)  15 egység boldogság 3 gyermeke van
+N002 (nõ)  15 egység boldogság 3 gyermeke van
+20: 
+N001 (nõ)  18 egység boldogság 3 gyermeke van
+N001 (nõ)  19 egység boldogság 3 gyermeke van
+21: 
+F002 (férfi)   8 egység boldogság
+F002 (férfi)   8 egység boldogság
+22: 
+F001 (férfi)  -1 egység boldogság
+F001 (férfi)   0 egység boldogság
+N001 (nõ)  19 egység boldogság 3 gyermeke van
+N001 (nõ)  24 egység boldogság 4 gyermeke van
+23: 
+N005 (nõ)  32 egység boldogság 6 gyermeke van
+N005 (nõ)  33 egység boldogság 6 gyermeke van
+24: 
+N002 (nõ)  15 egység boldogság 3 gyermeke van
+N002 (nõ)  16 egység boldogság 3 gyermeke van
+25: 
+F004 (férfi)  12 egység boldogság
+F004 (férfi)  12 egység boldogság
+26: 
+F004 (férfi)  12 egység boldogság
+F004 (férfi)  13 egység boldogság
+N005 (nõ)  33 egység boldogság 6 gyermeke van
+N005 (nõ)  48 egység boldogság 9 gyermeke van
+27: 
+N003 (nõ)  15 egység boldogság 4 gyermeke van
+N003 (nõ)  15 egység boldogság 4 gyermeke van
+28: 
+F004 (férfi)  13 egység boldogság
+F004 (férfi)  14 egység boldogság
+29: 
+N001 (nõ)  24 egység boldogság 4 gyermeke van
+N001 (nõ)  25 egység boldogság 4 gyermeke van
+N002 (nõ)  16 egység boldogság 3 gyermeke van
+N002 (nõ)  16 egység boldogság 3 gyermeke van
+30: 
+N002 (nõ)  16 egység boldogság 3 gyermeke van
+N002 (nõ)  18 egység boldogság 3 gyermeke van
+31: 
+N002 (nõ)  18 egység boldogság 3 gyermeke van
+N002 (nõ)  19 egység boldogság 3 gyermeke van
+32: 
+N005 (nõ)  48 egység boldogság 9 gyermeke van
+N005 (nõ)  49 egység boldogság 9 gyermeke van
+33: 
+N002 (nõ)  19 egység boldogság 3 gyermeke van
+N002 (nõ)  20 egység boldogság 3 gyermeke van
+N002 (nõ)  20 egység boldogság 3 gyermeke van
+N002 (nõ)  20 egység boldogság 3 gyermeke van
+34: 
+N005 (nõ)  49 egység boldogság 9 gyermeke van
+N005 (nõ)  50 egység boldogság 9 gyermeke van
+N001 (nõ)  25 egység boldogság 4 gyermeke van
+N001 (nõ)  25 egység boldogság 4 gyermeke van
+35: 
+F001 (férfi)   0 egység boldogság
+F001 (férfi)   1 egység boldogság
+36: 
+F003 (férfi)  13 egység boldogság
+F003 (férfi)  14 egység boldogság
+37: 
+N005 (nõ)  50 egység boldogság 9 gyermeke van
+N005 (nõ)  51 egység boldogság 9 gyermeke van
+38: 
+N005 (nõ)  51 egység boldogság 9 gyermeke van
+N005 (nõ)  52 egység boldogság 9 gyermeke van
+N002 (nõ)  20 egység boldogság 3 gyermeke van
+N002 (nõ)  35 egység boldogság 6 gyermeke van
+39: 
+F004 (férfi)  14 egység boldogság
+F004 (férfi)  15 egység boldogság
+N005 (nõ)  52 egység boldogság 9 gyermeke van
+N005 (nõ)  52 egység boldogság 9 gyermeke van
+40: 
+F003 (férfi)  14 egység boldogság
+F003 (férfi)  14 egység boldogság
+41: 
+N005 (nõ)  52 egység boldogság 9 gyermeke van
+N005 (nõ)  53 egység boldogság 9 gyermeke van
+42: 
+F003 (férfi)  14 egység boldogság
+F003 (férfi)  15 egység boldogság
+43: 
+N003 (nõ)  15 egység boldogság 4 gyermeke van
+N003 (nõ)  16 egység boldogság 4 gyermeke van
+44: 
+F002 (férfi)   8 egység boldogság
+F002 (férfi)   9 egység boldogság
+N005 (nõ)  53 egység boldogság 9 gyermeke van
+N005 (nõ)  68 egység boldogság 12 gyermeke van
+45: 
+N005 (nõ)  68 egység boldogság 12 gyermeke van
+N005 (nõ)  69 egység boldogság 12 gyermeke van
+N001 (nõ)  25 egység boldogság 4 gyermeke van
+N001 (nõ)  40 egység boldogság 7 gyermeke van
+
+============================================================
+=                A felmérések befejezõdtek                 =
+============================================================
+
+
+================= a felmérés végeredménye ==================
+F001 (férfi)   1 egység boldogság
+F002 (férfi)   9 egység boldogság
+F003 (férfi)  15 egység boldogság
+N001 (nõ)  40 egység boldogság 7 gyermeke van
+N002 (nõ)  35 egység boldogság 6 gyermeke van
+N003 (nõ)  16 egység boldogság 4 gyermeke van
+F004 (férfi)  15 egység boldogság
+N004 (nõ)  -2 egység boldogság 1 gyermeke van
+N005 (nõ)  69 egység boldogság 12 gyermeke van
+
+======================= A GNH értéke =======================
+Az átlagos boldogságszint 22 egység
+
+========== A felmérés szerint a legboldogabb(ak) ===========
+N005 (nõ)  12 gyermeke van
+
+==================== A gyermekek száma =====================
+Összesen 30 gyermeket számoltunk össze a felmérés során
+

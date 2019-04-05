@@ -1,0 +1,30 @@
+Minden évben március 20 a boldogság világnapja. Erre vonatkozóan egy felmérést végeznek, melyhez egy Java programot kell írni. A felmérés férfiak és nők boldogságértékét számolja.
+
+A felmérésben résztvevő minden egyes embert egy azonosító és a születési évének megadásával regisztrálnak. Az emberek boldogságérték()ét több összetevő alapján határozzák meg. Számít a párkapcsolati mutató – ez egy -10, +10 közötti érték, amelyet a felmérés során árulnak el az emberek (NE égesse be). Ez az érték természetesen gyakran változhat. 
+
+Tudósok azt is kimutatták, hogy a másokon segítő emberek sokkal boldogabbak, és azt is, hogy a boldogság a kor előrehaladtával csökkenhet is. A boldogságérték tehát a következő módon számolható: 
+Aa párkapcsolati mutatóhoz hozzáadják a segítések számának egy, az összes emberre egyformán érvényes szorzóval való szorzatát, és osztják az illető kor()ával. Ez az érték eltérően módosul majd férfiak és nők esetén.
+
+Minden embernek módjában áll segítenie. A segítés() során a segítések száma eggyel növekszik.
+
+A férfiak roppant vágynak a sikerre is. Egy férfi boldogságértékének kiszámításakor az alapértékhez még hozzáadódik a sikeresség mértékének és az illető korának a hányadosa. A férfiaktól a felmérés során kérdezik meg, hogy mennyire érzik sikeresnek magukat.
+
+A hölgyek boldogsága a gyerekszüléskor növekszik, és arányos a gyerekek számával. (A felmérés kezdetén meg kell adniuk a gyerekeik számát.) Az ő boldogságértékükhöz hozzáadódik még a gyerekek számának egy állandóval való szorzata. Ez az állandó minden hölgy esetén azonos. Egy hölgy akár még a (hosszabb ideig tartó) felmérés során is szülhet. Ha szül(), akkor gyerekei száma a metódus paraméterében megadott értékkel növekszik. (Ikreket is szülhet.)
+
+Kiíratáskor (toString()) az illető azonosítóját, nemét és boldogságértékét (mértékegység: „egység”) lehessen olvasni. Hölgyek esetén tüntesse fel a gyerekek számát is.
+
+A fentiek figyelembe vételével írjon programot a következőkre:
+
+A statikus adatok beállítása után olvassa be az adatokat az emberek.txt fájlból. (Adatszerkezet soronként: azonosító, születési év, nők esetén a gyerekek száma.) A férfiak azonosítója F-fel, a nőké N-nel kezdődik. Beolvasás után írassa ki a vizsgálatban résztvevő emberek adatait, majd kezdődjön a vizsgálat.
+
+A vizsgálat a következőt jelenti. Véletlen módon állítsuk be az összes ember párkapcsolati mutatójának és a férfiak sikerességi mértékének az értékét. A sikerességi mérték 0 és 10 között változhat (de ne égesse be!), majd véletlen sokszor futtassa le a következőt: válasszon egy véletlen embert, aki segít, és egy másik véletlen embert, aki ha nem túl öreg hölgy, akkor szül valahány gyereket. A korhatárra adjon egy reális értéket (ne égesse be), az újszülöttek száma pedig legyen egy 0 és 3 közötti véletlen érték. (Azaz legföljebb hármas ikrek lehetnek, most a még több gyerekkel várandósak kimaradnak a felmérésből, de ezt se égesse be).
+
+A vizsgálat után is írassa ki az eredményeket, majd értékelje a vizsgálatot, azaz:
+
+- Számolja ki az átlagos boldogságértéket (GNH – nemzeti boldogság index).
+
+- Határozza meg, hogy kik a legboldogabbak.
+
+- Állapítsa meg a gyerekek számát.
+
+A korábbiakhoz képest nincs benne új, próbálja önállóan megoldani.
