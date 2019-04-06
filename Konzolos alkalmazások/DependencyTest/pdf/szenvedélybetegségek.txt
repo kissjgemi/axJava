@@ -1,0 +1,33 @@
+Egy pszichiátriai klinikán szenvedélybetegeket vizsgálnak. Egy emberen egyszerre csak egyfajta szenvedélyt tudnak vizsgálni, ezért a kórházi felvételkor egyértelműen el kell dönteni, hogy alkoholfüggő, vagy facebook-függő egyént vesznek-e fel. Egyelőre csak diagnosztizálnak, vagyis a vizsgálat célja annak eldöntése, hogy az illető valóban függő()-e.
+
+A vizsgálat abból áll, hogy a pácienseket engedik tetszőleges sokszor inni() is és internetezni() is (de mivel egy büfé és egyetlen számítógép van, ezért egyetlen időpillanatban csak egy ember lehet a büfében, ill egy ember a gépnél – és hogy mérhető legyen az eredmény, ezért minden más italforrást és minden saját gépet elkoboznak).
+
+Betegfelvételkor meg kell adni a páciens nevét, TAJ-számát, alkoholfüggők esetén azt is meg kell adni, hogy az illető visszaeső-e.
+
+A vizsgálat során bárki iszik() és internetezik(), de csak az alkoholfüggőknél figyelik, hogy mennyit isznak, és a facebook-függőknél, hogy mennyit interneteznek. 
+Facebook-függők esetén minden egyes internetezéskor eggyel nő a belépések száma. Alkoholfüggők egyszerre egy pohárral isznak, és ilyenkor az alkoholszintjük megnövekszik a paraméterként megadott pohárban lévő alkohol mennyiségével. 
+
+A facebook-függő akkor tekinthető függőnek, ha az internetes belépések száma meghalad egy, az összes facebook-függőre egyformán érvényes határt. 
+
+Alkoholistáknál a függőség megállapításakor azt is figyelik, hogy az illető visszaeső-e. Egy visszaeső akkor tekinthető függőnek, ha alkoholszintjük egy, az összes alkoholfüggőre egyformán érvényes határ1 érték fölött van, 
+nem visszaeső esetén pedig akkor, ha ez az érték egy határ2 fölött.
+
+Minden egyes páciens esetén a kórlapra majd a páciens neve és TAJ-száma mellé az kerül majd, hogy az illető függő-e vagy sem. (Rendes szövegként, vagyis: „függő”, „nem függő”.)
+
+A pohar-at egyértelműen megadhatjuk a benne lévő ital nevének, mennyiségének és alkoholfokának megadásával. Ezek alapján kiszámolható a pohárban lévő alkoholmennyiség().
+
+A vezérlő osztályban a szükséges adatok beállítása után regisztrálja() a pácienseket, amíg van betegfelvétel (paciensek.txt fájl). 
+Azt, hogy milyen vizsgálatra veszik fel, most véletlenszerűen döntse el (egyforma eséllyel lehet ilyen is, olyan is). 
+Ha alkoholfüggő vizsgálatra kerül, akkor azt is véletlenszerűen döntse el, hogy az illető visszaeső-e vagy sem.
+
+
+Ezután, amíg tart a vizsgálat() (egy kérdésre adott válasz dönti el, hogy tart-e még, de egyszerűbb, és kényelmesebb, ha végtelen sokszor lefut egy ciklus), véletlenszerűen döntse el, hogy épp ki iszik, illetve ki internetezik a betegek közül. Aki iszik, az a rendelkezésre álló poharak közül véletlenszerűen választ egyet.
+
+Végül összesítse az eredményeket: névsorba rendezve írassa ki az összes beteg adatát. Állapítsa meg, hogy ki(k) internetezett a legtöbbet, illetve, hogy összesen mennyi a megfigyelt betegek által fogyasztott alkoholmennyiség.
+
+Ha látogató érkezik, akkor a rendszer meg tudja mondani, hogy a klinikán van-e a keresett páciens. (Ehhez célszerű definiálni a paciens osztályban az equals() és hashcode() metódusokat).
+
+Segítség: A poharak listáját létrehozhatja sima konstans adatokkal definiált példányok hozzáadásával.
+
+
+A korábbiakhoz képest nincs benne új, próbálja önállóan megoldani.
