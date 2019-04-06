@@ -1,0 +1,53 @@
+A Naprakész Sztárhírek című internetes újság ismert emberek (sztárok) életének kiteregetésével foglalkozik. A sztárokat általában jellemzi 
+
+a nevük (ez ismertté, azaz sztárrá válásuk után nem változik meg) és az emberi élet alatt szintén változatlan 
+
+IQ (intelligencia hányados). 
+
+Mindegyikük egyforma alap gázsit kap fizetésként. 
+
+Fontos számukra, hogy hányszor ír róluk a média. 
+
+Ez a szám egy megjelenik() metódus során növekszik, minden megjelenéskor eggyel. 
+
+Az újság időnként foglalkozik igazi művész sztárokkal is (őket a művészeti águk is jellemzi), 
+
+de inkább az RTL klub sztárjaival. 
+
+Közismertté válás után már nem szokás megváltoztatni a művészeti ágat. 
+
+Mindkét sztártípus esetén a fizetés()ük arányban van az IQ-jukkal: 
+
+művészek esetén az alapfizetéshez hozzáadódik még az IQ X-szerese, 
+
+ahol X minden egyes művészre egyformán érvényes szorzó, 
+
+RTL klub sztárok esetén azonban a fizetés fordított arányban áll az IQ-val (minél kisebb az IQ, annál nagyobb a fizetés :)), esetükben az alapfizetéshez hozzájön még az IQ reciprokának Y-szorosa, 
+
+ahol Y minden egyes RTL-klub sztár esetén egyforma. 
+
+(A legostobább embernek sem 0 az IQ-ja J)
+
+A vezérlő osztályban előbb legyen egy sztárválogató, ahol addig, amíg van jelentkező (sztarok.txt fájl), bekérik az illető nevét 
+
+és megmérik az IQ-ját (mérés helyett használjon most véletlen-szám generátort). 
+
+Ha ez az IQ egy megadott értéknél nagyobb, akkor az illetőből művész lesz, 
+
+ha egy másik, az előzőnél kisebb megadott értéknél kisebb, akkor RTL sztár, a kettő között pedig sikertelen a válogatás.
+
+A sajtófigyelő() N napon át „figyelje” a sajtót, és véletlenszerűen döntse el, hogy aznap épp kiről írnak (természetesen csak a beválogatott sztárok közül). 
+
+(A megjelenés azt jelenti, hogy kiíratja az illető jellemző adatait, vagyis a nevét és a megjelenések számát - művésznél a művészeti ágat is.)
+
+Végül készítsen egy kis statisztikát, és állapítsa meg, hogy az adott időszakban
+
+a/ kiknek volt nagyobb hatásuk a kultúrára, azaz összesen kik jelentek meg többször a sajtóban, az igazi művészek vagy az RTL klubosok;
+
+b/ melyik RTL klubos(ok)nak legnagyobb a fizetése, és melyik művész(ek)é a legkisebb.
+
+Adjon rá lehetőséget, hogy lekérdezhessük, egy-egy inputként megadott művészeti ág esetén kik az újság potenciális riportalanyai.
+
+Rendezze a szereplő embereket IQ szerint csökkenő sorrendbe.
+
+A korábbiakhoz képest nincs benne új, próbálja önállóan megoldani.

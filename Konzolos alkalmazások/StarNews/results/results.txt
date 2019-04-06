@@ -1,0 +1,241 @@
+************************************************************
+*                       Sztár hírek                        *
+************************************************************
+
+
+************************************************************
+*          A jelentkezõk adatainak beolvasása...           *
+************************************************************
+
+
+************************************************************
+*              A jelentkezõk kiválasztása...               *
+************************************************************
+
+	Hibás azonosító az adatok között: h
+================= A beválogatottak névsora =================
+Fanni    ( 78) RTL klub sztár
+Ákos     ( 29) RTL klub sztár
+Éva      (149) mûvész: operaénekes
+Csaba    (129) mûvész: operaénekes
+Norbert  ( 25) RTL klub sztár
+Gábor    ( 62) RTL klub sztár
+Szandra  (127) mûvész: festõmûvész
+============================================================
+
+
+========== A 90 napig figyeljük az újságzikkeket ===========
+  1.nap: Csaba    (129) mûvész: operaénekes
+  2.nap: Norbert  ( 25) RTL klub sztár
+  3.nap: Szandra  (127) mûvész: festõmûvész
+  4.nap: Éva      (149) mûvész: operaénekes
+  5.nap: Nem jelent meg cikk
+  6.nap: Gábor    ( 62) RTL klub sztár
+  7.nap: Nem jelent meg cikk
+  8.nap: Nem jelent meg cikk
+  9.nap: Csaba    (129) mûvész: operaénekes
+         Szandra  (127) mûvész: festõmûvész
+ 10.nap: Csaba    (129) mûvész: operaénekes
+         Gábor    ( 62) RTL klub sztár
+ 11.nap: Ákos     ( 29) RTL klub sztár
+ 12.nap: Nem jelent meg cikk
+ 13.nap: Ákos     ( 29) RTL klub sztár
+ 14.nap: Nem jelent meg cikk
+ 15.nap: Gábor    ( 62) RTL klub sztár
+ 16.nap: Nem jelent meg cikk
+ 17.nap: Ákos     ( 29) RTL klub sztár
+ 18.nap: Fanni    ( 78) RTL klub sztár
+ 19.nap: Fanni    ( 78) RTL klub sztár
+         Csaba    (129) mûvész: operaénekes
+ 20.nap: Szandra  (127) mûvész: festõmûvész
+ 21.nap: Nem jelent meg cikk
+ 22.nap: Gábor    ( 62) RTL klub sztár
+ 23.nap: Nem jelent meg cikk
+ 24.nap: Norbert  ( 25) RTL klub sztár
+ 25.nap: Ákos     ( 29) RTL klub sztár
+ 26.nap: Norbert  ( 25) RTL klub sztár
+         Szandra  (127) mûvész: festõmûvész
+ 27.nap: Nem jelent meg cikk
+ 28.nap: Nem jelent meg cikk
+ 29.nap: Ákos     ( 29) RTL klub sztár
+ 30.nap: Gábor    ( 62) RTL klub sztár
+ 31.nap: Fanni    ( 78) RTL klub sztár
+         Szandra  (127) mûvész: festõmûvész
+ 32.nap: Csaba    (129) mûvész: operaénekes
+ 33.nap: Nem jelent meg cikk
+ 34.nap: Nem jelent meg cikk
+ 35.nap: Gábor    ( 62) RTL klub sztár
+ 36.nap: Nem jelent meg cikk
+ 37.nap: Fanni    ( 78) RTL klub sztár
+         Csaba    (129) mûvész: operaénekes
+         Szandra  (127) mûvész: festõmûvész
+ 38.nap: Éva      (149) mûvész: operaénekes
+         Csaba    (129) mûvész: operaénekes
+ 39.nap: Gábor    ( 62) RTL klub sztár
+ 40.nap: Gábor    ( 62) RTL klub sztár
+         Szandra  (127) mûvész: festõmûvész
+ 41.nap: Nem jelent meg cikk
+ 42.nap: Gábor    ( 62) RTL klub sztár
+ 43.nap: Nem jelent meg cikk
+ 44.nap: Nem jelent meg cikk
+ 45.nap: Ákos     ( 29) RTL klub sztár
+         Csaba    (129) mûvész: operaénekes
+ 46.nap: Nem jelent meg cikk
+ 47.nap: Csaba    (129) mûvész: operaénekes
+ 48.nap: Nem jelent meg cikk
+ 49.nap: Nem jelent meg cikk
+ 50.nap: Ákos     ( 29) RTL klub sztár
+         Csaba    (129) mûvész: operaénekes
+ 51.nap: Nem jelent meg cikk
+ 52.nap: Csaba    (129) mûvész: operaénekes
+ 53.nap: Ákos     ( 29) RTL klub sztár
+         Csaba    (129) mûvész: operaénekes
+ 54.nap: Fanni    ( 78) RTL klub sztár
+         Csaba    (129) mûvész: operaénekes
+         Norbert  ( 25) RTL klub sztár
+ 55.nap: Ákos     ( 29) RTL klub sztár
+ 56.nap: Szandra  (127) mûvész: festõmûvész
+ 57.nap: Éva      (149) mûvész: operaénekes
+ 58.nap: Nem jelent meg cikk
+ 59.nap: Ákos     ( 29) RTL klub sztár
+         Éva      (149) mûvész: operaénekes
+ 60.nap: Gábor    ( 62) RTL klub sztár
+ 61.nap: Fanni    ( 78) RTL klub sztár
+ 62.nap: Nem jelent meg cikk
+ 63.nap: Éva      (149) mûvész: operaénekes
+ 64.nap: Fanni    ( 78) RTL klub sztár
+         Csaba    (129) mûvész: operaénekes
+ 65.nap: Csaba    (129) mûvész: operaénekes
+         Szandra  (127) mûvész: festõmûvész
+ 66.nap: Ákos     ( 29) RTL klub sztár
+         Szandra  (127) mûvész: festõmûvész
+ 67.nap: Gábor    ( 62) RTL klub sztár
+         Szandra  (127) mûvész: festõmûvész
+ 68.nap: Nem jelent meg cikk
+ 69.nap: Norbert  ( 25) RTL klub sztár
+         Gábor    ( 62) RTL klub sztár
+ 70.nap: Gábor    ( 62) RTL klub sztár
+ 71.nap: Nem jelent meg cikk
+ 72.nap: Nem jelent meg cikk
+ 73.nap: Nem jelent meg cikk
+ 74.nap: Norbert  ( 25) RTL klub sztár
+ 75.nap: Nem jelent meg cikk
+ 76.nap: Nem jelent meg cikk
+ 77.nap: Gábor    ( 62) RTL klub sztár
+ 78.nap: Nem jelent meg cikk
+ 79.nap: Ákos     ( 29) RTL klub sztár
+         Csaba    (129) mûvész: operaénekes
+         Gábor    ( 62) RTL klub sztár
+         Szandra  (127) mûvész: festõmûvész
+ 80.nap: Norbert  ( 25) RTL klub sztár
+ 81.nap: Norbert  ( 25) RTL klub sztár
+ 82.nap: Norbert  ( 25) RTL klub sztár
+         Szandra  (127) mûvész: festõmûvész
+ 83.nap: Nem jelent meg cikk
+ 84.nap: Fanni    ( 78) RTL klub sztár
+         Norbert  ( 25) RTL klub sztár
+ 85.nap: Fanni    ( 78) RTL klub sztár
+ 86.nap: Ákos     ( 29) RTL klub sztár
+ 87.nap: Fanni    ( 78) RTL klub sztár
+ 88.nap: Norbert  ( 25) RTL klub sztár
+         Gábor    ( 62) RTL klub sztár
+ 89.nap: Nem jelent meg cikk
+ 90.nap: Fanni    ( 78) RTL klub sztár
+         Ákos     ( 29) RTL klub sztár
+============================================================
+
+
+======================= statisztikák =======================
+A celebek kapták a nagyobb hírverést.
+
+======= A legtöbbet (520000 Ft-ot) keresõ celeb(ek): =======
+Norbert  ( 25) RTL klub sztár
+
+==== A legkevesebbet (454000 Ft-ot) keresõ mûvész(ek): =====
+Szandra  (127) mûvész: festõmûvész
+============================================================
+
+
+============ A szereplõk IQ szerinti sorrendje: ============
+Éva      (149) mûvész: operaénekes
+Csaba    (129) mûvész: operaénekes
+Szandra  (127) mûvész: festõmûvész
+Fanni    ( 78) RTL klub sztár
+Gábor    ( 62) RTL klub sztár
+Ákos     ( 29) RTL klub sztár
+Norbert  ( 25) RTL klub sztár
+============================================================
+
+
+Keresés mûvészeti ág szerint
+0-operaénekes, 1-festõmûvész, 2-építész, 3-orgonamûvész, 4-hegedûmûvész, 5-zongorista
+ >m
+A megadott adat alapján nem tudok keresni...
+
+Keressek még valakit? (i/n)
+ >
+
+Keressek még valakit? (i/n)
+ >i
+Keresés mûvészeti ág szerint
+0-operaénekes, 1-festõmûvész, 2-építész, 3-orgonamûvész, 4-hegedûmûvész, 5-zongorista
+ >
+ >0
+Éva      (149) mûvész: operaénekes
+Csaba    (129) mûvész: operaénekes
+
+Keressek még valakit? (i/n)
+ >i
+Keresés mûvészeti ág szerint
+0-operaénekes, 1-festõmûvész, 2-építész, 3-orgonamûvész, 4-hegedûmûvész, 5-zongorista
+ >1
+Szandra  (127) mûvész: festõmûvész
+
+Keressek még valakit? (i/n)
+ >i
+Keresés mûvészeti ág szerint
+0-operaénekes, 1-festõmûvész, 2-építész, 3-orgonamûvész, 4-hegedûmûvész, 5-zongorista
+ >2
+Nincs ilyen a mûvészek között
+
+Keressek még valakit? (i/n)
+ >i
+Keresés mûvészeti ág szerint
+0-operaénekes, 1-festõmûvész, 2-építész, 3-orgonamûvész, 4-hegedûmûvész, 5-zongorista
+ >3
+Nincs ilyen a mûvészek között
+
+Keressek még valakit? (i/n)
+ >i
+Keresés mûvészeti ág szerint
+0-operaénekes, 1-festõmûvész, 2-építész, 3-orgonamûvész, 4-hegedûmûvész, 5-zongorista
+ >4
+Nincs ilyen a mûvészek között
+
+Keressek még valakit? (i/n)
+ >i
+Keresés mûvészeti ág szerint
+0-operaénekes, 1-festõmûvész, 2-építész, 3-orgonamûvész, 4-hegedûmûvész, 5-zongorista
+ >5
+Nincs ilyen a mûvészek között
+
+Keressek még valakit? (i/n)
+ >i
+Keresés mûvészeti ág szerint
+0-operaénekes, 1-festõmûvész, 2-építész, 3-orgonamûvész, 4-hegedûmûvész, 5-zongorista
+ >6
+A megadott adat alapján nem tudok keresni...
+
+Keressek még valakit? (i/n)
+ >i
+Keresés mûvészeti ág szerint
+0-operaénekes, 1-festõmûvész, 2-építész, 3-orgonamûvész, 4-hegedûmûvész, 5-zongorista
+ >m
+A megadott adat alapján nem tudok keresni...
+
+Keressek még valakit? (i/n)
+ >m
+
+Keressek még valakit? (i/n)
+ >n
+
