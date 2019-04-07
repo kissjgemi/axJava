@@ -1,0 +1,376 @@
+************************************************************
+*                       Könyvesbolt                        *
+************************************************************
+
+
+************************************************************
+*                 Az adatok beolvasása...                  *
+************************************************************
+
+
+************************************************************
+*                 Az adatok ellenõrzése...                 *
+************************************************************
+
+	Hibás azonosító az adatok között: ááá
+	Hibás azonosító az adatok között: 1
+	Hibás azonosító az adatok között: óknak;2000;óknak;2000
+	Hibás azonosító az adatok között: óknak;2000
+
+========================== Leltár ==========================
+Gárdonyi Géza
+	Egri csillagok                           1500 Ft (25 db)
+Joshua Bloch
+	Hatékony Java                            2600 Ft E-book
+Nyékyné
+	Java útikalauz programozóknak            3000 Ft ( 7 db)
+Rowling
+	Harry Potter                             7500 Ft ( 9 db)
+Erich Gamma
+	Programtervezési minták                  2250 Ft (18 db)
+Exupery
+	A kis herceg                             1300 Ft E-book
+Tolkien
+	A Gyûrûk Ura                             3300 Ft (30 db)
+Tolsztoj
+	Háború és béke                           3750 Ft (46 db)
+Jack London
+	A vadon szava                            1560 Ft E-book
+Molnár Ferenc
+	A Pál utcai fiúk                         1500 Ft (49 db)
+Bulgakov
+	A Mester és Margarita                    2600 Ft E-book
+Dosztojevszkij
+	Bûn és bûnhõdés                          2100 Ft (30 db)
+============================================================
+
+
+================= Szerzõ szerint rendezve ==================
+Tolsztoj
+	Háború és béke                           3750 Ft (46 db)
+Tolkien
+	A Gyûrûk Ura                             3300 Ft (30 db)
+Rowling
+	Harry Potter                             7500 Ft ( 9 db)
+Nyékyné
+	Java útikalauz programozóknak            3000 Ft ( 7 db)
+Molnár Ferenc
+	A Pál utcai fiúk                         1500 Ft (49 db)
+Joshua Bloch
+	Hatékony Java                            2600 Ft E-book
+Jack London
+	A vadon szava                            1560 Ft E-book
+Gárdonyi Géza
+	Egri csillagok                           1500 Ft (25 db)
+Exupery
+	A kis herceg                             1300 Ft E-book
+Erich Gamma
+	Programtervezési minták                  2250 Ft (18 db)
+Dosztojevszkij
+	Bûn és bûnhõdés                          2100 Ft (30 db)
+Bulgakov
+	A Mester és Margarita                    2600 Ft E-book
+============================================================
+
+
+================= Szerzõ szerint rendezve ==================
+Bulgakov
+	A Mester és Margarita                    2600 Ft E-book
+Dosztojevszkij
+	Bûn és bûnhõdés                          2100 Ft (30 db)
+Erich Gamma
+	Programtervezési minták                  2250 Ft (18 db)
+Exupery
+	A kis herceg                             1300 Ft E-book
+Gárdonyi Géza
+	Egri csillagok                           1500 Ft (25 db)
+Jack London
+	A vadon szava                            1560 Ft E-book
+Joshua Bloch
+	Hatékony Java                            2600 Ft E-book
+Molnár Ferenc
+	A Pál utcai fiúk                         1500 Ft (49 db)
+Nyékyné
+	Java útikalauz programozóknak            3000 Ft ( 7 db)
+Rowling
+	Harry Potter                             7500 Ft ( 9 db)
+Tolkien
+	A Gyûrûk Ura                             3300 Ft (30 db)
+Tolsztoj
+	Háború és béke                           3750 Ft (46 db)
+============================================================
+
+
+================ Vásárlások szimulációja... ================
+19593 forinttal jöttek vásárolni:
+Molnár Ferenc: A Pál utcai fiúk könyvét megvásárolták 1500 Forintért
+16320 forinttal jöttek vásárolni:
+Erich Gamma: Programtervezési minták könyvét megvásárolták 2250 Forintért
+14725 forinttal jöttek vásárolni:
+Exupery: A kis herceg könyvét megvásárolták 1300 Forintért
+5436 forinttal jöttek vásárolni:
+Gárdonyi Géza: Egri csillagok könyvét megvásárolták 1500 Forintért
+4381 forinttal jöttek vásárolni:
+Erich Gamma: Programtervezési minták könyvét megvásárolták 2250 Forintért
+2326 forinttal jöttek vásárolni:
+Molnár Ferenc: A Pál utcai fiúk könyvét megvásárolták 1500 Forintért
+8925 forinttal jöttek vásárolni:
+Dosztojevszkij: Bûn és bûnhõdés könyvét megvásárolták 2100 Forintért
+5152 forinttal jöttek vásárolni:
+Exupery: A kis herceg könyvét megvásárolták 1300 Forintért
+16635 forinttal jöttek vásárolni:
+Tolkien: A Gyûrûk Ura könyvét megvásárolták 3300 Forintért
+1689 forinttal jöttek vásárolni:
+*
+ Tolsztoj: Háború és béke megvásárlása nem sikerült 3750 áron (46)
+*
+16656 forinttal jöttek vásárolni:
+Bulgakov: A Mester és Margarita könyvét megvásárolták 2600 Forintért
+13851 forinttal jöttek vásárolni:
+Rowling: Harry Potter könyvét megvásárolták 7500 Forintért
+17883 forinttal jöttek vásárolni:
+Nyékyné: Java útikalauz programozóknak könyvét megvásárolták 3000 Forintért
+16212 forinttal jöttek vásárolni:
+Nyékyné: Java útikalauz programozóknak könyvét megvásárolták 3000 Forintért
+16329 forinttal jöttek vásárolni:
+Exupery: A kis herceg könyvét megvásárolták 1300 Forintért
+10264 forinttal jöttek vásárolni:
+Dosztojevszkij: Bûn és bûnhõdés könyvét megvásárolták 2100 Forintért
+2019 forinttal jöttek vásárolni:
+Exupery: A kis herceg könyvét megvásárolták 1300 Forintért
+17748 forinttal jöttek vásárolni:
+Tolkien: A Gyûrûk Ura könyvét megvásárolták 3300 Forintért
+18915 forinttal jöttek vásárolni:
+Dosztojevszkij: Bûn és bûnhõdés könyvét megvásárolták 2100 Forintért
+10451 forinttal jöttek vásárolni:
+Bulgakov: A Mester és Margarita könyvét megvásárolták 2600 Forintért
+7782 forinttal jöttek vásárolni:
+Gárdonyi Géza: Egri csillagok könyvét megvásárolták 1500 Forintért
+3454 forinttal jöttek vásárolni:
+*
+ Rowling: Harry Potter megvásárlása nem sikerült 7500 áron (8)
+*
+2362 forinttal jöttek vásárolni:
+Erich Gamma: Programtervezési minták könyvét megvásárolták 2250 Forintért
+19730 forinttal jöttek vásárolni:
+Exupery: A kis herceg könyvét megvásárolták 1300 Forintért
+2510 forinttal jöttek vásárolni:
+Exupery: A kis herceg könyvét megvásárolták 1300 Forintért
+1562 forinttal jöttek vásárolni:
+Molnár Ferenc: A Pál utcai fiúk könyvét megvásárolták 1500 Forintért
+17341 forinttal jöttek vásárolni:
+Gárdonyi Géza: Egri csillagok könyvét megvásárolták 1500 Forintért
+10137 forinttal jöttek vásárolni:
+Joshua Bloch: Hatékony Java könyvét megvásárolták 2600 Forintért
+5719 forinttal jöttek vásárolni:
+Gárdonyi Géza: Egri csillagok könyvét megvásárolták 1500 Forintért
+3090 forinttal jöttek vásárolni:
+Joshua Bloch: Hatékony Java könyvét megvásárolták 2600 Forintért
+8690 forinttal jöttek vásárolni:
+Tolkien: A Gyûrûk Ura könyvét megvásárolták 3300 Forintért
+5693 forinttal jöttek vásárolni:
+Tolkien: A Gyûrûk Ura könyvét megvásárolták 3300 Forintért
+8706 forinttal jöttek vásárolni:
+Jack London: A vadon szava könyvét megvásárolták 1560 Forintért
+8678 forinttal jöttek vásárolni:
+Molnár Ferenc: A Pál utcai fiúk könyvét megvásárolták 1500 Forintért
+3691 forinttal jöttek vásárolni:
+Joshua Bloch: Hatékony Java könyvét megvásárolták 2600 Forintért
+1549 forinttal jöttek vásárolni:
+Molnár Ferenc: A Pál utcai fiúk könyvét megvásárolták 1500 Forintért
+11201 forinttal jöttek vásárolni:
+Exupery: A kis herceg könyvét megvásárolták 1300 Forintért
+4498 forinttal jöttek vásárolni:
+*
+ Rowling: Harry Potter megvásárlása nem sikerült 7500 áron (8)
+*
+12031 forinttal jöttek vásárolni:
+Jack London: A vadon szava könyvét megvásárolták 1560 Forintért
+17817 forinttal jöttek vásárolni:
+Erich Gamma: Programtervezési minták könyvét megvásárolták 2250 Forintért
+6801 forinttal jöttek vásárolni:
+*
+ Rowling: Harry Potter megvásárlása nem sikerült 7500 áron (8)
+*
+8898 forinttal jöttek vásárolni:
+Bulgakov: A Mester és Margarita könyvét megvásárolták 2600 Forintért
+13079 forinttal jöttek vásárolni:
+Bulgakov: A Mester és Margarita könyvét megvásárolták 2600 Forintért
+4644 forinttal jöttek vásárolni:
+Bulgakov: A Mester és Margarita könyvét megvásárolták 2600 Forintért
+19688 forinttal jöttek vásárolni:
+Nyékyné: Java útikalauz programozóknak könyvét megvásárolták 3000 Forintért
+13231 forinttal jöttek vásárolni:
+Molnár Ferenc: A Pál utcai fiúk könyvét megvásárolták 1500 Forintért
+11858 forinttal jöttek vásárolni:
+Jack London: A vadon szava könyvét megvásárolták 1560 Forintért
+3840 forinttal jöttek vásárolni:
+Exupery: A kis herceg könyvét megvásárolták 1300 Forintért
+14871 forinttal jöttek vásárolni:
+Nyékyné: Java útikalauz programozóknak könyvét megvásárolták 3000 Forintért
+6044 forinttal jöttek vásárolni:
+Bulgakov: A Mester és Margarita könyvét megvásárolták 2600 Forintért
+16812 forinttal jöttek vásárolni:
+Gárdonyi Géza: Egri csillagok könyvét megvásárolták 1500 Forintért
+8115 forinttal jöttek vásárolni:
+Nyékyné: Java útikalauz programozóknak könyvét megvásárolták 3000 Forintért
+2957 forinttal jöttek vásárolni:
+*
+ Tolkien: A Gyûrûk Ura megvásárlása nem sikerült 3300 áron (26)
+*
+8567 forinttal jöttek vásárolni:
+Gárdonyi Géza: Egri csillagok könyvét megvásárolták 1500 Forintért
+6256 forinttal jöttek vásárolni:
+Tolkien: A Gyûrûk Ura könyvét megvásárolták 3300 Forintért
+8733 forinttal jöttek vásárolni:
+Exupery: A kis herceg könyvét megvásárolták 1300 Forintért
+19188 forinttal jöttek vásárolni:
+Dosztojevszkij: Bûn és bûnhõdés könyvét megvásárolták 2100 Forintért
+16175 forinttal jöttek vásárolni:
+Joshua Bloch: Hatékony Java könyvét megvásárolták 2600 Forintért
+12135 forinttal jöttek vásárolni:
+Rowling: Harry Potter könyvét megvásárolták 7500 Forintért
+5149 forinttal jöttek vásárolni:
+Gárdonyi Géza: Egri csillagok könyvét megvásárolták 1500 Forintért
+3241 forinttal jöttek vásárolni:
+*
+ Tolkien: A Gyûrûk Ura megvásárlása nem sikerült 3300 áron (25)
+*
+11274 forinttal jöttek vásárolni:
+Gárdonyi Géza: Egri csillagok könyvét megvásárolták 1500 Forintért
+17430 forinttal jöttek vásárolni:
+Bulgakov: A Mester és Margarita könyvét megvásárolták 2600 Forintért
+1931 forinttal jöttek vásárolni:
+Exupery: A kis herceg könyvét megvásárolták 1300 Forintért
+10057 forinttal jöttek vásárolni:
+Nyékyné: Java útikalauz programozóknak könyvét megvásárolták 3000 Forintért
+8772 forinttal jöttek vásárolni:
+Rowling: Harry Potter könyvét megvásárolták 7500 Forintért
+14379 forinttal jöttek vásárolni:
+Exupery: A kis herceg könyvét megvásárolták 1300 Forintért
+4024 forinttal jöttek vásárolni:
+Tolsztoj: Háború és béke könyvét megvásárolták 3750 Forintért
+8649 forinttal jöttek vásárolni:
+Exupery: A kis herceg könyvét megvásárolták 1300 Forintért
+5090 forinttal jöttek vásárolni:
+Exupery: A kis herceg könyvét megvásárolták 1300 Forintért
+5353 forinttal jöttek vásárolni:
+Tolsztoj: Háború és béke könyvét megvásárolták 3750 Forintért
+7171 forinttal jöttek vásárolni:
+Gárdonyi Géza: Egri csillagok könyvét megvásárolták 1500 Forintért
+12694 forinttal jöttek vásárolni:
+Gárdonyi Géza: Egri csillagok könyvét megvásárolták 1500 Forintért
+10386 forinttal jöttek vásárolni:
+Joshua Bloch: Hatékony Java könyvét megvásárolták 2600 Forintért
+18006 forinttal jöttek vásárolni:
+Joshua Bloch: Hatékony Java könyvét megvásárolták 2600 Forintért
+4047 forinttal jöttek vásárolni:
+Molnár Ferenc: A Pál utcai fiúk könyvét megvásárolták 1500 Forintért
+18355 forinttal jöttek vásárolni:
+Tolkien: A Gyûrûk Ura könyvét megvásárolták 3300 Forintért
+6418 forinttal jöttek vásárolni:
+Bulgakov: A Mester és Margarita könyvét megvásárolták 2600 Forintért
+2091 forinttal jöttek vásárolni:
+*
+ Erich Gamma: Programtervezési minták megvásárlása nem sikerült 2250 áron (14)
+*
+12408 forinttal jöttek vásárolni:
+Tolsztoj: Háború és béke könyvét megvásárolták 3750 Forintért
+8611 forinttal jöttek vásárolni:
+Gárdonyi Géza: Egri csillagok könyvét megvásárolták 1500 Forintért
+19255 forinttal jöttek vásárolni:
+Jack London: A vadon szava könyvét megvásárolták 1560 Forintért
+12054 forinttal jöttek vásárolni:
+Dosztojevszkij: Bûn és bûnhõdés könyvét megvásárolták 2100 Forintért
+3330 forinttal jöttek vásárolni:
+Jack London: A vadon szava könyvét megvásárolták 1560 Forintért
+3075 forinttal jöttek vásárolni:
+Bulgakov: A Mester és Margarita könyvét megvásárolták 2600 Forintért
+6732 forinttal jöttek vásárolni:
+Jack London: A vadon szava könyvét megvásárolták 1560 Forintért
+1258 forinttal jöttek vásárolni:
+*
+ Joshua Bloch: Hatékony Java megvásárlása nem sikerült 2600 áron
+*
+11324 forinttal jöttek vásárolni:
+Rowling: Harry Potter könyvét megvásárolták 7500 Forintért
+4049 forinttal jöttek vásárolni:
+Gárdonyi Géza: Egri csillagok könyvét megvásárolták 1500 Forintért
+6378 forinttal jöttek vásárolni:
+Joshua Bloch: Hatékony Java könyvét megvásárolták 2600 Forintért
+2497 forinttal jöttek vásárolni:
+Gárdonyi Géza: Egri csillagok könyvét megvásárolták 1500 Forintért
+9909 forinttal jöttek vásárolni:
+Bulgakov: A Mester és Margarita könyvét megvásárolták 2600 Forintért
+17319 forinttal jöttek vásárolni:
+Joshua Bloch: Hatékony Java könyvét megvásárolták 2600 Forintért
+6203 forinttal jöttek vásárolni:
+Tolsztoj: Háború és béke könyvét megvásárolták 3750 Forintért
+11133 forinttal jöttek vásárolni:
+Molnár Ferenc: A Pál utcai fiúk könyvét megvásárolták 1500 Forintért
+14930 forinttal jöttek vásárolni:
+Erich Gamma: Programtervezési minták könyvét megvásárolták 2250 Forintért
+7923 forinttal jöttek vásárolni:
+Tolkien: A Gyûrûk Ura könyvét megvásárolták 3300 Forintért
+12567 forinttal jöttek vásárolni:
+Tolsztoj: Háború és béke könyvét megvásárolták 3750 Forintért
+12997 forinttal jöttek vásárolni:
+Rowling: Harry Potter könyvét megvásárolták 7500 Forintért
+8700 forinttal jöttek vásárolni:
+Gárdonyi Géza: Egri csillagok könyvét megvásárolták 1500 Forintért
+============================================================
+
+
+======================== Letöltések ========================
+Több könyvet (37db) töltöttek le legálisan,
+ mint illegálisan (27db).
+============================================================
+
+
+Keresés a könyv címe alapján
+ >E
+Gárdonyi Géza
+	Egri csillagok                           1500 Ft (11 db)
+
+Keressek tovább? (i/n)
+ >H
+
+Keressek tovább? (i/n)
+ >i
+Keresés a könyv címe alapján
+ >H
+Joshua Bloch
+	Hatékony Java                            2600 Ft E-book
+Rowling
+	Harry Potter                             7500 Ft ( 4 db)
+Tolsztoj
+	Háború és béke                           3750 Ft (41 db)
+
+Keressek tovább? (i/n)
+ >A
+
+Keressek tovább? (i/n)
+ >i
+Keresés a könyv címe alapján
+ >A
+Bulgakov
+	A Mester és Margarita                    2600 Ft E-book
+Exupery
+	A kis herceg                             1300 Ft E-book
+Jack London
+	A vadon szava                            1560 Ft E-book
+Molnár Ferenc
+	A Pál utcai fiúk                         1500 Ft (41 db)
+Tolkien
+	A Gyûrûk Ura                             3300 Ft (23 db)
+
+Keressek tovább? (i/n)
+ >i
+Keresés a könyv címe alapján
+ >A v
+Jack London
+	A vadon szava                            1560 Ft E-book
+
+Keressek tovább? (i/n)
+ >n
+

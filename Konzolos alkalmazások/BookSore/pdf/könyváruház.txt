@@ -1,0 +1,70 @@
+A tankönyvbolt a továbbiakban web-shopként is akar működni. Az ehhez szükséges program megírásához egy team-et kértek fel. A web-es felület, a szállítás, fizetés a team másik tagjainak a dolga, az öné a nyilvántartás és néhány részfeladat.
+
+A bolt nyomtatott és elektronikus könyveket akar árulni. Minden könyvet jellemez a 
+
+szerzője, 
+címe és a 
+beszerzési ára 
+(kellene egy ISBN szám is, 
+
+
+de ez idő hiányában kimaradhat). A beszerzési ár a könyvelés után nem változhat. A 
+nyomtatott könyvek esetén nyilvántartásba kell venni az 
+
+aktuális példányszámot is.
+
+Egy könyv 
+ar()a a beszerzési ár + az egyes haszonkulcsok alapján számolt bevétel. 
+
+Minden könyvből lehet 
+vásárol()ni, de nem teljesen egyformán. 
+
+Mindkét esetben pénzért vásárolhatunk, vagyis csak 
+
+akkor sikeres a vásárlási eljárás, ha a metódus paraméterében megadott pénzérték legalább akkora, mint a könyv ára. 
+(A metódus adja vissza, hogy sikerült-e a vásárlás vagy sem.) 
+Sikeres vásárlás esetén a bevételt 
+könyvelje az eddigiekhez, vagyis a bevétellel (a beszerzési ár fölötti rész) növelje az eddigi össz bevételt. 
+(A bevételt könyvenként figyeljük, hiszen az is szempont, hogy egy adott könyv mennyit „fial”.)
+
+Nyomtatott könyvek esetén az is feltétel, hogy legyen belőle példány. 
+
+Sikeres vásárlás esetén a példányok száma eggyel csökken. 
+
+Elektronikus könyvek esetén nincs kötött példányszám, itt a vásárlások számát tartják nyilván. Vásárláskor ez növekszik eggyel.
+
+Nyomtatott könyvek esetén a beszerzési árra rájön még az X%-os haszonkulcsnak megfelelő érték. (Vagyis pl. 100 Ft-os beszerzési ár és 10%-os haszonkulcs esetén a könyv ára 110 Ft.) 
+
+Elektronikus könyvek esetén a haszonkulcs Y%.
+
+Az elektronikus könyvek esetén van még egy 
+
+hackelés() számláló metódus az illegális letöltések figyelésére. Ez minden egyes 
+
+érzékelt hackeléskor eggyel növeli a hackelések számát.
+
+Kiíratáskor (toString()) a könyvek szerzője, címe, ára látszódjon. (Természetesen lekérni más adatot is lehessen.)
+
+A vezérlő osztályban töltse fel a boltot áruval, azaz olvassa be a szükséges adatokat (konyvek.txt fájl) – 
+a véletlen döntse el, hogy az aktuális könyv nyomtatott vagy elektronikus. 
+A bolt árukészletéből kb. 30% az e-könyv.
+
+Ellenőrzésképpen írassa vissza a raktárkészletet.
+
+Ezek után kezdjen vásárolni. 
+A vásárlás során adja meg a keresett 
+könyv szerzőjét, címét, 
+és ha van ilyen, próbálja meg megvásárolni (ne feledkezzen meg az equals() és hascode() metódusokról). 
+Vásárlás után írassa ki, hogy sikerült-e vagy sem. 
+Ha van ilyen könyv, akkor a program jelezze vissza, hogy nyomtatott vagy elektronikus formában kapható. 
+(Idő hiányában elég az elsőnek talált változatot kiírni, vagyis ha van ilyen is és olyan is, akkor a hamarabb megtalált nyert.) 
+Ezt addig ismételgesse, amíg van kedve vásárolni.
+
+Mivel „becsületes” világban élünk, ezért az e-könyvek mindegyike esetén véletlen sokszor hívja meg a hackelés metódust.
+
+Végül állapítsa meg, hogy legálisan (vásárlással) vagy ill  egálisan (hackeléssel) töltöttek le több könyvet.
+
+Rendezze a könyveket szerző szerint.
+
+
+A korábbiakhoz képest nincs benne új, próbálja önállóan megoldani. 

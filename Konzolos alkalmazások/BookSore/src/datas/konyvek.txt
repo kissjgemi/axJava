@@ -1,0 +1,16 @@
+Gárdonyi Géza;Egri csillagok;1000
+ááá
+1
+Joshua Bloch;Hatékony Java;2000
+Nyékyné;Java útikalauz programozóknak;2000
+Rowling;Harry Potter;5000
+Erich Gamma;Programtervezési minták;1500
+óknak;2000;óknak;2000
+Exupery;A kis herceg;1000
+Tolkien;A Gyűrűk Ura;2200
+Tolsztoj;Háború és béke;2500
+Jack London;A vadon szava;1200
+Molnár Ferenc;A Pál utcai fiúk;1000
+Bulgakov;A Mester és Margarita;2000
+Dosztojevszkij;Bűn és bűnhődés;1400
+óknak;2000
