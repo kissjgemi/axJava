@@ -1,0 +1,23 @@
+Baranyai Hedvig;123456789
+Somogyi Péter;214567249
+hiba
+Tolnai Erika;123215632
+Zala Bálint;456723560
+Fejér Lajos;102436782
+Veszprémi Béla;120435786
+hiba;hiba
+Vas Éva;654987321
+Győri Kornél;216534879
+Komáromi Blanka;0123698742
+Bács Ferenc;213459807
+Pesti Margit;216980473
+Buda Béla;987213645
+hiba;hiba;hiba
+Nógrádi Gizella;741852963
+Heves Marci;128736901
+Csongrádi Kata;741258963
+Szolnoki Rezső;321987456
+Békési Ildikó;867534219
+Hajdú Mónika;951847623
+Borsodi Géza;753194268
+Szatmári Pál;159326847

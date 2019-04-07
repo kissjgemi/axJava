@@ -1,0 +1,338 @@
+************************************************************
+*           idGenerator && Sort && Hash && Equal           *
+************************************************************
+
+
+************************************************************
+*                 Az adatok beolvasása...                  *
+************************************************************
+
+
+************************************************************
+*                 Az adatok ellenõrzése...                 *
+************************************************************
+
+	Hibás azonosító az adatok között: hiba
+For input string: "hiba"hiba;hiba
+	Hibás azonosító az adatok között: hiba;hiba;hiba
+
+========================== Névsor ==========================
+Sign-B1  Baranyai Hedvig     Test Class B 123456789
+Sign-B2  Somogyi Péter       Test Class B 214567249
+Sign-A1  Tolnai Erika        Test Class A 123215632
+Sign-A2  Zala Bálint         Test Class A 456723560
+Sign-A3  Fejér Lajos         Test Class A 102436782
+Sign-A4  Veszprémi Béla      Test Class A 120435786
+Sign-A5  Vas Éva             Test Class A 654987321
+Sign-A6  Gyõri Kornél        Test Class A 216534879
+Sign-B3  Komáromi Blanka     Test Class B 123698742
+Sign-A7  Bács Ferenc         Test Class A 213459807
+Sign-B4  Pesti Margit        Test Class B 216980473
+Sign-B5  Buda Béla           Test Class B 987213645
+Sign-A8  Nógrádi Gizella     Test Class A 741852963
+Sign-A9  Heves Marci         Test Class A 128736901
+Sign-B6  Csongrádi Kata      Test Class B 741258963
+Sign-A10 Szolnoki Rezsõ      Test Class A 321987456
+Sign-B7  Békési Ildikó       Test Class B 867534219
+Sign-B8  Hajdú Mónika        Test Class B 951847623
+Sign-B9  Borsodi Géza        Test Class B 753194268
+Sign-A11 Szatmári Pál        Test Class A 159326847
+============================================================
+
+
+==================== Névsorba rendezve =====================
+Sign-B1  Baranyai Hedvig     Test Class B 123456789
+Sign-B9  Borsodi Géza        Test Class B 753194268
+Sign-B5  Buda Béla           Test Class B 987213645
+Sign-A7  Bács Ferenc         Test Class A 213459807
+Sign-B7  Békési Ildikó       Test Class B 867534219
+Sign-B6  Csongrádi Kata      Test Class B 741258963
+Sign-A3  Fejér Lajos         Test Class A 102436782
+Sign-A6  Gyõri Kornél        Test Class A 216534879
+Sign-B8  Hajdú Mónika        Test Class B 951847623
+Sign-A9  Heves Marci         Test Class A 128736901
+Sign-B3  Komáromi Blanka     Test Class B 123698742
+Sign-A8  Nógrádi Gizella     Test Class A 741852963
+Sign-B4  Pesti Margit        Test Class B 216980473
+Sign-B2  Somogyi Péter       Test Class B 214567249
+Sign-A11 Szatmári Pál        Test Class A 159326847
+Sign-A10 Szolnoki Rezsõ      Test Class A 321987456
+Sign-A1  Tolnai Erika        Test Class A 123215632
+Sign-A5  Vas Éva             Test Class A 654987321
+Sign-A4  Veszprémi Béla      Test Class A 120435786
+Sign-A2  Zala Bálint         Test Class A 456723560
+============================================================
+
+
+==================== Névsorba rendezve =====================
+Sign-A2  Zala Bálint         Test Class A 456723560
+Sign-A4  Veszprémi Béla      Test Class A 120435786
+Sign-A5  Vas Éva             Test Class A 654987321
+Sign-A1  Tolnai Erika        Test Class A 123215632
+Sign-A10 Szolnoki Rezsõ      Test Class A 321987456
+Sign-A11 Szatmári Pál        Test Class A 159326847
+Sign-B2  Somogyi Péter       Test Class B 214567249
+Sign-B4  Pesti Margit        Test Class B 216980473
+Sign-A8  Nógrádi Gizella     Test Class A 741852963
+Sign-B3  Komáromi Blanka     Test Class B 123698742
+Sign-A9  Heves Marci         Test Class A 128736901
+Sign-B8  Hajdú Mónika        Test Class B 951847623
+Sign-A6  Gyõri Kornél        Test Class A 216534879
+Sign-A3  Fejér Lajos         Test Class A 102436782
+Sign-B6  Csongrádi Kata      Test Class B 741258963
+Sign-B7  Békési Ildikó       Test Class B 867534219
+Sign-A7  Bács Ferenc         Test Class A 213459807
+Sign-B5  Buda Béla           Test Class B 987213645
+Sign-B9  Borsodi Géza        Test Class B 753194268
+Sign-B1  Baranyai Hedvig     Test Class B 123456789
+============================================================
+
+
+================ TAJ szám szerint rendezve =================
+Sign-A3  Fejér Lajos         Test Class A 102436782
+Sign-A4  Veszprémi Béla      Test Class A 120435786
+Sign-A1  Tolnai Erika        Test Class A 123215632
+Sign-B1  Baranyai Hedvig     Test Class B 123456789
+Sign-B3  Komáromi Blanka     Test Class B 123698742
+Sign-A9  Heves Marci         Test Class A 128736901
+Sign-A11 Szatmári Pál        Test Class A 159326847
+Sign-A7  Bács Ferenc         Test Class A 213459807
+Sign-B2  Somogyi Péter       Test Class B 214567249
+Sign-A6  Gyõri Kornél        Test Class A 216534879
+Sign-B4  Pesti Margit        Test Class B 216980473
+Sign-A10 Szolnoki Rezsõ      Test Class A 321987456
+Sign-A2  Zala Bálint         Test Class A 456723560
+Sign-A5  Vas Éva             Test Class A 654987321
+Sign-B6  Csongrádi Kata      Test Class B 741258963
+Sign-A8  Nógrádi Gizella     Test Class A 741852963
+Sign-B9  Borsodi Géza        Test Class B 753194268
+Sign-B7  Békési Ildikó       Test Class B 867534219
+Sign-B8  Hajdú Mónika        Test Class B 951847623
+Sign-B5  Buda Béla           Test Class B 987213645
+============================================================
+
+
+================ TAJ szám szerint rendezve =================
+Sign-B5  Buda Béla           Test Class B 987213645
+Sign-B8  Hajdú Mónika        Test Class B 951847623
+Sign-B7  Békési Ildikó       Test Class B 867534219
+Sign-B9  Borsodi Géza        Test Class B 753194268
+Sign-A8  Nógrádi Gizella     Test Class A 741852963
+Sign-B6  Csongrádi Kata      Test Class B 741258963
+Sign-A5  Vas Éva             Test Class A 654987321
+Sign-A2  Zala Bálint         Test Class A 456723560
+Sign-A10 Szolnoki Rezsõ      Test Class A 321987456
+Sign-B4  Pesti Margit        Test Class B 216980473
+Sign-A6  Gyõri Kornél        Test Class A 216534879
+Sign-B2  Somogyi Péter       Test Class B 214567249
+Sign-A7  Bács Ferenc         Test Class A 213459807
+Sign-A11 Szatmári Pál        Test Class A 159326847
+Sign-A9  Heves Marci         Test Class A 128736901
+Sign-B3  Komáromi Blanka     Test Class B 123698742
+Sign-B1  Baranyai Hedvig     Test Class B 123456789
+Sign-A1  Tolnai Erika        Test Class A 123215632
+Sign-A4  Veszprémi Béla      Test Class A 120435786
+Sign-A3  Fejér Lajos         Test Class A 102436782
+============================================================
+
+
+=================== ID szerint rendezve ====================
+Sign-A1  Tolnai Erika        Test Class A 123215632
+Sign-A2  Zala Bálint         Test Class A 456723560
+Sign-A3  Fejér Lajos         Test Class A 102436782
+Sign-A4  Veszprémi Béla      Test Class A 120435786
+Sign-A5  Vas Éva             Test Class A 654987321
+Sign-A6  Gyõri Kornél        Test Class A 216534879
+Sign-A7  Bács Ferenc         Test Class A 213459807
+Sign-A8  Nógrádi Gizella     Test Class A 741852963
+Sign-A9  Heves Marci         Test Class A 128736901
+Sign-A10 Szolnoki Rezsõ      Test Class A 321987456
+Sign-A11 Szatmári Pál        Test Class A 159326847
+Sign-B1  Baranyai Hedvig     Test Class B 123456789
+Sign-B2  Somogyi Péter       Test Class B 214567249
+Sign-B3  Komáromi Blanka     Test Class B 123698742
+Sign-B4  Pesti Margit        Test Class B 216980473
+Sign-B5  Buda Béla           Test Class B 987213645
+Sign-B6  Csongrádi Kata      Test Class B 741258963
+Sign-B7  Békési Ildikó       Test Class B 867534219
+Sign-B8  Hajdú Mónika        Test Class B 951847623
+Sign-B9  Borsodi Géza        Test Class B 753194268
+============================================================
+
+
+=================== ID szerint rendezve ====================
+Sign-B9  Borsodi Géza        Test Class B 753194268
+Sign-B8  Hajdú Mónika        Test Class B 951847623
+Sign-B7  Békési Ildikó       Test Class B 867534219
+Sign-B6  Csongrádi Kata      Test Class B 741258963
+Sign-B5  Buda Béla           Test Class B 987213645
+Sign-B4  Pesti Margit        Test Class B 216980473
+Sign-B3  Komáromi Blanka     Test Class B 123698742
+Sign-B2  Somogyi Péter       Test Class B 214567249
+Sign-B1  Baranyai Hedvig     Test Class B 123456789
+Sign-A11 Szatmári Pál        Test Class A 159326847
+Sign-A10 Szolnoki Rezsõ      Test Class A 321987456
+Sign-A9  Heves Marci         Test Class A 128736901
+Sign-A8  Nógrádi Gizella     Test Class A 741852963
+Sign-A7  Bács Ferenc         Test Class A 213459807
+Sign-A6  Gyõri Kornél        Test Class A 216534879
+Sign-A5  Vas Éva             Test Class A 654987321
+Sign-A4  Veszprémi Béla      Test Class A 120435786
+Sign-A3  Fejér Lajos         Test Class A 102436782
+Sign-A2  Zala Bálint         Test Class A 456723560
+Sign-A1  Tolnai Erika        Test Class A 123215632
+============================================================
+
+
+========================= Teszt... =========================
+Sign-A2  Zala Bálint          100 egység
+Sign-B1  Baranyai Hedvig      100 egység
+Sign-A8  Nógrádi Gizella       50 egység
+Sign-B8  Hajdú Mónika          50 egység
+Sign-A3  Fejér Lajos          500 egység
+Sign-A8  Nógrádi Gizella      550 egység
+Sign-A11 Szatmári Pál          50 egység
+Sign-B4  Pesti Margit          50 egység
+Sign-A3  Fejér Lajos         1000 egység
+Sign-A5  Vas Éva               50 egység
+Sign-B5  Buda Béla            500 egység
+Sign-B8  Hajdú Mónika         550 egység
+Sign-A5  Vas Éva              150 egység
+Sign-B7  Békési Ildikó        500 egység
+Sign-B1  Baranyai Hedvig      200 egység
+Sign-B8  Hajdú Mónika         650 egység
+Sign-A1  Tolnai Erika         500 egység
+Sign-A11 Szatmári Pál         550 egység
+Sign-A6  Gyõri Kornél          50 egység
+Sign-B4  Pesti Margit         550 egység
+Sign-A1  Tolnai Erika         550 egység
+Sign-B1  Baranyai Hedvig      250 egység
+Sign-B3  Komáromi Blanka      100 egység
+Sign-B8  Hajdú Mónika         750 egység
+Sign-A10 Szolnoki Rezsõ        50 egység
+Sign-A2  Zala Bálint          200 egység
+Sign-B3  Komáromi Blanka      200 egység
+Sign-B3  Komáromi Blanka      700 egység
+Sign-A9  Heves Marci           50 egység
+Sign-B1  Baranyai Hedvig      300 egység
+Sign-A11 Szatmári Pál         650 egység
+Sign-A2  Zala Bálint          700 egység
+Sign-B6  Csongrádi Kata       500 egység
+Sign-B7  Békési Ildikó       1000 egység
+Sign-A5  Vas Éva              250 egység
+Sign-A8  Nógrádi Gizella      650 egység
+Sign-B5  Buda Béla           1000 egység
+Sign-A11 Szatmári Pál         700 egység
+Sign-A2  Zala Bálint          800 egység
+Sign-A4  Veszprémi Béla        50 egység
+Sign-A10 Szolnoki Rezsõ       550 egység
+Sign-B6  Csongrádi Kata       550 egység
+Sign-A7  Bács Ferenc          500 egység
+Sign-B9  Borsodi Géza          50 egység
+Sign-B2  Somogyi Péter        100 egység
+Sign-B8  Hajdú Mónika        1250 egység
+Sign-A7  Bács Ferenc          550 egység
+Sign-B3  Komáromi Blanka      800 egység
+Sign-B7  Békési Ildikó       1050 egység
+Sign-B1  Baranyai Hedvig      800 egység
+Sign-B9  Borsodi Géza         100 egység
+Sign-A9  Heves Marci          550 egység
+Sign-B1  Baranyai Hedvig     1300 egység
+Sign-A6  Gyõri Kornél         550 egység
+Sign-A2  Zala Bálint          850 egység
+Sign-B2  Somogyi Péter        200 egység
+Sign-B4  Pesti Margit         650 egység
+Sign-A5  Vas Éva              300 egység
+Sign-A4  Veszprémi Béla       100 egység
+Sign-B4  Pesti Margit         700 egység
+Sign-A3  Fejér Lajos         1500 egység
+Sign-B8  Hajdú Mónika        1350 egység
+Sign-A9  Heves Marci          650 egység
+Sign-B8  Hajdú Mónika        1450 egység
+Sign-B5  Buda Béla           1100 egység
+Sign-B7  Békési Ildikó       1550 egység
+Sign-A5  Vas Éva              400 egység
+Sign-B5  Buda Béla           1150 egység
+Sign-A8  Nógrádi Gizella      750 egység
+Sign-B6  Csongrádi Kata       600 egység
+Sign-B2  Somogyi Péter        700 egység
+Sign-A1  Tolnai Erika        1050 egység
+Sign-A8  Nógrádi Gizella      850 egység
+Sign-B3  Komáromi Blanka      850 egység
+Sign-B7  Békési Ildikó       1600 egység
+Sign-A11 Szatmári Pál         750 egység
+Sign-B2  Somogyi Péter       1200 egység
+Sign-A1  Tolnai Erika        1100 egység
+Sign-A11 Szatmári Pál         850 egység
+Sign-A3  Fejér Lajos         1550 egység
+Sign-A2  Zala Bálint          900 egység
+Sign-A7  Bács Ferenc         1050 egység
+Sign-A1  Tolnai Erika        1150 egység
+Sign-A9  Heves Marci         1150 egység
+Sign-B3  Komáromi Blanka      950 egység
+Sign-B2  Somogyi Péter       1300 egység
+Sign-A2  Zala Bálint         1000 egység
+Sign-B9  Borsodi Géza         600 egység
+Sign-B7  Békési Ildikó       1650 egység
+Sign-A1  Tolnai Erika        1650 egység
+Sign-A3  Fejér Lajos         2050 egység
+Sign-B2  Somogyi Péter       1800 egység
+Sign-B3  Komáromi Blanka     1450 egység
+Sign-A1  Tolnai Erika        2150 egység
+Sign-B7  Békési Ildikó       1700 egység
+Sign-B7  Békési Ildikó       1750 egység
+Sign-A10 Szolnoki Rezsõ      1050 egység
+Sign-A3  Fejér Lajos         2100 egység
+Sign-A8  Nógrádi Gizella      950 egység
+Sign-A1  Tolnai Erika        2250 egység
+============================================================
+
+
+================ Eredmény szerint rendezve =================
+Sign-A4  Veszprémi Béla       100 egység
+Sign-A5  Vas Éva              400 egység
+Sign-A6  Gyõri Kornél         550 egység
+Sign-B9  Borsodi Géza         600 egység
+Sign-B6  Csongrádi Kata       600 egység
+Sign-B4  Pesti Margit         700 egység
+Sign-A11 Szatmári Pál         850 egység
+Sign-A8  Nógrádi Gizella      950 egység
+Sign-A2  Zala Bálint         1000 egység
+Sign-A10 Szolnoki Rezsõ      1050 egység
+Sign-A7  Bács Ferenc         1050 egység
+Sign-B5  Buda Béla           1150 egység
+Sign-A9  Heves Marci         1150 egység
+Sign-B1  Baranyai Hedvig     1300 egység
+Sign-B8  Hajdú Mónika        1450 egység
+Sign-B3  Komáromi Blanka     1450 egység
+Sign-B7  Békési Ildikó       1750 egység
+Sign-B2  Somogyi Péter       1800 egység
+Sign-A3  Fejér Lajos         2100 egység
+Sign-A1  Tolnai Erika        2250 egység
+============================================================
+
+
+================ Eredmény szerint rendezve =================
+Sign-A1  Tolnai Erika        2250 egység
+Sign-A3  Fejér Lajos         2100 egység
+Sign-B2  Somogyi Péter       1800 egység
+Sign-B7  Békési Ildikó       1750 egység
+Sign-B8  Hajdú Mónika        1450 egység
+Sign-B3  Komáromi Blanka     1450 egység
+Sign-B1  Baranyai Hedvig     1300 egység
+Sign-B5  Buda Béla           1150 egység
+Sign-A9  Heves Marci         1150 egység
+Sign-A10 Szolnoki Rezsõ      1050 egység
+Sign-A7  Bács Ferenc         1050 egység
+Sign-A2  Zala Bálint         1000 egység
+Sign-A8  Nógrádi Gizella      950 egység
+Sign-A11 Szatmári Pál         850 egység
+Sign-B4  Pesti Margit         700 egység
+Sign-B9  Borsodi Géza         600 egység
+Sign-B6  Csongrádi Kata       600 egység
+Sign-A6  Gyõri Kornél         550 egység
+Sign-A5  Vas Éva              400 egység
+Sign-A4  Veszprémi Béla       100 egység
+============================================================
+
+
