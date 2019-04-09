@@ -26,8 +26,16 @@ public class Match {
         return good;
     }
 
+    public void setGood(boolean good) {
+        this.good = good;
+    }
+
     public int getExteension() {
         return exteension;
+    }
+
+    public void setExteension(int exteension) {
+        this.exteension = exteension;
     }
 
     public static int getPlayTime() {
