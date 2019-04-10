@@ -1,0 +1,5 @@
+Kacsa hírek;2018.04.29;1000;30
+Napi bulvár;2018.05.03;http:/napibulvar.hu
+Sztár világ;2018.05.07;http:/sztarvilag.hu
+Ki kivel;2018.04.30;http:/kikivel.hu
+Unicum;2018.04.30;2000;50
