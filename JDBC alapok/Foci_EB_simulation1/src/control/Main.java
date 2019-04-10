@@ -4,9 +4,14 @@ import basis.Husband;
 import basis.Match;
 import basis.Team;
 import basis.ThePair;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -24,12 +29,23 @@ public class Main {
     private List<Team> TEAMS;
     private List<ThePair> PAIRS;
 
+    private final String SOURCE_TEAMS = "/datas/csapatok.txt";
+    private final String SOURCE_PAIRS = "/datas/parok.txt";
+
+    private final String DB_DRIVER = "org.apache.derby.jdbc.ClientDriver";
+    private final String DB_URL = "jdbc:derby://localhost:1527/FOCI";
+    private final String DB_USER = "foci";
+    private final String DB_PSWD = "foci";
+
     public static void main(String[] args) {
         new Main().start();
     }
 
     private void start() {
         staticDatas();
+        dataInput();
+        showPairs();
+        matches();
     }
 
     private void staticDatas() {
@@ -38,11 +54,26 @@ public class Main {
         Husband.setBadMatchBeerNumber(BAD_MATCH_BEER);
     }
 
-    private void dataInput() {
-
+    private Connection connect() throws ClassNotFoundException, SQLException {
+        Class.forName(DB_DRIVER);
+        return DriverManager.getConnection(DB_URL, DB_USER, DB_PSWD);
     }
 
-    private String main_outputPairs() {
+    private void dataInput() {
+        /*
+        try {
+            InputData inputData = new InputFromFile(SOURCE_TEAMS, SOURCE_PAIRS);
+         */
+        try (Connection connecttion = connect()) {
+            InputData inputData = new InputFromDB(connecttion);
+            TEAMS = inputData.inputListOfTeams();
+            PAIRS = inputData.inputListOfPairs();
+        } catch (Exception e) {
+            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, e);
+        }
+    }
+
+    private String main_showPairs() {
         return "Házaspárok: ";
     }
 
@@ -50,38 +81,38 @@ public class Main {
         return "\nVan még meccs? (i/n)";
     }
 
-    private String main_outputMatch() {
+    private String main_showMatch() {
         return "\nA meccs: ";
     }
 
-    private String main_outputHusband() {
+    private String main_showHusband() {
         return "\nFérjek: ";
     }
 
-    private String main_outputWife() {
+    private String main_showWife() {
         return "\nFeleségek: ";
     }
 
-    private void outputPairs() {
-        System.out.println(main_outputPairs());
+    private void showPairs() {
+        System.out.println(main_showPairs());
         for (ThePair p : PAIRS) {
             System.out.println(p);
         }
     }
 
-    private void outputMatch(Match match) {
-        System.out.println(main_outputMatch());
+    private void showMatch(Match match) {
+        System.out.println(main_showMatch());
         System.out.println(match);
     }
 
-    private void outputHusbandWife() {
-        System.out.println(main_outputHusband());
+    private void showHusbandWife() {
+        System.out.println(main_showHusband());
         for (ThePair p : PAIRS) {
-            System.out.println(p.getHUSBAND());
+            System.out.println(p.getHUSBAND().toString());
         }
-        System.out.println(main_outputWife());
+        System.out.println(main_showWife());
         for (ThePair p : PAIRS) {
-            System.out.println(p.getWIFE());
+            System.out.println(p.getWIFE().toString());
         }
     }
 
@@ -107,9 +138,9 @@ public class Main {
         if (Math.random() < GOOD_MATCH_CHANCE) {
             match.setGood(true);
         }
-        outputMatch(match);
+        showMatch(match);
 
         Collections.sort(PAIRS);
-        outputHusbandWife();
+        showHusbandWife();
     }
 }
