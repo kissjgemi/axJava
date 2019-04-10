@@ -140,6 +140,12 @@ public class Main {
         }
         showMatch(match);
 
+        for (ThePair pair : PAIRS) {
+            if (Math.random() < VIEWING_MATCH_CHANCE) {
+                pair.viewingMatches(match);
+            }
+        }
+
         Collections.sort(PAIRS);
         showHusbandWife();
     }

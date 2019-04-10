@@ -33,7 +33,7 @@ public class ThePair implements Comparable<ThePair> {
 
     @Override
     public String toString() {
-        return HUSBAND.getNAME() + " " + WIFE.getNAME();
+        return HUSBAND.getNAME() + " & " + WIFE.getNAME();
     }
 
     @Override
