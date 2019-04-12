@@ -3,6 +3,8 @@ package control;
 import basis.Article;
 import basis.Messenger;
 import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -30,14 +32,23 @@ public class Main {
     private final String DB_USER = "media";
     private final String DB_PSWD = "media";
 
+    private Connection connect() throws ClassNotFoundException, SQLException {
+        Class.forName(DB_DRIVER);
+        return DriverManager.getConnection(DB_URL, DB_USER, DB_PSWD);
+    }
+
     private void dataInput() {
         try {
             InputData inputData = new InputFromFile(SOURCE_ARTICLES,
                     SOURCE_MESSENGERS);
-            /*
+            articles = inputData.inputListOfArticles();
+            messengers = inputData.inputListOfMessengers();
+        } catch (Exception e) {
+            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, e);
+        }
+        System.out.println("\n****\n");
         try (Connection connecttion = connect()) {
             InputData inputData = new InputFromDB(connecttion);
-             */
             articles = inputData.inputListOfArticles();
             messengers = inputData.inputListOfMessengers();
         } catch (Exception e) {
