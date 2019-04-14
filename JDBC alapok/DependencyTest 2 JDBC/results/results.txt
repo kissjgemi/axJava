@@ -1,0 +1,738 @@
+************************************************************
+*                  Függõségi vizsgálatok                   *
+************************************************************
+
+
+************************************************************
+*                 Az adatok beolvasása...                  *
+************************************************************
+
+
+************************************************************
+*          A betegek adatainak az ellenõrzése...           *
+************************************************************
+
+	Hibás azonosító az adatok között: hiba
+	Hibás azonosító az adatok között: másik hiba
+
+R: 20
+=================== A páciensek névsora ====================
+Baranyai Hedvig      TAJ-123456789: facebookfüggõség gyanúja
+Somogyi Péter        TAJ-214567249: alkohol-függõség gyanúja
+Tolnai Erika         TAJ-123215632: alkohol-függõség gyanúja
+Zala Bálint          TAJ-456723560: facebookfüggõség gyanúja
+Fejér Lajos          TAJ-102436782: facebookfüggõség gyanúja
+Veszprémi Béla       TAJ-120435786: alkohol-függõség gyanúja
+Vas Éva              TAJ-654987321: alkohol-függõség gyanúja
+Gyõri Kornél         TAJ-216534879: facebookfüggõség gyanúja
+Komáromi Blanka      TAJ-012369874: facebookfüggõség gyanúja
+Bács Ferenc          TAJ-213459807: alkohol-függõség gyanúja
+Pesti Margit         TAJ-216980473: facebookfüggõség gyanúja
+Buda Béla            TAJ-987213645: facebookfüggõség gyanúja
+Nógrádi Gizella      TAJ-741852963: facebookfüggõség gyanúja
+Heves Marci          TAJ-128736901: facebookfüggõség gyanúja
+Csongrádi Kata       TAJ-741258963: facebookfüggõség gyanúja
+Szolnoki Rezsõ       TAJ-321987456: facebookfüggõség gyanúja
+Békési Ildikó        TAJ-867534219: facebookfüggõség gyanúja
+Hajdú Mónika         TAJ-951847623: facebookfüggõség gyanúja
+Borsodi Géza         TAJ-753194268: alkohol-függõség gyanúja
+Szatmári Pál         TAJ-159326847: alkohol-függõség gyanúja
+============================================================
+
+
+=================== A páciensek követése ===================
+Gyõri Kornél         facebookot használt
+Vas Éva              megivott egy italt(pálinka)
+Békési Ildikó        facebookot használt
+Gyõri Kornél         megivott egy italt(radler)
+Tolnai Erika         facebookot használt
+Csongrádi Kata       megivott egy italt(sör)
+Vas Éva              facebookot használt
+Heves Marci          megivott egy italt(sör)
+Hajdú Mónika         facebookot használt
+Veszprémi Béla       megivott egy italt(sör)
+Buda Béla            facebookot használt
+Pesti Margit         megivott egy italt(sör)
+Szolnoki Rezsõ       facebookot használt
+Szatmári Pál         megivott egy italt(pálinka)
+Baranyai Hedvig      facebookot használt
+Heves Marci          megivott egy italt(radler)
+Szatmári Pál         facebookot használt
+Szolnoki Rezsõ       megivott egy italt(radler)
+Szatmári Pál         facebookot használt
+Bács Ferenc          megivott egy italt(fehérbor)
+Baranyai Hedvig      facebookot használt
+Hajdú Mónika         megivott egy italt(fehérbor)
+Buda Béla            facebookot használt
+Csongrádi Kata       megivott egy italt(fehérbor)
+Vas Éva              facebookot használt
+Békési Ildikó        megivott egy italt(vörösbor)
+Zala Bálint          facebookot használt
+Pesti Margit         megivott egy italt(fehérbor)
+Békési Ildikó        facebookot használt
+Gyõri Kornél         megivott egy italt(likõr)
+Borsodi Géza         facebookot használt
+Buda Béla            megivott egy italt(likõr)
+Hajdú Mónika         facebookot használt
+Vas Éva              megivott egy italt(sör)
+Somogyi Péter        facebookot használt
+Gyõri Kornél         megivott egy italt(likõr)
+Pesti Margit         facebookot használt
+Buda Béla            megivott egy italt(fehérbor)
+Bács Ferenc          facebookot használt
+Fejér Lajos          megivott egy italt(likõr)
+Gyõri Kornél         facebookot használt
+Békési Ildikó        megivott egy italt(sör)
+Bács Ferenc          facebookot használt
+Vas Éva              megivott egy italt(vörösbor)
+Nógrádi Gizella      facebookot használt
+Pesti Margit         megivott egy italt(fehérbor)
+Somogyi Péter        facebookot használt
+Vas Éva              megivott egy italt(radler)
+Hajdú Mónika         facebookot használt
+Fejér Lajos          megivott egy italt(radler)
+Komáromi Blanka      facebookot használt
+Fejér Lajos          megivott egy italt(pálinka)
+Zala Bálint          facebookot használt
+Veszprémi Béla       megivott egy italt(fehérbor)
+Hajdú Mónika         facebookot használt
+Zala Bálint          megivott egy italt(vörösbor)
+Bács Ferenc          facebookot használt
+Szolnoki Rezsõ       megivott egy italt(pálinka)
+Hajdú Mónika         facebookot használt
+Pesti Margit         megivott egy italt(likõr)
+Nógrádi Gizella      facebookot használt
+Baranyai Hedvig      megivott egy italt(pálinka)
+Szatmári Pál         facebookot használt
+Vas Éva              megivott egy italt(vörösbor)
+Zala Bálint          facebookot használt
+Bács Ferenc          megivott egy italt(radler)
+Borsodi Géza         facebookot használt
+Baranyai Hedvig      megivott egy italt(pálinka)
+Zala Bálint          facebookot használt
+Somogyi Péter        megivott egy italt(sör)
+Baranyai Hedvig      facebookot használt
+Heves Marci          megivott egy italt(radler)
+Komáromi Blanka      facebookot használt
+Nógrádi Gizella      megivott egy italt(fehérbor)
+Fejér Lajos          facebookot használt
+Zala Bálint          megivott egy italt(likõr)
+Vas Éva              facebookot használt
+Gyõri Kornél         megivott egy italt(fehérbor)
+Zala Bálint          facebookot használt
+Csongrádi Kata       megivott egy italt(pálinka)
+Bács Ferenc          facebookot használt
+Borsodi Géza         megivott egy italt(radler)
+Vas Éva              facebookot használt
+Csongrádi Kata       megivott egy italt(pálinka)
+Békési Ildikó        facebookot használt
+Heves Marci          megivott egy italt(radler)
+Gyõri Kornél         facebookot használt
+Vas Éva              megivott egy italt(pálinka)
+Borsodi Géza         facebookot használt
+Komáromi Blanka      megivott egy italt(sör)
+Somogyi Péter        facebookot használt
+Komáromi Blanka      megivott egy italt(vörösbor)
+Fejér Lajos          facebookot használt
+Borsodi Géza         megivott egy italt(sör)
+Veszprémi Béla       facebookot használt
+Nógrádi Gizella      megivott egy italt(sör)
+Somogyi Péter        facebookot használt
+Hajdú Mónika         megivott egy italt(sör)
+Hajdú Mónika         facebookot használt
+Baranyai Hedvig      megivott egy italt(fehérbor)
+Fejér Lajos          facebookot használt
+Bács Ferenc          megivott egy italt(radler)
+Pesti Margit         facebookot használt
+Borsodi Géza         megivott egy italt(pálinka)
+Csongrádi Kata       facebookot használt
+Borsodi Géza         megivott egy italt(pálinka)
+Tolnai Erika         facebookot használt
+Vas Éva              megivott egy italt(pálinka)
+Baranyai Hedvig      facebookot használt
+Csongrádi Kata       megivott egy italt(vörösbor)
+Somogyi Péter        facebookot használt
+Borsodi Géza         megivott egy italt(likõr)
+Somogyi Péter        facebookot használt
+Veszprémi Béla       megivott egy italt(vörösbor)
+Csongrádi Kata       facebookot használt
+Gyõri Kornél         megivott egy italt(sör)
+Veszprémi Béla       facebookot használt
+Szolnoki Rezsõ       megivott egy italt(vörösbor)
+Szolnoki Rezsõ       facebookot használt
+Heves Marci          megivott egy italt(pálinka)
+Gyõri Kornél         facebookot használt
+Zala Bálint          megivott egy italt(pálinka)
+Csongrádi Kata       facebookot használt
+Gyõri Kornél         megivott egy italt(fehérbor)
+Szatmári Pál         facebookot használt
+Nógrádi Gizella      megivott egy italt(sör)
+Fejér Lajos          facebookot használt
+Heves Marci          megivott egy italt(pálinka)
+Veszprémi Béla       facebookot használt
+Buda Béla            megivott egy italt(vörösbor)
+Veszprémi Béla       facebookot használt
+Pesti Margit         megivott egy italt(fehérbor)
+Csongrádi Kata       facebookot használt
+Baranyai Hedvig      megivott egy italt(fehérbor)
+Gyõri Kornél         facebookot használt
+Veszprémi Béla       megivott egy italt(fehérbor)
+Szolnoki Rezsõ       facebookot használt
+Heves Marci          megivott egy italt(pálinka)
+Gyõri Kornél         facebookot használt
+Hajdú Mónika         megivott egy italt(sör)
+Baranyai Hedvig      facebookot használt
+Veszprémi Béla       megivott egy italt(radler)
+Tolnai Erika         facebookot használt
+Komáromi Blanka      megivott egy italt(likõr)
+Szolnoki Rezsõ       facebookot használt
+Pesti Margit         megivott egy italt(pálinka)
+Zala Bálint          facebookot használt
+Veszprémi Béla       megivott egy italt(radler)
+Bács Ferenc          facebookot használt
+Pesti Margit         megivott egy italt(sör)
+Somogyi Péter        facebookot használt
+Komáromi Blanka      megivott egy italt(radler)
+Békési Ildikó        facebookot használt
+Somogyi Péter        megivott egy italt(radler)
+Bács Ferenc          facebookot használt
+Veszprémi Béla       megivott egy italt(pálinka)
+Fejér Lajos          facebookot használt
+Somogyi Péter        megivott egy italt(sör)
+Zala Bálint          facebookot használt
+Veszprémi Béla       megivott egy italt(vörösbor)
+Buda Béla            facebookot használt
+Borsodi Géza         megivott egy italt(pálinka)
+Tolnai Erika         facebookot használt
+Bács Ferenc          megivott egy italt(radler)
+Szatmári Pál         facebookot használt
+Borsodi Géza         megivott egy italt(vörösbor)
+Veszprémi Béla       facebookot használt
+Zala Bálint          megivott egy italt(radler)
+Vas Éva              facebookot használt
+Borsodi Géza         megivott egy italt(vörösbor)
+Borsodi Géza         facebookot használt
+Somogyi Péter        megivott egy italt(sör)
+Buda Béla            facebookot használt
+Csongrádi Kata       megivott egy italt(likõr)
+Veszprémi Béla       facebookot használt
+Bács Ferenc          megivott egy italt(pálinka)
+Csongrádi Kata       facebookot használt
+Komáromi Blanka      megivott egy italt(vörösbor)
+Nógrádi Gizella      facebookot használt
+Veszprémi Béla       megivott egy italt(vörösbor)
+Szatmári Pál         facebookot használt
+Vas Éva              megivott egy italt(pálinka)
+Heves Marci          facebookot használt
+Szolnoki Rezsõ       megivott egy italt(vörösbor)
+Vas Éva              facebookot használt
+Békési Ildikó        megivott egy italt(sör)
+Szolnoki Rezsõ       facebookot használt
+Fejér Lajos          megivott egy italt(pálinka)
+Nógrádi Gizella      facebookot használt
+Szatmári Pál         megivott egy italt(likõr)
+Nógrádi Gizella      facebookot használt
+Somogyi Péter        megivott egy italt(pálinka)
+Csongrádi Kata       facebookot használt
+Szolnoki Rezsõ       megivott egy italt(likõr)
+Vas Éva              facebookot használt
+Gyõri Kornél         megivott egy italt(likõr)
+Borsodi Géza         facebookot használt
+Fejér Lajos          megivott egy italt(sör)
+Veszprémi Béla       facebookot használt
+Hajdú Mónika         megivott egy italt(sör)
+Nógrádi Gizella      facebookot használt
+Borsodi Géza         megivott egy italt(likõr)
+Pesti Margit         facebookot használt
+Szolnoki Rezsõ       megivott egy italt(pálinka)
+Tolnai Erika         facebookot használt
+Borsodi Géza         megivott egy italt(vörösbor)
+Szatmári Pál         facebookot használt
+Csongrádi Kata       megivott egy italt(radler)
+Tolnai Erika         facebookot használt
+Buda Béla            megivott egy italt(fehérbor)
+Bács Ferenc          facebookot használt
+Tolnai Erika         megivott egy italt(fehérbor)
+Heves Marci          facebookot használt
+Csongrádi Kata       megivott egy italt(likõr)
+Csongrádi Kata       facebookot használt
+Pesti Margit         megivott egy italt(likõr)
+Békési Ildikó        facebookot használt
+Pesti Margit         megivott egy italt(sör)
+Borsodi Géza         facebookot használt
+Bács Ferenc          megivott egy italt(sör)
+Buda Béla            facebookot használt
+Békési Ildikó        megivott egy italt(radler)
+Gyõri Kornél         facebookot használt
+Tolnai Erika         megivott egy italt(radler)
+Somogyi Péter        facebookot használt
+Nógrádi Gizella      megivott egy italt(likõr)
+Bács Ferenc          facebookot használt
+Nógrádi Gizella      megivott egy italt(pálinka)
+Gyõri Kornél         facebookot használt
+Csongrádi Kata       megivott egy italt(pálinka)
+Csongrádi Kata       facebookot használt
+Buda Béla            megivott egy italt(vörösbor)
+Bács Ferenc          facebookot használt
+Tolnai Erika         megivott egy italt(radler)
+Baranyai Hedvig      facebookot használt
+Heves Marci          megivott egy italt(fehérbor)
+Veszprémi Béla       facebookot használt
+Szolnoki Rezsõ       megivott egy italt(likõr)
+Veszprémi Béla       facebookot használt
+Szolnoki Rezsõ       megivott egy italt(pálinka)
+Borsodi Géza         facebookot használt
+Hajdú Mónika         megivott egy italt(vörösbor)
+Pesti Margit         facebookot használt
+Somogyi Péter        megivott egy italt(likõr)
+Gyõri Kornél         facebookot használt
+Szatmári Pál         megivott egy italt(pálinka)
+Somogyi Péter        facebookot használt
+Heves Marci          megivott egy italt(likõr)
+Fejér Lajos          facebookot használt
+Veszprémi Béla       megivott egy italt(radler)
+Buda Béla            facebookot használt
+Békési Ildikó        megivott egy italt(fehérbor)
+Vas Éva              facebookot használt
+Baranyai Hedvig      megivott egy italt(pálinka)
+Heves Marci          facebookot használt
+Szatmári Pál         megivott egy italt(fehérbor)
+Somogyi Péter        facebookot használt
+Zala Bálint          megivott egy italt(sör)
+Veszprémi Béla       facebookot használt
+Csongrádi Kata       megivott egy italt(vörösbor)
+Szolnoki Rezsõ       facebookot használt
+Somogyi Péter        megivott egy italt(radler)
+Hajdú Mónika         facebookot használt
+Somogyi Péter        megivott egy italt(sör)
+Fejér Lajos          facebookot használt
+Szatmári Pál         megivott egy italt(fehérbor)
+Hajdú Mónika         facebookot használt
+Fejér Lajos          megivott egy italt(sör)
+Hajdú Mónika         facebookot használt
+Borsodi Géza         megivott egy italt(sör)
+Nógrádi Gizella      facebookot használt
+Heves Marci          megivott egy italt(likõr)
+Baranyai Hedvig      facebookot használt
+Buda Béla            megivott egy italt(fehérbor)
+Csongrádi Kata       facebookot használt
+Vas Éva              megivott egy italt(likõr)
+Bács Ferenc          facebookot használt
+Békési Ildikó        megivott egy italt(likõr)
+Somogyi Péter        facebookot használt
+Szolnoki Rezsõ       megivott egy italt(vörösbor)
+Szatmári Pál         facebookot használt
+Békési Ildikó        megivott egy italt(sör)
+Szolnoki Rezsõ       facebookot használt
+Baranyai Hedvig      megivott egy italt(radler)
+Békési Ildikó        facebookot használt
+Borsodi Géza         megivott egy italt(sör)
+Nógrádi Gizella      facebookot használt
+Szatmári Pál         megivott egy italt(pálinka)
+Somogyi Péter        facebookot használt
+Fejér Lajos          megivott egy italt(radler)
+Somogyi Péter        facebookot használt
+Heves Marci          megivott egy italt(fehérbor)
+Békési Ildikó        facebookot használt
+Bács Ferenc          megivott egy italt(fehérbor)
+Buda Béla            facebookot használt
+Szatmári Pál         megivott egy italt(sör)
+Veszprémi Béla       facebookot használt
+Szolnoki Rezsõ       megivott egy italt(fehérbor)
+Buda Béla            facebookot használt
+Pesti Margit         megivott egy italt(likõr)
+Fejér Lajos          facebookot használt
+Heves Marci          megivott egy italt(vörösbor)
+Heves Marci          facebookot használt
+Szolnoki Rezsõ       megivott egy italt(vörösbor)
+Gyõri Kornél         facebookot használt
+Veszprémi Béla       megivott egy italt(vörösbor)
+Somogyi Péter        facebookot használt
+Veszprémi Béla       megivott egy italt(pálinka)
+Veszprémi Béla       facebookot használt
+Pesti Margit         megivott egy italt(radler)
+Komáromi Blanka      facebookot használt
+Hajdú Mónika         megivott egy italt(fehérbor)
+Buda Béla            facebookot használt
+Komáromi Blanka      megivott egy italt(radler)
+Tolnai Erika         facebookot használt
+Veszprémi Béla       megivott egy italt(radler)
+Nógrádi Gizella      facebookot használt
+Somogyi Péter        megivott egy italt(radler)
+Borsodi Géza         facebookot használt
+Baranyai Hedvig      megivott egy italt(pálinka)
+Borsodi Géza         facebookot használt
+Vas Éva              megivott egy italt(radler)
+Baranyai Hedvig      facebookot használt
+Somogyi Péter        megivott egy italt(vörösbor)
+Buda Béla            facebookot használt
+Pesti Margit         megivott egy italt(likõr)
+Zala Bálint          facebookot használt
+Vas Éva              megivott egy italt(likõr)
+Csongrádi Kata       facebookot használt
+Vas Éva              megivott egy italt(fehérbor)
+Borsodi Géza         facebookot használt
+Somogyi Péter        megivott egy italt(vörösbor)
+Veszprémi Béla       facebookot használt
+Csongrádi Kata       megivott egy italt(fehérbor)
+Zala Bálint          facebookot használt
+Buda Béla            megivott egy italt(fehérbor)
+Fejér Lajos          facebookot használt
+Veszprémi Béla       megivott egy italt(pálinka)
+Somogyi Péter        facebookot használt
+Nógrádi Gizella      megivott egy italt(pálinka)
+Szolnoki Rezsõ       facebookot használt
+Borsodi Géza         megivott egy italt(vörösbor)
+Somogyi Péter        facebookot használt
+Fejér Lajos          megivott egy italt(pálinka)
+Buda Béla            facebookot használt
+Fejér Lajos          megivott egy italt(vörösbor)
+Gyõri Kornél         facebookot használt
+Fejér Lajos          megivott egy italt(vörösbor)
+Békési Ildikó        facebookot használt
+Szatmári Pál         megivott egy italt(fehérbor)
+Szatmári Pál         facebookot használt
+Gyõri Kornél         megivott egy italt(pálinka)
+Pesti Margit         facebookot használt
+Tolnai Erika         megivott egy italt(likõr)
+Veszprémi Béla       facebookot használt
+Buda Béla            megivott egy italt(pálinka)
+Pesti Margit         facebookot használt
+Szolnoki Rezsõ       megivott egy italt(sör)
+Pesti Margit         facebookot használt
+Buda Béla            megivott egy italt(likõr)
+Buda Béla            facebookot használt
+Somogyi Péter        megivott egy italt(radler)
+Szolnoki Rezsõ       facebookot használt
+Veszprémi Béla       megivott egy italt(likõr)
+Buda Béla            facebookot használt
+Szatmári Pál         megivott egy italt(fehérbor)
+Békési Ildikó        facebookot használt
+Tolnai Erika         megivott egy italt(likõr)
+Zala Bálint          facebookot használt
+Baranyai Hedvig      megivott egy italt(radler)
+Fejér Lajos          facebookot használt
+Pesti Margit         megivott egy italt(fehérbor)
+Zala Bálint          facebookot használt
+Csongrádi Kata       megivott egy italt(likõr)
+Heves Marci          facebookot használt
+Zala Bálint          megivott egy italt(pálinka)
+Veszprémi Béla       facebookot használt
+Somogyi Péter        megivott egy italt(vörösbor)
+Csongrádi Kata       facebookot használt
+Somogyi Péter        megivott egy italt(sör)
+Baranyai Hedvig      facebookot használt
+Szolnoki Rezsõ       megivott egy italt(fehérbor)
+Heves Marci          facebookot használt
+Bács Ferenc          megivott egy italt(pálinka)
+Gyõri Kornél         facebookot használt
+Komáromi Blanka      megivott egy italt(fehérbor)
+Nógrádi Gizella      facebookot használt
+Buda Béla            megivott egy italt(radler)
+Tolnai Erika         facebookot használt
+Szolnoki Rezsõ       megivott egy italt(fehérbor)
+Hajdú Mónika         facebookot használt
+Veszprémi Béla       megivott egy italt(pálinka)
+Baranyai Hedvig      facebookot használt
+Heves Marci          megivott egy italt(vörösbor)
+Tolnai Erika         facebookot használt
+Bács Ferenc          megivott egy italt(radler)
+Békési Ildikó        facebookot használt
+Veszprémi Béla       megivott egy italt(radler)
+Borsodi Géza         facebookot használt
+Pesti Margit         megivott egy italt(sör)
+Pesti Margit         facebookot használt
+Vas Éva              megivott egy italt(vörösbor)
+Szolnoki Rezsõ       facebookot használt
+Békési Ildikó        megivott egy italt(pálinka)
+Heves Marci          facebookot használt
+Pesti Margit         megivott egy italt(fehérbor)
+Zala Bálint          facebookot használt
+Veszprémi Béla       megivott egy italt(sör)
+Heves Marci          facebookot használt
+Komáromi Blanka      megivott egy italt(fehérbor)
+Nógrádi Gizella      facebookot használt
+Szatmári Pál         megivott egy italt(pálinka)
+Szolnoki Rezsõ       facebookot használt
+Baranyai Hedvig      megivott egy italt(likõr)
+Zala Bálint          facebookot használt
+Heves Marci          megivott egy italt(likõr)
+Szatmári Pál         facebookot használt
+Veszprémi Béla       megivott egy italt(sör)
+Baranyai Hedvig      facebookot használt
+Zala Bálint          megivott egy italt(fehérbor)
+Bács Ferenc          facebookot használt
+Borsodi Géza         megivott egy italt(vörösbor)
+Gyõri Kornél         facebookot használt
+Heves Marci          megivott egy italt(sör)
+Nógrádi Gizella      facebookot használt
+Vas Éva              megivott egy italt(radler)
+Bács Ferenc          facebookot használt
+Zala Bálint          megivott egy italt(vörösbor)
+Szolnoki Rezsõ       facebookot használt
+Baranyai Hedvig      megivott egy italt(radler)
+Vas Éva              facebookot használt
+Tolnai Erika         megivott egy italt(sör)
+Tolnai Erika         facebookot használt
+Zala Bálint          megivott egy italt(vörösbor)
+Borsodi Géza         facebookot használt
+Bács Ferenc          megivott egy italt(sör)
+Veszprémi Béla       facebookot használt
+Hajdú Mónika         megivott egy italt(vörösbor)
+Szatmári Pál         facebookot használt
+Tolnai Erika         megivott egy italt(fehérbor)
+Nógrádi Gizella      facebookot használt
+Vas Éva              megivott egy italt(vörösbor)
+Békési Ildikó        facebookot használt
+Somogyi Péter        megivott egy italt(radler)
+Borsodi Géza         facebookot használt
+Komáromi Blanka      megivott egy italt(vörösbor)
+Bács Ferenc          facebookot használt
+Somogyi Péter        megivott egy italt(pálinka)
+Heves Marci          facebookot használt
+Somogyi Péter        megivott egy italt(sör)
+Veszprémi Béla       facebookot használt
+Somogyi Péter        megivott egy italt(vörösbor)
+Somogyi Péter        facebookot használt
+Buda Béla            megivott egy italt(vörösbor)
+Komáromi Blanka      facebookot használt
+Szolnoki Rezsõ       megivott egy italt(sör)
+Komáromi Blanka      facebookot használt
+Hajdú Mónika         megivott egy italt(fehérbor)
+Békési Ildikó        facebookot használt
+Buda Béla            megivott egy italt(sör)
+Bács Ferenc          facebookot használt
+Vas Éva              megivott egy italt(sör)
+Szolnoki Rezsõ       facebookot használt
+Veszprémi Béla       megivott egy italt(vörösbor)
+Hajdú Mónika         facebookot használt
+Gyõri Kornél         megivott egy italt(sör)
+Hajdú Mónika         facebookot használt
+Somogyi Péter        megivott egy italt(vörösbor)
+Csongrádi Kata       facebookot használt
+Gyõri Kornél         megivott egy italt(radler)
+Tolnai Erika         facebookot használt
+Baranyai Hedvig      megivott egy italt(sör)
+Heves Marci          facebookot használt
+Szatmári Pál         megivott egy italt(pálinka)
+Pesti Margit         facebookot használt
+Veszprémi Béla       megivott egy italt(fehérbor)
+Pesti Margit         facebookot használt
+Buda Béla            megivott egy italt(fehérbor)
+Pesti Margit         facebookot használt
+Gyõri Kornél         megivott egy italt(fehérbor)
+Tolnai Erika         facebookot használt
+Gyõri Kornél         megivott egy italt(vörösbor)
+Somogyi Péter        facebookot használt
+Baranyai Hedvig      megivott egy italt(likõr)
+Bács Ferenc          facebookot használt
+Békési Ildikó        megivott egy italt(vörösbor)
+Pesti Margit         facebookot használt
+Vas Éva              megivott egy italt(likõr)
+Hajdú Mónika         facebookot használt
+Bács Ferenc          megivott egy italt(pálinka)
+Szolnoki Rezsõ       facebookot használt
+Buda Béla            megivott egy italt(fehérbor)
+Borsodi Géza         facebookot használt
+Hajdú Mónika         megivott egy italt(vörösbor)
+Fejér Lajos          facebookot használt
+Csongrádi Kata       megivott egy italt(sör)
+Buda Béla            facebookot használt
+Komáromi Blanka      megivott egy italt(pálinka)
+Heves Marci          facebookot használt
+Nógrádi Gizella      megivott egy italt(radler)
+Veszprémi Béla       facebookot használt
+Fejér Lajos          megivott egy italt(fehérbor)
+Somogyi Péter        facebookot használt
+Baranyai Hedvig      megivott egy italt(sör)
+Szolnoki Rezsõ       facebookot használt
+Nógrádi Gizella      megivott egy italt(sör)
+Szolnoki Rezsõ       facebookot használt
+Veszprémi Béla       megivott egy italt(sör)
+Somogyi Péter        facebookot használt
+Szatmári Pál         megivott egy italt(pálinka)
+Szolnoki Rezsõ       facebookot használt
+Heves Marci          megivott egy italt(sör)
+Szolnoki Rezsõ       facebookot használt
+Hajdú Mónika         megivott egy italt(pálinka)
+Fejér Lajos          facebookot használt
+Gyõri Kornél         megivott egy italt(sör)
+Pesti Margit         facebookot használt
+Buda Béla            megivott egy italt(vörösbor)
+Szatmári Pál         facebookot használt
+Hajdú Mónika         megivott egy italt(radler)
+Veszprémi Béla       facebookot használt
+Szatmári Pál         megivott egy italt(fehérbor)
+Buda Béla            facebookot használt
+Békési Ildikó        megivott egy italt(sör)
+Nógrádi Gizella      facebookot használt
+Szolnoki Rezsõ       megivott egy italt(vörösbor)
+Hajdú Mónika         facebookot használt
+Fejér Lajos          megivott egy italt(vörösbor)
+Szolnoki Rezsõ       facebookot használt
+Buda Béla            megivott egy italt(vörösbor)
+Pesti Margit         facebookot használt
+Somogyi Péter        megivott egy italt(sör)
+Veszprémi Béla       facebookot használt
+Somogyi Péter        megivott egy italt(likõr)
+Zala Bálint          facebookot használt
+Gyõri Kornél         megivott egy italt(vörösbor)
+Baranyai Hedvig      facebookot használt
+Hajdú Mónika         megivott egy italt(sör)
+Pesti Margit         facebookot használt
+Csongrádi Kata       megivott egy italt(fehérbor)
+Komáromi Blanka      facebookot használt
+Szolnoki Rezsõ       megivott egy italt(fehérbor)
+Borsodi Géza         facebookot használt
+Csongrádi Kata       megivott egy italt(sör)
+Veszprémi Béla       facebookot használt
+Tolnai Erika         megivott egy italt(pálinka)
+Vas Éva              facebookot használt
+Nógrádi Gizella      megivott egy italt(fehérbor)
+Borsodi Géza         facebookot használt
+Heves Marci          megivott egy italt(radler)
+Bács Ferenc          facebookot használt
+Gyõri Kornél         megivott egy italt(radler)
+Komáromi Blanka      facebookot használt
+Békési Ildikó        megivott egy italt(vörösbor)
+Zala Bálint          facebookot használt
+Hajdú Mónika         megivott egy italt(sör)
+Békési Ildikó        facebookot használt
+Bács Ferenc          megivott egy italt(radler)
+Nógrádi Gizella      facebookot használt
+Hajdú Mónika         megivott egy italt(vörösbor)
+Gyõri Kornél         facebookot használt
+Békési Ildikó        megivott egy italt(fehérbor)
+Heves Marci          facebookot használt
+Békési Ildikó        megivott egy italt(sör)
+Veszprémi Béla       facebookot használt
+Szolnoki Rezsõ       megivott egy italt(vörösbor)
+Somogyi Péter        facebookot használt
+Szolnoki Rezsõ       megivott egy italt(pálinka)
+Nógrádi Gizella      facebookot használt
+Somogyi Péter        megivott egy italt(fehérbor)
+Komáromi Blanka      facebookot használt
+Vas Éva              megivott egy italt(fehérbor)
+Tolnai Erika         facebookot használt
+Szolnoki Rezsõ       megivott egy italt(likõr)
+Somogyi Péter        facebookot használt
+Gyõri Kornél         megivott egy italt(pálinka)
+Csongrádi Kata       facebookot használt
+Buda Béla            megivott egy italt(sör)
+Békési Ildikó        facebookot használt
+Gyõri Kornél         megivott egy italt(vörösbor)
+Csongrádi Kata       facebookot használt
+Nógrádi Gizella      megivott egy italt(radler)
+Csongrádi Kata       facebookot használt
+Bács Ferenc          megivott egy italt(sör)
+Baranyai Hedvig      facebookot használt
+Zala Bálint          megivott egy italt(radler)
+Szatmári Pál         facebookot használt
+Hajdú Mónika         megivott egy italt(sör)
+Hajdú Mónika         facebookot használt
+Somogyi Péter        megivott egy italt(likõr)
+Zala Bálint          facebookot használt
+Baranyai Hedvig      megivott egy italt(vörösbor)
+Hajdú Mónika         facebookot használt
+Somogyi Péter        megivott egy italt(sör)
+Vas Éva              facebookot használt
+Borsodi Géza         megivott egy italt(likõr)
+Pesti Margit         facebookot használt
+Komáromi Blanka      megivott egy italt(sör)
+Békési Ildikó        facebookot használt
+Komáromi Blanka      megivott egy italt(fehérbor)
+Csongrádi Kata       facebookot használt
+Zala Bálint          megivott egy italt(likõr)
+Nógrádi Gizella      facebookot használt
+Pesti Margit         megivott egy italt(pálinka)
+Komáromi Blanka      facebookot használt
+Szolnoki Rezsõ       megivott egy italt(vörösbor)
+Nógrádi Gizella      facebookot használt
+Hajdú Mónika         megivott egy italt(vörösbor)
+Borsodi Géza         facebookot használt
+Fejér Lajos          megivott egy italt(pálinka)
+Veszprémi Béla       facebookot használt
+Szolnoki Rezsõ       megivott egy italt(sör)
+Csongrádi Kata       facebookot használt
+Gyõri Kornél         megivott egy italt(sör)
+Hajdú Mónika         facebookot használt
+Komáromi Blanka      megivott egy italt(sör)
+Tolnai Erika         facebookot használt
+Szatmári Pál         megivott egy italt(vörösbor)
+Békési Ildikó        facebookot használt
+Zala Bálint          megivott egy italt(likõr)
+Veszprémi Béla       facebookot használt
+Zala Bálint          megivott egy italt(sör)
+Somogyi Péter        facebookot használt
+Fejér Lajos          megivott egy italt(pálinka)
+Borsodi Géza         facebookot használt
+Pesti Margit         megivott egy italt(sör)
+Baranyai Hedvig      facebookot használt
+Heves Marci          megivott egy italt(radler)
+Pesti Margit         facebookot használt
+Vas Éva              megivott egy italt(radler)
+Komáromi Blanka      facebookot használt
+Somogyi Péter        megivott egy italt(fehérbor)
+Csongrádi Kata       facebookot használt
+Somogyi Péter        megivott egy italt(likõr)
+Bács Ferenc          facebookot használt
+Borsodi Géza         megivott egy italt(sör)
+Fejér Lajos          facebookot használt
+Komáromi Blanka      megivott egy italt(fehérbor)
+Somogyi Péter        facebookot használt
+Borsodi Géza         megivott egy italt(sör)
+============================================================
+
+
+======== A vizsgálatok eredménye névsorba rendezve =========
+Baranyai Hedvig      TAJ-123456789: nem függõ
+Borsodi Géza         TAJ-753194268: nem függõ
+Buda Béla            TAJ-987213645: nem függõ
+Bács Ferenc          TAJ-213459807: nem függõ
+Békési Ildikó        TAJ-867534219: nem függõ
+Csongrádi Kata       TAJ-741258963: nem függõ
+Fejér Lajos          TAJ-102436782: nem függõ
+Gyõri Kornél         TAJ-216534879: nem függõ
+Hajdú Mónika         TAJ-951847623: nem függõ
+Heves Marci          TAJ-128736901: nem függõ
+Komáromi Blanka      TAJ-012369874: nem függõ
+Nógrádi Gizella      TAJ-741852963: nem függõ
+Pesti Margit         TAJ-216980473: nem függõ
+Somogyi Péter        TAJ-214567249: nem függõ
+Szatmári Pál         TAJ-159326847: nem függõ
+Szolnoki Rezsõ       TAJ-321987456: nem függõ
+Tolnai Erika         TAJ-123215632: nem függõ
+Vas Éva              TAJ-654987321: nem függõ
+Veszprémi Béla       TAJ-120435786: nem függõ
+Zala Bálint          TAJ-456723560: nem függõ
+============================================================
+
+
+======================= Statisztikák =======================
+Az internetet legtöbbet (24 alkalom) használó(k)
+Somogyi Péter        TAJ-214567249: alkohol-függõség gyanúja
+Veszprémi Béla       TAJ-120435786: alkohol-függõség gyanúja
+
+Az elfogyasztott italokban összesen 5235 cl alkohol volt
+============================================================
+
+
+Keresés név vagy TAJ-szám alapján
+ >Somogyi Péte
+Nincs ilyen a páciensek között
+
+Keressek még valakit? (i/n)
+ >i
+Keresés név vagy TAJ-szám alapján
+ >Somogyi Péter
+Somogyi Péter        TAJ-214567249: alkohol-függõség gyanúja
+
+Keressek még valakit? (i/n)
+ >i
+Keresés név vagy TAJ-szám alapján
+ >951847623
+Hajdú Mónika         TAJ-951847623: facebookfüggõség gyanúja
+
+Keressek még valakit? (i/n)
+ >n
+

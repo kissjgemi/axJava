@@ -1,0 +1,82 @@
+Sun Apr 14 17:26:58 CEST 2019 : Apache Derby Hálózati kiszolgáló - 10.10.2.0 - (1582446) elindult és kész a kapcsolatok fogadására a(z) {3} 1527 portján 
+----------------------------------------------------------------
+Sun Apr 14 17:26:58 CEST 2019:
+ Derby The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446) változat betöltése: a816c00e-016a-1c75-6091-ffff9d268182 példány
+a(z) G:\aB6main\000_Axjava\JDBC alapok\DependencyTest 2 JDBC\src\derby\PATIENT adatbázis-könyvtáron: sun.misc.Launcher$AppClassLoader@144bcfa 
+
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_202-b08
+user.dir=C:\Program Files\glassfish-4.1.1\javadb
+os.name=Windows 7
+os.arch=x86
+os.version=6.1
+derby.system.home=G:\aB6main\000_Axjava\JDBC alapok\DependencyTest 2 JDBC\src\derby
+Az adatbázis-osztálybetöltõ elindult - derby.database.classpath=''
+----------------------------------------------------------------
+Sun Apr 14 17:27:13 CEST 2019:
+a816c00e-016a-1c75-6091-ffff9d268182 példány leállítása
+Sun Apr 14 17:27:13 CEST 2019 Thread[DRDAConnThread_2,5,main] (DATABASE = PATIENT), (DRDAID = {2}), A(z) 'PATIENT' adatbázis leáll.
+Sun Apr 14 19:15:02 CEST 2019 Thread[DRDAConnThread_2,5,main] Cleanup action starting
+java.sql.SQLException: A(z) 'MEDIA' adatbázis nem található.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection40.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver40.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.Driver20.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: java.sql.SQLException: A(z) 'MEDIA' adatbázis nem található.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 19 more
+============= begin nested exception, level (1) ===========
+java.sql.SQLException: A(z) 'MEDIA' adatbázis nem található.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection40.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver40.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.Driver20.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+============= end nested exception, level (1) ===========
+Cleanup action completed
+Sun Apr 14 19:15:02 CEST 2019 Thread[DRDAConnThread_2,5,main] (DATABASE = MEDIA), (DRDAID = {3}), A(z) 'MEDIA' adatbázis nem található.
+----------------------------------------------------------------
+Sun Apr 14 19:15:37 CEST 2019:
+ Derby The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446) változat betöltése: 560740aa-016a-1c75-6091-ffff9d268182 példány
+a(z) G:\aB6main\000_Axjava\JDBC alapok\DependencyTest 2 JDBC\src\derby\PATIENT adatbázis-könyvtáron: sun.misc.Launcher$AppClassLoader@144bcfa 
+
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_202-b08
+user.dir=C:\Program Files\glassfish-4.1.1\javadb
+os.name=Windows 7
+os.arch=x86
+os.version=6.1
+derby.system.home=G:\aB6main\000_Axjava\JDBC alapok\DependencyTest 2 JDBC\src\derby
+Az adatbázis-osztálybetöltõ elindult - derby.database.classpath=''
