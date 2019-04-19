@@ -11,6 +11,7 @@ public class Match {
 
     private boolean good;
     private int exteension;
+    private int audience;
 
     private static int playTime;
 
@@ -26,6 +27,10 @@ public class Match {
         return good;
     }
 
+    public String getQuality() {
+        return isGood() ? "jó" : "rossz";
+    }
+
     public void setGood(boolean good) {
         this.good = good;
     }
@@ -36,6 +41,10 @@ public class Match {
 
     public void setExteension(int exteension) {
         this.exteension = exteension;
+    }
+
+    public int getAudience() {
+        return audience;
     }
 
     public static int getPlayTime() {
@@ -53,6 +62,10 @@ public class Match {
 
     public int matchLength() {
         return playTime + exteension;
+    }
+
+    public void viewMatch() {
+        audience++;
     }
 
     @Override

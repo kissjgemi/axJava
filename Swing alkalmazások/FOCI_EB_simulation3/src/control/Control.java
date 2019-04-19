@@ -7,15 +7,19 @@ import basis.ThePair;
 import dataIo.InputData;
 import dataIo.InputFromDB;
 import dataIo.InputFromFile;
+import java.io.File;
+import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import surface.MatchPanel;
+import surface.ViewedMatchesPanel;
 
 /**
  *
@@ -33,6 +37,9 @@ public class Control {
     private List<Team> TEAMS;
     private List<ThePair> PAIRS;
     private MatchPanel matchPanel;
+    private ViewedMatchesPanel viewedMatchesPanel;
+
+    private List<Match> viwedMatches = new ArrayList<>();
 
     private final String SOURCE_TEAMS = "/datas/csapatok.txt";
     private final String SOURCE_PAIRS = "/datas/parok.txt";
@@ -42,8 +49,9 @@ public class Control {
     private final String DB_USER = "foci";
     private final String DB_PSWD = "foci";
 
-    public Control(MatchPanel matchPanel) {
+    public Control(MatchPanel matchPanel, ViewedMatchesPanel vmatchesPanel) {
         this.matchPanel = matchPanel;
+        this.viewedMatchesPanel = vmatchesPanel;
     }
 
     public void start() {
@@ -77,6 +85,21 @@ public class Control {
         Match.setPlayTime(PLAY_TIME);
         Husband.setGoodMatchBeerNumber(GOOD_MATCH_BEER);
         Husband.setBadMatchBeerNumber(BAD_MATCH_BEER);
+    }
+
+    public void writeToFile(File f) {
+        try (PrintWriter fout = new PrintWriter(f)) {
+            for (Match m : viwedMatches) {
+                String str = String.format("%s;%s;%d;%s;%d",
+                        m.getTEAM1(), m.getTEAM2(),
+                        m.matchLength(), m.getQuality(),
+                        m.getAudience());
+                System.out.println(str);
+                fout.println(str);
+            }
+        } catch (Exception ex) {
+            Logger.getLogger(Control.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     private void dataInputFromFile() {
@@ -177,7 +200,7 @@ public class Control {
 
         for (ThePair pair : PAIRS) {
             if (Math.random() < VIEWING_MATCH_CHANCE) {
-                pair.viewingMatches(match);
+                pair.viewMatches(match);
             }
         }
 
@@ -187,5 +210,7 @@ public class Control {
         matchPanel.showDatas(PAIRS);
         matchPanel.writeMatch(match);
         matchPanel.writeResults(averageBeer(), sumOfLeasureTime());
+        viwedMatches.add(match);
+        viewedMatchesPanel.insertMatch(match);
     }
 }

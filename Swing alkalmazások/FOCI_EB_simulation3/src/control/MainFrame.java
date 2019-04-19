@@ -17,12 +17,14 @@ public class MainFrame extends javax.swing.JFrame {
         super.setSize(PANEL_WIDTH, PANEL_HEIGHT);
         super.setTitle(PANEL_TITLE);
         super.setLocationRelativeTo(null);
+        jTabbedPane1.setTitleAt(2, "Megnézett meccsek");
     }
 
     private void start() {
         setVisible(true);
-        Control c = new Control(matchPanel1);
+        Control c = new Control(matchPanel1, viewedMatchesPanel1);
         matchPanel1.setControl(c);
+        viewedMatchesPanel1.setControl(c);
         c.start();
     }
 

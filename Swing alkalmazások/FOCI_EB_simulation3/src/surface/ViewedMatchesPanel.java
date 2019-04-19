@@ -5,17 +5,39 @@
  */
 package surface;
 
+import basis.Match;
+import control.Control;
+import java.io.File;
+import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
+
 /**
  *
  * @author KissJGabi
  */
 public class ViewedMatchesPanel extends javax.swing.JPanel {
 
+    private Control control;
+    private DefaultTableModel tableModel;
+
     /**
      * Creates new form ViewedMatchesPanel
      */
     public ViewedMatchesPanel() {
         initComponents();
+        tblMatches.setShowGrid(true);
+        tableModel = (DefaultTableModel) tblMatches.getModel();
+    }
+
+    public void setControl(Control c) {
+        this.control = c;
+    }
+
+    public void insertMatch(Match match) {
+        Object[] tableLine = {match.getTEAM1(), match.getTEAM2(),
+            match.matchLength(), match.getQuality(), match.getAudience()};
+        tableModel.addRow(tableLine);
     }
 
     /**
@@ -49,16 +71,7 @@ public class ViewedMatchesPanel extends javax.swing.JPanel {
         tblMatches.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         tblMatches.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
+
             },
             new String [] {
                 "1. csapat", "2. csapat", "Játékidő (perc)", "Minőség", "Nézőszám"
@@ -121,7 +134,24 @@ public class ViewedMatchesPanel extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnWriteToFileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnWriteToFileActionPerformed
-        // TODO add your handling code here:
+        JFileChooser fileChooser = new JFileChooser(new File("."));
+        if (fileChooser.showSaveDialog(this) == JFileChooser.APPROVE_OPTION) {
+            try {
+                File file = fileChooser.getSelectedFile();
+                if (file.exists()) {
+                    if (JOptionPane.showConfirmDialog(null,
+                            "a fájl már létezik, felülírjam",
+                            "hibaüzenet", JOptionPane.YES_NO_OPTION)
+                            == JOptionPane.YES_OPTION) {
+                        control.writeToFile(file);
+                    }
+                } else {
+                    control.writeToFile(file);
+                }
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
+        }
     }//GEN-LAST:event_btnWriteToFileActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

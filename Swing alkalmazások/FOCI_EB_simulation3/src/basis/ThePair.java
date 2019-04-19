@@ -22,9 +22,10 @@ public class ThePair implements Comparable<ThePair> {
         this.WIFE = wife;
     }
 
-    public void viewingMatches(Match match) {
+    public void viewMatches(Match match) {
         HUSBAND.viewingMatch(match);
         WIFE.viewingMatch(match);
+        match.viewMatch();
     }
 
     public String className() {

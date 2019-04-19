@@ -1,0 +1,4 @@
+Németország;Belgium;94;rossz;2
+Németország;Lengyelország;94;rossz;3
+Anglia;Portugália;92;jó;3
+Portugália;Olaszország;116;jó;4
