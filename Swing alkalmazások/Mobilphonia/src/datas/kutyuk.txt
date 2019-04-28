@@ -1,0 +1,8 @@
+Samsung Galaxy;Android
+Sony Xperia;Android
+Huawei;Android
+Nokia Lumia;Windows Phone
+Honor;Android
+Nokia
+Samsung Primo
+Alcatel

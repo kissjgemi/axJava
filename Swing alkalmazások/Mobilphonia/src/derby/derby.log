@@ -1,0 +1,14 @@
+Sat Apr 27 18:35:12 CEST 2019 : Apache Derby Hálózati kiszolgáló - 10.10.2.0 - (1582446) elindult és kész a kapcsolatok fogadására a(z) {3} 1527 portján 
+----------------------------------------------------------------
+Sat Apr 27 18:35:13 CEST 2019:
+ Derby The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446) változat betöltése: a816c00e-016a-5fa6-86c4-ffff8613e092 példány
+a(z) G:\aB6main\000_Axjava\Swing alkalmazások\Mobilphonia\src\derby\PHONIA adatbázis-könyvtáron: sun.misc.Launcher$AppClassLoader@144bcfa 
+
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_202-b08
+user.dir=C:\Program Files\glassfish-4.1.1\javadb
+os.name=Windows 7
+os.arch=x86
+os.version=6.1
+derby.system.home=G:\aB6main\000_Axjava\Swing alkalmazások\Mobilphonia\src\derby
+Az adatbázis-osztálybetöltõ elindult - derby.database.classpath=''
