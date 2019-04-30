@@ -1,0 +1,30 @@
+A HÖK jó tanuló, jó sportoló pályázatot hoz létre. Szimulálja egy Java programmal.
+
+Egy pályázat egy egyedi sorszám és a pályázó megadásával iktatható. Minden pályázat esetén meghatározható a folyosithatoOsszeg(). Ez nem haladhat meg egy egységes összegHatárt.
+
+Kétféle pályázatot lehet beadni:
+
+A tanulmányi pályázat esetén meg kell adni a kért összeget is (mert pl. ez egy verseny nevezési díja). Akkor kaphat pénzt, ha a pályázó rendelkezik tanári ajánlással. Ekkor a számára folyósítható összeg vagy a kért összeg lesz, ha az a megadott határ alatt van, vagy a pályázati összeghatár.
+
+Sportpályázat esetén a pályázó akkor kaphat pénzt, ha rendelkezik edzői ajánlással. Ekkor mérkőzései számának valahányszorosát kaphatja, ha az kevesebb az összeghatárnál, egyéb­ként pedig az összeghatárt. A mérkőzésenkénti díj egységes.
+
+A pályázót (diák) egyértelműen azonosítja a neve és kódja. Tanul() is és sportol() is. Tanulás során az okossági szintje mindig eggyel nő, és ha eléri az egységes okossági határt, akkor kap tanári ajánlást. (igazzá válik) Sportolás során a mérkőzéseinek száma növekszik eggyel, és ha eléri az egységes mérkőzéshatárt, akkor edzői ajánlást kap (vagyis ez válik igazzá).
+
+Egy 600×400-as belső méretű felületen szimulálja a pályáztatási folyamatot. 
+
+Állítsa be a statikus adatokat, és olvassa be a pályázók adatait.
+
+Lehetőleg névsorba rendezve írassa ki a pályázókat, majd szimulálja előbb a szorgalmiIdoszak()ot, majd a pályázás()t. (Egyikhez sem kell külön esemény, a beolvasás után automatikusan végrehajtódnak.)
+
+A szorgalmiIdoszak() azt jelenti, hogy egy ciklusban ismételje meg a következőt: véletlenszerűen válasszon ki két diákot, az egyik sportol, a másik tanul. (Ha véletlenül ugyanaz a diák sportol is és tanul is, az nem baj.)
+
+A pályázás() során minden egyes pályázó (diák) esetén, ha az illetőnek van edzői ajánlása, akkor adja be a sportpályázatot. Ha nincs edzői ajánlása, de van tanári, akkor adja be a tanulmányi pályázatot. A pályázat sorszáma egyesével növekszik , és nyilván az adott pályázó tartozik hozzá. Tanulmányi pályázat esetén a kért összeg legyen egy véletlen érték. A véletlent a pályázati összeghatár duplájáig generálja.
+
+Az Elbírálás gomb hatására kerüljenek be a nyertesek a nyertes pályázatok listájába (azok nyernek, ahol a pályázat folyósítható összege nullánál nagyobb).
+
+A nyertesek alá írja ki a teljes kifizetendő összeget és a legnagyobb kifizetés értékét.
+
+
+A korábbiakhoz képest nincs benne új, próbálja önállóan megoldani. 
+
+
