@@ -1,0 +1,31 @@
+Bill Gates hatvanadik születésnapja tiszteletére több helyszínen is konferenciát tartottak, melyre kétféle résztvevő regisztrálhatott, a vendégek ott voltak a helyszínen, a virtuális résztvevők számítógépen kapcsolódtak az eseményhez.
+
+Minden résztvevő egyértelműen megadható a nevével és egy egyedi sorszámmal. Mindenki értékeli Bill Gates munkáját egy pontszámmal. Mindenki csak egyszer pontoz()hat, ekkor egy véletlen pontszám keletkezik (kivételesen lehet alaposztályban véletlen), mégpedig egy, az összes résztvevőre egyformán jellemző alsó- és felső ponthatár közötti érték (a felsőt is felveheti, az alsó akár negatív is lehet). (Figyeljen rá, hogy tényleg csak egyszer generálódjon ez az érték.)
+
+A vendég a helyszínen vesz részt a konferencián, ez csak azért érdekes, mert ott be tud szállni Bill Gates jótékonysági tevékenységébe. (BG megígérte, hogy a konferenciákon összegyűlt adomány dupláját adja jótékonysági célokra.) Ahhoz, hogy valaki vendég lehessen, feltétlenül rendelkeznie kell valamennyi pénzzel. Ebből a pénzből tud adakozni, az adomany() pedig az adott pontszám és egy, az összes vendégre egyformán jellemző szorzó szorzata lesz.
+
+Természetesen csak annyit tud adni, amennyi pénze van, illetve csak adni tud, kapni akkor sem, ha rossz véleménnyel van BG-ről.
+
+A virtuális résztvevők számítógépen kísérik az eseményeket, azonban sajnos előfordulhat, hogy csak késve tudnak kapcsolódni, mert a gépük épp elkezd frissíteni. Amikor frissit(), akkor a metódus paraméterében lévő frissítések számától függ a frissítési idő, mégpedig a frissítések számának és egy, az összes virtuális felhasználóra érvényes átlag idő szorzata. Csak akkor tud pontozni, ha a frissítési idő nem halad meg egy, az összes virtuális részvevőre jellemző időkorlátot.
+
+Egy konferenciát a kódjával és helyszínével lehet megadni. A regisztráció() során egy, a metódus paraméterében lévő résztvevő kerül a résztvevők listájába – de természetesen mindenki csak egyszer vehet részt egy konferencián. A szavazas() során minden résztvevő pontoz. A pontszam() a résztvevők össz-pontszámát adja vissza, az adomany() pedig a vendégek adomá­nyainak összegét (ezek az értékek esetleg adattagként is számolhatók). A konferenciáknak van egy egységes részvételi díja is.
+
+Olvassa be a konferenciák és a résztvevők adatait. Valaki akkor lehet vendég, ha egy adott határértéknél több pénze van, egyébként virtuális résztvevő lehet. (Esetünkben a konkrét határérték legyen a konferencia-díj, de általános határral oldja meg.) Ugyancsak a konferencia-díj legyen majd a vendégek szorzójának értéke is.
+
+A program indulásakor azonnal jelenjen meg a konferenciák listája (ekkor a résztvevők listája még üres), és rögtön regisztráljanak is a résztvevők, azaz: valahányszor ismételje meg, hogy egy véletlenül kiválasztott konferenciára regisztrál egy véletlenül kiválasztott résztvevő (egy résztvevő több konferencián is részt vehet) . 
+
+Egy-egy elemet kiválasztva a konferenciák listá­járól, a másik listafelületen lehessen látni az adott konferencián résztvevőket (a virtuális résztvevő neve mellet (v) szerepel).
+
+Induláskor a Szavazás gomb aktív, a Rendezés inaktív, szavazás után ez megfordul.
+
+A Szavazás gomb hatása: először minden virtuális résztvevő gépe elkezd frissíteni 0 és egy adott érték közötti véletlen frissítés-számmal. Ezután minden konferencián lezajlik a szavazás, és a konferenciák lista alatt megjelenik az összes adomány ($) és az összes pont értéke.
+
+A résztvevők listájából kiválasztva egyetlen em­bert, a lista alatt az általa generált pontszám olvasható.
+
+A Rendezés gomb hatására a konferenciák listában adományok szerint csökkenő módon jelenjenek meg a konferenciák, a név, helyszín adatok mellett az adományok mennyisége is szerepeljen ($).
+
+Tesztelje az alaposztályokat.
+
+
+A korábbiakhoz képest nincs benne új (csak annyi, hogy most a Resztvevo osztály pontoz() metódusában szerepelhet véletlen generálás), próbálja önállóan megoldani. 
+

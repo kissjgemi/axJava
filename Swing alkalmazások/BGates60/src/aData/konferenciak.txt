@@ -1,0 +1,8 @@
+HU001;Microsoft Hungary
+FI002;Microsoft Finland
+AT003;Microsoft Austria
+UK004;Microsoft UK
+JP005;Microsoft Japan
+IT006;Microsoft Italy
+CH007;Microsoft China
+CA008;Microsoft Canada

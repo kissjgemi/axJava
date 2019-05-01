@@ -1,0 +1,31 @@
+Tue Apr 30 12:56:48 CEST 2019 : Apache Derby Hálózati kiszolgáló - 10.10.2.0 - (1582446) elindult és kész a kapcsolatok fogadására a(z) {3} 1527 portján 
+----------------------------------------------------------------
+Tue Apr 30 12:56:49 CEST 2019:
+ Derby The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446) változat betöltése: a816c00e-016a-6de3-c1a0-00002cc3ed28 példány
+a(z) G:\aB6main\000_Axjava\Swing alkalmazások\BGates60\src\derby\BILL60 adatbázis-könyvtáron: sun.misc.Launcher$AppClassLoader@144bcfa 
+
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_202-b08
+user.dir=C:\Program Files\glassfish-4.1.1\javadb
+os.name=Windows 7
+os.arch=x86
+os.version=6.1
+derby.system.home=G:\aB6main\000_Axjava\Swing alkalmazások\BGates60\src\derby
+Az adatbázis-osztálybetöltõ elindult - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Apr 30 12:57:15 CEST 2019:
+a816c00e-016a-6de3-c1a0-00002cc3ed28 példány leállítása
+Tue Apr 30 12:57:15 CEST 2019 Thread[DRDAConnThread_2,5,main] (DATABASE = BILL60), (DRDAID = {2}), A(z) 'BILL60' adatbázis leáll.
+----------------------------------------------------------------
+Tue Apr 30 12:58:27 CEST 2019:
+ Derby The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446) változat betöltése: 560740aa-016a-6de3-c1a0-00002cc3ed28 példány
+a(z) G:\aB6main\000_Axjava\Swing alkalmazások\BGates60\src\derby\BILL60 adatbázis-könyvtáron: sun.misc.Launcher$AppClassLoader@144bcfa 
+
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_202-b08
+user.dir=C:\Program Files\glassfish-4.1.1\javadb
+os.name=Windows 7
+os.arch=x86
+os.version=6.1
+derby.system.home=G:\aB6main\000_Axjava\Swing alkalmazások\BGates60\src\derby
+Az adatbázis-osztálybetöltõ elindult - derby.database.classpath=''
