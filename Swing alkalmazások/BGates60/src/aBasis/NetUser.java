@@ -12,6 +12,10 @@ public class NetUser extends Participant {
     private static int updateTime;
     private static int loginLimit;
 
+    public int getUpdateNr() {
+        return updateNr;
+    }
+
     public static void setUpdateNrMax(int updateNrMax) {
         NetUser.updateNrMax = updateNrMax;
     }
