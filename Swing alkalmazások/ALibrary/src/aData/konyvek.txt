@@ -1,0 +1,23 @@
+Gárdonyi Géza;Egri csillagok;GG20
+Szabó Magda;Abigail;SZM10
+Rejtő Jenő;Piszkos Fred, a kapitány;RJ02;Reviczky Gábor
+Fekete István;Vuk;FI12
+Ernest Hemingway;Öreg halász és a tenger;HE04
+Joshua Block;Hatékony Java;BJ13
+Charolotte Bronte;Jane Eyre;BC21;Horváth Magda
+Gárdonyi Géza;A láthatatlan ember;GG18;Kárász Péter
+Daniel Defoe;Robinson;DD11
+Daniel Defoe;Robinson;DD11;Avar István
+Jókai Mór;A kőszívű ember fiai;JM11
+Franz Kafka;A per;KF10
+Kosztolányi Dezső;Édes Anna;KD15;Hegedűs Géza
+Jókai Mór;Aranyember;JM17;Reviczky Gábor
+Tamási Áron;Ábel a rengetegben;TA13
+Rejtő Jenő;A láthatatlan légió;RJ11
+Karinthy Frigyes;Utazás a koponyám körül;KF15
+Karinthy Frigyes;Tanár úr kérem;KF10;Balkai Géza
+Mikszáth Kálmán;A fekete város;MK10
+Mikszáth Kálmán;A beszélő köntös;MK13;Avar István
+Móra Ferenc;Rab ember fiai;MF10
+Charles Dickens;Twist Oliver;DC12
+Thomas Mann;A varázshegy;MT11;Katona Árpád

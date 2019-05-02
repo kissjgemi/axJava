@@ -1,0 +1,26 @@
+Szimulálja Java programmal egy könyvtár működését.
+
+Egy könyvet a szerzője, címe és egy egyedi azonosító jellemzi. A könyveket kölcsönözni lehet. A kölcsönzés() vagy sikeres, vagy nem. Ha már kikölcsönzött állapotban van, akkor nyilván sikertelen. Ha nincs kikölcsönözve, akkor sikeres a kölcsönzés. Ez azt jelenti, hogy a kikölcsönzött állapot igazzá válik, és a kölcsönzés dátuma felveszi a metódus paraméterében lévő értéket. A dátum most lehet egy int érték (mondjuk az év napja, de ez most lényegtelen). (Persze, ha kedve van hozzá, dolgozhat igazi dátummal is.) A visszahoz() metódus hatására a kikölcsönzött állapot ismét hamissá válik, a kölcsönzés dátuma pedig legyen nulla.
+
+Minden könyv egy egységes kölcsönzési ideig adható ki (valahány nap). Az osztály tudja kiszámolni a kölcsönzés lejarat()-át is, vagyis azt, hogy a metódus paraméterében megadott dátumhoz képest hány nap van még hátra a kölcsönzésből.
+
+A könyvtár hangos könyveket is kölcsönöz. A hangos könyvet a fentieken kívül még a szöveget felolvasó ember neve is jellemzi. Ha igaz, hogy másolásvédett, akkor ugyanúgy lehet kölcsönözni, mint bármilyen más könyvet, egyébként nem kölcsönözhető (csak helyben hallgatható). A másolásvédelem bármikor módosítható.
+
+Egy 900*600-as belső méretű felületen szimulálja a könyvtár működését. 
+
+A felület betöltésekor olvassa be a konyvek.txt fájl tartalmát. (Adatszerkezet: szerző;cím;azonosító, és hangos könyv esetén a felolvasó neve.) Beolvasáskor a hangos könyvek kb. x százalékát lássa el másolásvédelemmel. (Véletlenszerűen döntse el, hogy melyik lesz másolásvédett és melyik nem.)
+
+A beolvasott adatok értelemszerűen kerüljenek a megfelelő listafelületre. Könyvek esetén a szerző: cím legyen olvasható, hangos könyv esetén ezek után zárójelben legyen feltüntetve a felolvasó neve is.
+
+A Kölcsönöz gomb hatására lehessen kölcsönözni. Ha nincs megadva a dátum, illetve nincs kiválasztás, akkor adjon hibaüzenetet. Egyébként kölcsönözze a kiválasztott könyveket. Sikeres kölcsönzés esetén kerüljön be a könyv a kölcsönzöttek listájára is (de maradjon meg az eredeti helyén is), ha nem lehet kölcsönözni, akkor pedig jelezze, hogy az illető könyv ki van kölcsönözve. (Ha több kijelölt is ki van kölcsönözve, akkor egyenként mindegyikhez dobjon fel egy üzenetet.)
+
+Ugyanezt kell csinálni a hangos könyvek esetén is. Ott még azt is jelezze, ha a kiválasztott példány másolásvédelem hiánya miatt csak helyben hallgatható. Kölcsönzések után szűnjenek meg a kijelölések. (Mindkét fajta kölcsönzés esetén.)
+
+A kölcsönzöttek listáján egy elemre kattintva a lista alatt jelenjen meg, hogy még hány nap van hátra a kölcsönzés lejártáig. (A dátum mezőben nyilván meg kell adni az aktuális dátumot – egy int értéket.) Ebből a listából egyszerre csak egy elemet lehessen kiválasztani.
+
+A visszahoz gomb hatására menjen végig a kölcsönzött anyagok listáján, és véletlenszerűen hívja meg (vagy ne) egy-egy könyv visszahoz() metódusát. Utána még egyszer menjen végig ezen a listán, és törölje ki a felületről a visszavitt könyveket.
+
+
+A korábbiakhoz képest nincs benne új, próbálja önállóan megoldani. 
+
+
