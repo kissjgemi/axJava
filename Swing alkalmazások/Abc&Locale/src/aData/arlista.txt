@@ -1,0 +1,11 @@
+narancslé;orange juice;123456;300;3
+sör;beer;254354;400;Dréher;4.5;3
+sör;beer;254355;450;Heinekken;4.5;3
+sör;beer;555555;600;Java;5;3
+ásványvíz;mineral water;123325;200;5
+bor;wine;321265;1000;Szürkebarát;12.5;2
+bor;wine;321487;2000;Cabernet Sauvignon;14;2
+tea;tea;488934;400;3
+pálinka;schnaps;978345;4000;Rézangyal;40;0.5
+pálinka;schnaps;978512;5000;Rézfán fütyülő;40;0.5
+málnaszörp;raspberry juice;111111;250;2
