@@ -1,0 +1,8 @@
+Fecsegő Ferdinánd;Hulla a bokorban;220;30
+Csacsogó Csilla;Csacsogás;1000;40
+Igazmondó Pál;Őszinte politika;300;80
+Rossztollú Rezső;Mellébeszélés;250;60
+Nagyhangú Nándor;Ugye megmondtam;500;50
+Diák Szerző;Könnyű a zh;100;60
+Csacsogó Csilla;Újabb csacsogás;800;60
+Fecsegő Ferdinánd;Eltűnt milliók;250;70

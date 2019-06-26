@@ -1,0 +1,49 @@
+Módosítsuk a 3. feladatsor Médiabirodalom 1. című feladatát, mégpedig úgy, hogy minél több minden szerepeljen benne az eddig tanultak közül. Grafikus felületen dolgozzunk,  és választástól függően vagy fájlból vagy adatbázisból olvassuk be az adatokat – az újságnevek névsorba rendezetten jelenjenek meg a listafelületen. 
+
+A „választott fájl” menüpont hatására nyíljon meg egymás után két fájlválasztó ablak, az egyikből válasszuk ki a cikkek adatait tartalmazó fájlt, a másikból az újságokét. Ekkor persze illene legalább annyit tenni, hogy a gomb feliratával jelezzük, hogy épp mit választunk, pl. így:
+
+fajlValaszto.setApproveButtonText(„Cikkbevitel”);
+
+(A fájlválasztónak létezik „multipleSelection” módja is, úgy egyszerre lehet kiválasztani a két fájlt, de oda kellene figyelni arra is, hogy jó legyen a kiválasztott fájlok sorrendje. Ha kedve, ideje van, próbálja így is megoldani.)
+
+A megoldás során használjuk ki, hogy az adatbevitel egy interfész implementálásával is megoldható.
+
+Az Újságírás feliratú gomb hatására fusson le a korábbi ujsagIras() metódus, melynek során véletlen sokszor egy-egy véletlenül választott újságban jelentessünk meg egy-egy véletlenül választott cikket. A gombnyomás hatására azonnal jelenjen meg egy szövegmezőben a legtöbb cikket tartalmazó újságok névsora.
+
+Az újságra kattintva a lista alatt lehessen látni értelemszerűen vagy a példányszámot vagy a linket, a másik listában lássuk a benne megjelent cikkeket. Egyszerre csak egy újságot lehessen kiválasztani.
+
+A cikkek közül viszont akár többet is, a lista alatt pedig legyen látható a kiválasztott cikkek átlag-hazugság értéke.
+
+Hogy a felhasználó tudja, hogy mikor mit is kell tennie, mindkét listához rendeljünk egy-egy ismertető tool-tip-et.
+
+Használjunk igazi dátumokat. Így megoldható az is, hogy az újságok mellett olvasható legyen az is, hogy hány napja jelent meg az újság, illetve szűrni is lehessen, hogy az összeset szeretnénk-e látni, vagy csak az e haviakat.
+
+Néhány további képernyőkép: médiabirodalom_2_kepernyokepek
+(https://drive.google.com/open?id=1xP7Uz055oTRZoNnnHV-nnroacwDjOjxI)
+
+A kimutatás fül értelemszerű, a Rendezés menüpont hatására pedig lehessen névsorba, megjelenési dátum, illetve cikkek száma szerint rendezni, választástól függően növekvő vagy csökkenő sorrendbe.
+
+
+Néhány további képernyőkép: médiabirodalom_2_kepernyokepek
+
+A képeken látható panelméret: 600 x 500 pixel - a frame méretének megadásakor ne felejtse el ehhez hozzáadni a tabulátorfülek, a menüsor és a keret szélességét (kb. 60-70 pixel).
+
+A korábbiakhoz képest csak a dátumkezelés új, próbálja önállóan megoldani.
+
+Segítség a dátumkezeléshez:
+
+Az adatot Date típusúra kell deklarálni.
+
+Beolvasás:
+
+String-ből Date: datum =new SimpleDateFormat(datumFormatum).parse(stringAdat);
+
+ahol a datumFormatum a beolvasandó dátum formátuma, esetünkben "yyyy.MM.dd".
+
+Az Ujsag osztályban pedig a dátum String alakját kell előállítani. Ezt így lehet: new SimpleDateFormat("yyyy.MM.dd").format(datum);
+
+(Majd még részletesebben is lesz szó dátumkezelésről, de ehhez a feladathoz ennyi is elég.)
+
+
+Még egy észrevétel (bár ez nem teljesen kapcsolódik az eredeti feladathoz): Ha beállítjuk a táblázat AutoCreateRowSorter tulajdonságát, akkor a fejlécre kattintva az adott oszlop szerint lehet rendezni az adatokat. 
+

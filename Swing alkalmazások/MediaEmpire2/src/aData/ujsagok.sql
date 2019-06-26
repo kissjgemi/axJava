@@ -1,0 +1,7 @@
+CREATE TABLE UJSAGOK ( id int not null primary key, nev varchar(40), datum date, meret int, peldanyszam int, link varchar(50))
+INSERT INTO UJSAGOK VALUES(1,'Kacsa hírek','2018-05-29',1000,30,null)
+INSERT INTO UJSAGOK VALUES(2,'Napi bulvár','2018-06-03',null,null,'http://napibulvar.hu')
+INSERT INTO UJSAGOK VALUES(3,'Sztár világ','2018-06-02',null,null,'http://sztarvilag.hu')
+INSERT INTO UJSAGOK VALUES(4,'Ki kivel','2018-05-30',null,null,'http://kikivel.hu')
+INSERT INTO UJSAGOK VALUES(5,'Unicum','2018-05-30',2000,50,null)
+INSERT INTO UJSAGOK VALUES(6,'Adatbázis hírek','2018-05-11',null,null,'http://adatbazishirek.hu')

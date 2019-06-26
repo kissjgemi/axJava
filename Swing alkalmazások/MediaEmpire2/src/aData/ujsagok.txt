@@ -1,0 +1,10 @@
+Kócsag hírek;2018-04-29;1000;30
+Napi blikk;2018-05-03;http:/napibulvar.hu
+Sztárom a párom;2018-05-07;http:/sztarvilag.hu
+Mit mível;2019-04-30;http:/kikivel.hu
+Fütyülős;2019-05-30;2000;50
+Kacsa hírek;2019-05-01;1000;30
+Napi bulvár;2019-06-03;http:/napibulvar.hu
+Sztár világ;2019-06-07;http:/sztarvilag.hu
+Ki kivel;2019-04-30;http:/kikivel.hu
+Unicum;2019-04-30;2000;50
