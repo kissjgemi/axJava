@@ -333,7 +333,6 @@ public class Control {
         LIBRARYPANEL.listGraetestMessengers(maxArticles, mostApperances);
         SUMMARYPANEL.summaryTable(messengers);
         MEDIA3PANEL.listAllNews(messengers);
-        MEDIA3PANEL.resetDisplay();
     }
 
     public void journalism_theTest() {
@@ -361,6 +360,7 @@ public class Control {
                     maxArticles.add(m);
                 }
             }
+            MEDIA3PANEL.resetDisplay();
             listAllNews();
         }
     }
@@ -420,6 +420,18 @@ public class Control {
     public void removeArticle(int index, Article selectedValue) {
         messengers.get(index).removehArticle(selectedValue);
         MEDIA3PANEL.listArticles(messengers.get(index).getArticles());
-        LIBRARYPANEL.listArticles(messengers.get(index).getArticles());
+        mostApperances = 0;
+        maxArticles = new ArrayList<>();
+        for (Messenger m : messengers) {
+            if (mostApperances < m.getArticleNumbers()) {
+                mostApperances = m.getArticleNumbers();
+            }
+        }
+        for (Messenger m : messengers) {
+            if (m.getArticleNumbers() == mostApperances) {
+                maxArticles.add(m);
+            }
+        }
+        listAllNews();
     }
 }
