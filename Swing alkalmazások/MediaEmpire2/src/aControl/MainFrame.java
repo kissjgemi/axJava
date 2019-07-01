@@ -87,6 +87,7 @@ public class MainFrame extends javax.swing.JFrame {
         menuDataInput.setText("adatbevitel");
 
         menuDBInput.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_D, java.awt.event.InputEvent.CTRL_MASK));
+        menuDBInput.setIcon(new javax.swing.ImageIcon(getClass().getResource("/aControl/database_icon.jpg"))); // NOI18N
         menuDBInput.setText("Adatbázisból");
         menuDBInput.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -95,6 +96,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         menuDataInput.add(menuDBInput);
 
+        menuFileInput.setIcon(new javax.swing.ImageIcon(getClass().getResource("/aControl/file_icon.jpg"))); // NOI18N
         menuFileInput.setText("Fájlból");
 
         menuInputFixFile.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_MASK));
