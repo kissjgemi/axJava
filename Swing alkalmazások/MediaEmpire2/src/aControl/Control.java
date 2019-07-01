@@ -13,6 +13,7 @@ import aData.InputData;
 import aData.InputFromDB;
 import aData.InputFromFile;
 import aSurface.LibraryPanel;
+import aSurface.Media3Panel;
 import aSurface.SummaryPanel;
 import java.io.File;
 import java.io.IOException;
@@ -23,7 +24,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.text.SimpleDateFormat;
-import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -39,6 +39,7 @@ import javax.swing.JOptionPane;
  */
 public class Control {
 
+    private Media3Panel MEDIA3PANEL = null;
     private LibraryPanel LIBRARYPANEL = null;
     private SummaryPanel SUMMARYPANEL = null;
     private MainFrame MAINFRAME = null;
@@ -47,8 +48,9 @@ public class Control {
 
     }
 
-    public Control(LibraryPanel libraryPanel,
+    public Control(Media3Panel media3Panel, LibraryPanel libraryPanel,
             SummaryPanel summaryPanel, MainFrame mainFrame) {
+        this.MEDIA3PANEL = media3Panel;
         this.LIBRARYPANEL = libraryPanel;
         this.SUMMARYPANEL = summaryPanel;
         this.MAINFRAME = mainFrame;
@@ -330,6 +332,8 @@ public class Control {
         LIBRARYPANEL.listMessengers(messengers);
         LIBRARYPANEL.listGraetestMessengers(maxArticles, mostApperances);
         SUMMARYPANEL.summaryTable(messengers);
+        MEDIA3PANEL.listAllNews(messengers);
+        MEDIA3PANEL.resetDisplay();
     }
 
     public void journalism_theTest() {
@@ -407,5 +411,15 @@ public class Control {
             sum += article.getLIE_PROPORTION();
         }
         return sum / articles.size();
+    }
+
+    public void showArticles(int index) {
+        MEDIA3PANEL.listArticles(messengers.get(index).getArticles());
+    }
+
+    public void removeArticle(int index, Article selectedValue) {
+        messengers.get(index).removehArticle(selectedValue);
+        MEDIA3PANEL.listArticles(messengers.get(index).getArticles());
+        LIBRARYPANEL.listArticles(messengers.get(index).getArticles());
     }
 }

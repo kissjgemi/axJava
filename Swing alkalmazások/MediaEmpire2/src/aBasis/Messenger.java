@@ -115,6 +115,20 @@ public class Messenger implements Serializable, Comparable<Messenger> {
         return false;
     }
 
+    public boolean removehArticle(Article article) {
+        if (articles.contains(article)) {
+            articles.remove(article);
+            sumOfLies -= article.getLIE_PROPORTION();
+            if (articles.size() == 0) {
+                averageofLies = 0;
+            } else {
+                averageofLies = sumOfLies / articles.size();
+            }
+            return true;
+        }
+        return false;
+    }
+
     public String contents() {
         String temp = "\nAz újságban nem jelent meg cikk";
         if (!articles.isEmpty()) {

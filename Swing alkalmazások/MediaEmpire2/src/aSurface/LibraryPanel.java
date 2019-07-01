@@ -350,6 +350,8 @@ public class LibraryPanel extends javax.swing.JPanel {
             lblInfo.setText(str);
             if (!m.getArticles().isEmpty()) {
                 listArticles(m.getArticles());
+            } else {
+                articleListModel.clear();
             }
         }
     }//GEN-LAST:event_lstMessengersValueChanged

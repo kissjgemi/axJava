@@ -31,7 +31,8 @@ public class MainFrame extends javax.swing.JFrame {
 
     private void start() {
         this.setVisible(true);
-        c = new Control(libraryPanel1, summaryPanel1, this);
+        c = new Control(media3panel1, libraryPanel1, summaryPanel1, this);
+        media3panel1.setControl(c);
         libraryPanel1.setControl(c);
         summaryPanel1.setControl(c);
         c.start();
@@ -50,6 +51,7 @@ public class MainFrame extends javax.swing.JFrame {
         jTabbedPane1 = new javax.swing.JTabbedPane();
         libraryPanel1 = new aSurface.LibraryPanel();
         summaryPanel1 = new aSurface.SummaryPanel();
+        media3panel1 = new aSurface.Media3Panel();
         jMenuBar1 = new javax.swing.JMenuBar();
         menuFile = new javax.swing.JMenu();
         menuDataInput = new javax.swing.JMenu();
@@ -76,6 +78,7 @@ public class MainFrame extends javax.swing.JFrame {
         libraryPanel1.setMinimumSize(new java.awt.Dimension(600, 500));
         jTabbedPane1.addTab("újságok", libraryPanel1);
         jTabbedPane1.addTab("kimutatás", summaryPanel1);
+        jTabbedPane1.addTab("MediaEmpire3", media3panel1);
 
         getContentPane().add(jTabbedPane1, java.awt.BorderLayout.CENTER);
 
@@ -263,6 +266,7 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JPopupMenu.Separator jSeparator1;
     private javax.swing.JTabbedPane jTabbedPane1;
     private aSurface.LibraryPanel libraryPanel1;
+    private aSurface.Media3Panel media3panel1;
     private javax.swing.JMenuItem menuAbout;
     private javax.swing.JMenuItem menuBrowsinFiles;
     private javax.swing.JMenuItem menuDBInput;
