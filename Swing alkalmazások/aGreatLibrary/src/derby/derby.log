@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Wed Jul 03 18:40:23 CEST 2019:
+ Derby The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446) változat betöltése: a816c00e-016b-b8b5-6247-000032056ecf példány
+a(z) G:\aB6main\000_Axjava\Swing alkalmazások\aGreatLibrary\src\derby\GREATLIB adatbázis-könyvtáron: sun.misc.Launcher$AppClassLoader@10455d6 
+
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_212-b10
+user.dir=G:\aB6main\000_Axjava\Swing alkalmazások\aGreatLibrary
+os.name=Windows 7
+os.arch=x86
+os.version=6.1
+derby.system.home=G:\aB6main\000_Axjava\Swing alkalmazások\aGreatLibrary\src\derby
+Az adatbázis-osztálybetöltő elindult - derby.database.classpath=''
