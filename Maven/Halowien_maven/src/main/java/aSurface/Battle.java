@@ -42,6 +42,10 @@ public class Battle extends javax.swing.JPanel {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         g.drawImage(myImage, 0, 0, this.getWidth(), this.getHeight(), null);
+
+        if (c != null) {
+            c.paintFigthers(g);
+        }
     }
 
     /**
@@ -52,6 +56,12 @@ public class Battle extends javax.swing.JPanel {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+
+        addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                formMousePressed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -64,6 +74,11 @@ public class Battle extends javax.swing.JPanel {
             .addGap(0, 650, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void formMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMousePressed
+        System.out.println("formMousePressed " + evt.getX() + ":" + evt.getY());
+        c.clickedOnBattlefield(evt.getX(), evt.getY());
+    }//GEN-LAST:event_formMousePressed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -5,7 +5,10 @@
  */
 package aSurface;
 
+import aBasis.Fighter;
+import aBasis.aModel.RendezhetoListModel;
 import aControl.Control;
+import java.util.List;
 import java.util.ResourceBundle;
 
 /**
@@ -14,6 +17,7 @@ import java.util.ResourceBundle;
  */
 public class Warriors extends javax.swing.JPanel {
 
+    private RendezhetoListModel fighterListModel = new RendezhetoListModel();
     private Control c;
 
     public void setControl(Control c) {
@@ -25,6 +29,21 @@ public class Warriors extends javax.swing.JPanel {
      */
     public Warriors() {
         initComponents();
+        lstFighter.setModel(fighterListModel);
+    }
+
+    public void listFighters(List<Fighter> fighterList, boolean sort) {
+        fighterListModel.clear();
+        fighterList.forEach((fighter) -> {
+            fighterListModel.addElement(fighter, sort);
+        });
+    }
+
+    public void refreshFigthersList(Fighter f) {
+        fighterListModel.removeElement(f);
+        if (f.isAlive()) {
+            fighterListModel.addElement(f, true);
+        }
     }
 
     public void setTextLocale(ResourceBundle bundle) {
@@ -53,14 +72,19 @@ public class Warriors extends javax.swing.JPanel {
         lblFighter.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblFighter.setText("Harcosok");
 
-        lstFighter.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
+        lstFighter.setModel(new javax.swing.AbstractListModel<Fighter>() {
+            Fighter[] fighters;
+            public int getSize() { return fighters.length; }
+            public Fighter getElementAt(int i) { return fighters[i]; }
         });
         jScrollPane1.setViewportView(lstFighter);
 
         btnFight.setText("Csatára fel!");
+        btnFight.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFightActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -69,9 +93,9 @@ public class Warriors extends javax.swing.JPanel {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jScrollPane1)
                     .addComponent(lblFighter, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnFight, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 220, Short.MAX_VALUE))
+                    .addComponent(btnFight, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 220, Short.MAX_VALUE)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -80,17 +104,23 @@ public class Warriors extends javax.swing.JPanel {
                 .addContainerGap()
                 .addComponent(lblFighter)
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 552, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 552, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(btnFight)
                 .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btnFightActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFightActionPerformed
+        List<Fighter> selectedFighters = lstFighter.getSelectedValuesList();
+        c.beginBattle(selectedFighters);
+        lstFighter.clearSelection();
+    }//GEN-LAST:event_btnFightActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnFight;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblFighter;
-    private javax.swing.JList<String> lstFighter;
+    private javax.swing.JList<Fighter> lstFighter;
     // End of variables declaration//GEN-END:variables
 }

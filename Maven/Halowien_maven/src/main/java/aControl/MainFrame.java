@@ -16,6 +16,7 @@ public class MainFrame extends javax.swing.JFrame {
     private final String FRAME_TITLE = "Age Of Maven - The HalloWien";
 
     private Control c;
+    public boolean LOADED = false;
 
     /**
      * Creates new form MainFrame
@@ -26,6 +27,10 @@ public class MainFrame extends javax.swing.JFrame {
         super.setLocationRelativeTo(null);
     }
 
+    void enableHalloWienPanel(boolean b) {
+        jTabbedPane1.setEnabledAt(1, b);
+    }
+
     public void setTextLocale(ResourceBundle bundle) {
         jTabbedPane1.setTitleAt(0, bundle.getString("TAB_0_NAME"));
         jTabbedPane1.setTitleAt(1, bundle.getString("TAB_1_NAME"));
@@ -33,6 +38,7 @@ public class MainFrame extends javax.swing.JFrame {
     }
 
     private void start() {
+        enableHalloWienPanel(LOADED);
         this.setVisible(true);
         c = new Control(this, welcome1, hallowien1, hallowien1.getWarriors(),
                 hallowien1.getBattle(), languages1);
