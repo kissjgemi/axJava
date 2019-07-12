@@ -82,7 +82,7 @@ public class Fighter implements Comparable<Fighter> {
         if (alive) {
             extentOfDamage--;
         }
-        if (extentOfDamage <= 0) {
+        if (extentOfDamage < 0) {
             alive = false;
         }
     }
