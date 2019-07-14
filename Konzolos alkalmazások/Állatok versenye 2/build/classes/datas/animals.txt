@@ -1,0 +1,8 @@
+Bodri;2010
+Rexi;2013e
+Cirmos;2011;true
+Pamacs;2015
+Bolhazsák;2016;true;j
+Buksi;2010
+Picúr;2012;false
+
