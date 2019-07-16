@@ -1,0 +1,12 @@
+ Készítsen olyan alkalmazást, amelyen különböző időzónák aktuális idejét láthatjuk.
+
+Segítség: használja a DateFormat, Calendar, GregorianCalendar, TimeZone osztályokat és a Graphics2D lehetőségeit. 
+
+Kiindulhat pl. innen: 
+
+https://docs.oracle.com/javase/tutorial/2d/index.html
+
+https://docs.oracle.com/javase/tutorial/2d/TOC.html 
+
+
+Ez is önálló játszadozás. 
