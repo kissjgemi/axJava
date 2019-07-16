@@ -1,0 +1,9 @@
+Alakítsa át a programot „valódi” órává. A másodpercmutató mellett legyen perc- és óramutató is. A mutatók elrendezése egy valódi órát szimuláljon. Mindhárom mutató különböző színű és hosszúságú legyen. Az analóg óra alatt jelenítse meg az órán mutatott időpont digitális változatát. Mindkettő (az analóg is és a digitális is) az operációs rendszer rendszeridejét mutassa.
+
+Segítség: használja a Date és Calendar osztályt
+
+Az analóg óra mutatóinak vastagságát is állítsa be az ábrán látható módon.
+
+Segítség: használja a Graphics2D lehetőségeit.
+
+Ez már valóban játszadozás, próbálja önállóan megoldani.
