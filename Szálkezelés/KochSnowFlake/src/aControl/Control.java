@@ -51,14 +51,14 @@ public class Control {
 
     public void drawFlake(Graphics g, int level) {
         int drawingWidth = SNOWFLAKEPANEL.getWidth() - 2 * margin;
-        int drawingHeigth = SNOWFLAKEPANEL.getHeight() - margin - lowerMargin;
+        int drawingHeight = SNOWFLAKEPANEL.getHeight() - margin - lowerMargin;
 
         int x1 = margin;
         int x2 = margin + drawingWidth;
         int x3 = margin + drawingWidth / 2;
 
-        int y1 = margin + drawingHeigth;
-        int y2 = margin + drawingHeigth;
+        int y1 = margin + drawingHeight;
+        int y2 = margin + drawingHeight;
         int y3 = margin;
 
         if (level > -1) {
