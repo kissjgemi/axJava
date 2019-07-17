@@ -15,12 +15,13 @@ import java.awt.Graphics;
 public class MandelbrotPanel extends javax.swing.JPanel implements Runnable {
 
     private final int SLEEP = 1000;
-    private final double ZOOM_MIN = 150;
-    private final double ZOOM_MAX = 250;
+    private final int STEP = 25;
+    private final double ZOOM_MIN = 500;
+    private final double ZOOM_MAX = 1000;
     private Thread myThread;
     private boolean isRunning = true;
 
-    private double zoom = ZOOM_MIN - 1;
+    private double zoom = ZOOM_MIN - STEP;
     private Control c;
 
     public double getZOOM_MIN() {
@@ -51,7 +52,7 @@ public class MandelbrotPanel extends javax.swing.JPanel implements Runnable {
                 } catch (InterruptedException ex) {
                     ex.getMessage();
                 }
-                zoom++;
+                zoom += STEP;
                 this.repaint();
             }
             while (zoom > ZOOM_MIN) {
@@ -60,7 +61,7 @@ public class MandelbrotPanel extends javax.swing.JPanel implements Runnable {
                 } catch (InterruptedException ex) {
                     ex.getMessage();
                 }
-                zoom--;
+                zoom -= STEP;
                 this.repaint();
             }
         }
