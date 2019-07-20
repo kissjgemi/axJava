@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sat Jul 20 23:39:06 CEST 2019:
+ Derby The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446) változat betöltése: a816c00e-016c-1152-f939-ffffac52d4e1 példány
+a(z) G:\aB6main\000_Axjava\Szálkezelés\Aquarium2\src\derby\HALAK adatbázis-könyvtáron: sun.misc.Launcher$AppClassLoader@e53b93 
+
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_212-b10
+user.dir=G:\aB6main\000_Axjava\Szálkezelés\Aquarium2
+os.name=Windows 7
+os.arch=x86
+os.version=6.1
+derby.system.home=G:\aB6main\000_Axjava\Szálkezelés\Aquarium2/src/derby
+Az adatbázis-osztálybetöltő elindult - derby.database.classpath=''
