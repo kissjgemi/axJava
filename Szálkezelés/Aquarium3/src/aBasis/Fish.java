@@ -145,7 +145,7 @@ public class Fish extends Thread {
                 this.stepX = (Math.random() < 0.5) ? newStepX : -newStepX;
                 int newStepY = (int) (stepX * Math.random() + 1);
                 this.stepY = (Math.random() < 0.5) ? newStepY : -newStepY;
-                originalY = this.imageX;
+                originalY = this.imageY;
                 setFishImage();
             }
         }
