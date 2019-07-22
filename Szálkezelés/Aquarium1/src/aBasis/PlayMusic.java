@@ -77,7 +77,7 @@ public class PlayMusic extends Thread {
                 }
             });
         } catch (JavaLayerException e) {
-            e.getMessage();
+            System.out.println(e.getMessage());
             killPlayer();
         }
     }
@@ -92,7 +92,7 @@ public class PlayMusic extends Thread {
             c.setFinishSoundEvent(finished);
             myPlayer.play(pausedOnFrame, Integer.MAX_VALUE);
         } catch (JavaLayerException e) {
-            e.getMessage();
+            System.out.println(e.getMessage());
             killPlayer();
         } finally {
             System.out.println("stoppedAtFrame> " + pausedOnFrame);
