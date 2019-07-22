@@ -22,6 +22,14 @@ public class Hunter {
     private int imageX, imageY;
     private static int faceWidth, faceHeight;
 
+    public void setImageX(int imageX) {
+        this.imageX = imageX;
+    }
+
+    public void setImageY(int imageY) {
+        this.imageY = imageY;
+    }
+
     public static void setFaceWidth(int faceWidth) {
         Hunter.faceWidth = faceWidth;
     }
