@@ -73,10 +73,24 @@ public class Control implements Runnable {
         long remainingTime = GAME_TIME * 1000;
         while (remainingTime >= 0) {
             try {
-
+                RESULTSPANEL.writeTime(remainingTime / 1000);
+                startButterfly();
+                Thread.sleep(REBIRTH_TIME);
+                remainingTime -= REBIRTH_TIME;
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
         }
+        RESULTSPANEL.finishGame();
+        PlayersPanel.finishGame(player);
+        stopGame();
+    }
+
+    private void startButterfly() {
+
+    }
+
+    private void stopGame() {
+
     }
 }

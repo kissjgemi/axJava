@@ -5,6 +5,8 @@
  */
 package aSurface;
 
+import aBasis.Player;
+
 /**
  *
  * @author b6dmin
@@ -16,6 +18,10 @@ public class PlayersPanel extends javax.swing.JPanel {
      */
     public PlayersPanel() {
         initComponents();
+    }
+
+    public static void finishGame(Player player) {
+
     }
 
     /**
