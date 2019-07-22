@@ -14,8 +14,6 @@ import aSurface.GraphicPanel;
 import aSurface.StartPanel;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *
