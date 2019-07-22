@@ -5,7 +5,6 @@
  */
 package aSurface;
 
-import aBasis.Fish;
 import static aBasis.Global.*;
 import aControl.Control;
 import java.util.List;
