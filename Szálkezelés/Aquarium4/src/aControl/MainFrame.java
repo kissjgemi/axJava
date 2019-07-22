@@ -10,7 +10,6 @@ import static aBasis.Global.*;
 import aSurface.ControllerPanel;
 import aSurface.GraphicPanel;
 import static java.awt.BorderLayout.*;
-import javax.swing.WindowConstants;
 
 /**
  *
