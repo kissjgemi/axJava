@@ -6,6 +6,9 @@
 package aControl;
 
 import static aBasis.Global.*;
+import aDataAccess.DatabaseInit;
+import java.util.Locale;
+import java.util.ResourceBundle;
 
 /**
  *
@@ -13,17 +16,44 @@ import static aBasis.Global.*;
  */
 public class MainFrame extends javax.swing.JFrame {
 
-    /**
-     * Creates new form MainFrame
+    private Control c;
+
+    public void setControl(Control c) {
+        playersPanel1.setControl(c);
+        resultsPanel1.setControl(c);
+    }
+
+    /* Creates new form MainFrame
+
      */
     public MainFrame() {
+        System.out.println("MainFrame()");
         initComponents();
         super.setTitle(MAINFRAME_TITLE);
         super.setLocationRelativeTo(null);
     }
 
+    public void setTextLocale() {
+        this.setTitle(rBundle.getString("MAINFRAME_NAME"));
+    }
+
     private void start() {
         this.setVisible(true);
+        this.c = new Control(resultsPanel1.getGamePanel(),
+                playersPanel1, resultsPanel1, this);
+        setControl(c);
+        locale = new Locale("hu", "HU");
+        rBundle = ResourceBundle.getBundle(BUNDLE, locale);
+        c.setupGame();
+
+        useLanguage();
+
+        DatabaseInit.getInstance().setControl(c);
+        DatabaseInit.getInstance().start();
+    }
+
+    private void useLanguage() {
+        c.setLocaleBundle();
     }
 
     /**

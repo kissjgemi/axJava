@@ -5,6 +5,9 @@
  */
 package aBasis;
 
+import java.util.Locale;
+import java.util.ResourceBundle;
+
 /**
  *
  * @author b6dmin
@@ -12,7 +15,7 @@ package aBasis;
 public class Global {
 
     //sql-derby
-    public static final String SQL_SOURCE = "/sources/player.sql";//MAVAN: "/sql/halak.sql"
+    public static final String SQL_SOURCE = "/sources/hunter.sql";//MAVAN: "/sql/hunter.sql"
     public static final String CHAR_SET = "UTF-8";
 
     public static final String DB_NAME = "HUNTER";
@@ -22,10 +25,11 @@ public class Global {
     public static final String DB_PSWD = ";password=hunter";
     public static final String CREATE_TRUE = ";create=true";
     public static final String[] DB_TABLE
-            = {"HUNTER", "NAME", "SCORE"};
+            = {"HUNTER", "HNAME", "SCORE"};
     public static final String DB_DIR = "/src/derby";
 
     //képek beolvasás
+    public static final int IMAGE_NR = 10;
     public static final String SOURCES_URL = "/sources/";
 
     //gamePanel
@@ -46,4 +50,10 @@ public class Global {
     public static final long REBIRTH_TIME = 1000;
     public static final int HUNTER_WIDTH = 150;
     public static final int HUNTER_HEIGHT = 150;
+
+    //lokalitások
+    public static final String BUNDLE = "aLocalities/Bundle";
+    public static Locale locale;
+    public static ResourceBundle rBundle;
+    public static String pointtext = "pont";
 }

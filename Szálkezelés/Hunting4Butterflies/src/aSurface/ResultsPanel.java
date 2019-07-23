@@ -5,7 +5,8 @@
  */
 package aSurface;
 
-import java.util.ResourceBundle;
+import static aBasis.Global.*;
+import aControl.Control;
 
 /**
  *
@@ -13,7 +14,16 @@ import java.util.ResourceBundle;
  */
 public class ResultsPanel extends javax.swing.JPanel {
 
-    ResourceBundle bundle;
+    private Control c;
+
+    public void setControl(Control c) {
+        this.c = c;
+        gamePanel1.setControl(c);
+    }
+
+    public GamePanel getGamePanel() {
+        return gamePanel1;
+    }
 
     /**
      * Creates new form ResultsPanel
@@ -22,12 +32,17 @@ public class ResultsPanel extends javax.swing.JPanel {
         initComponents();
     }
 
+    public void setTextLocale() {
+        writeScore(c.getPlayerScore());
+        writeTime(c.getRemainingTime());
+    }
+
     public void writeScore(int score) {
-        lblScore.setText(bundle.getString(("LBL_SCORE_TEXT") + score));
+        lblScore.setText(rBundle.getString(("LBL_SCORE_TXT")) + score);
     }
 
     public void writeTime(long time) {
-        lblTime.setText(bundle.getString(("LBL_TIME_TEXT") + time));
+        lblTime.setText(rBundle.getString(("LBL_REMAININGTIME_TXT")) + time);
     }
 
     public void finishGame() {
@@ -44,7 +59,7 @@ public class ResultsPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        gamePanel2 = new aSurface.GamePanel();
+        gamePanel1 = new aSurface.GamePanel();
         lblScore = new javax.swing.JLabel();
         lblTime = new javax.swing.JLabel();
 
@@ -53,19 +68,19 @@ public class ResultsPanel extends javax.swing.JPanel {
         setPreferredSize(new java.awt.Dimension(800, 600));
         setLayout(null);
 
-        javax.swing.GroupLayout gamePanel2Layout = new javax.swing.GroupLayout(gamePanel2);
-        gamePanel2.setLayout(gamePanel2Layout);
-        gamePanel2Layout.setHorizontalGroup(
-            gamePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout gamePanel1Layout = new javax.swing.GroupLayout(gamePanel1);
+        gamePanel1.setLayout(gamePanel1Layout);
+        gamePanel1Layout.setHorizontalGroup(
+            gamePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 800, Short.MAX_VALUE)
         );
-        gamePanel2Layout.setVerticalGroup(
-            gamePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        gamePanel1Layout.setVerticalGroup(
+            gamePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 550, Short.MAX_VALUE)
         );
 
-        add(gamePanel2);
-        gamePanel2.setBounds(0, 50, 800, 550);
+        add(gamePanel1);
+        gamePanel1.setBounds(0, 50, 800, 550);
 
         lblScore.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         lblScore.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -83,7 +98,7 @@ public class ResultsPanel extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private aSurface.GamePanel gamePanel2;
+    private aSurface.GamePanel gamePanel1;
     private javax.swing.JLabel lblScore;
     private javax.swing.JLabel lblTime;
     // End of variables declaration//GEN-END:variables

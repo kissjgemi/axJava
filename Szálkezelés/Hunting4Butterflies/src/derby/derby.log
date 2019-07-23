@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Tue Jul 23 19:50:31 CEST 2019:
+ Derby The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446) változat betöltése: a816c00e-016c-1ff4-c4f9-ffff831d53c6 példány
+a(z) G:\aB6main\000_Axjava\Szálkezelés\Hunting4Butterflies\src\derby\HUNTER adatbázis-könyvtáron: sun.misc.Launcher$AppClassLoader@e53b93 
+
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_212-b10
+user.dir=G:\aB6main\000_Axjava\Szálkezelés\Hunting4Butterflies
+os.name=Windows 7
+os.arch=x86
+os.version=6.1
+derby.system.home=G:\aB6main\000_Axjava\Szálkezelés\Hunting4Butterflies/src/derby
+Az adatbázis-osztálybetöltő elindult - derby.database.classpath=''
