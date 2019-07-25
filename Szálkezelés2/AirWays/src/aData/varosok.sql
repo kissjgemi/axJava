@@ -1,0 +1,1 @@
+CREATE TABLE CITIES (cityname varchar(50), x int, y int)

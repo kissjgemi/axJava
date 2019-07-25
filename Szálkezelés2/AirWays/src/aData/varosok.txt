@@ -1,0 +1,6 @@
+Budapest,455,380
+Helsinki,505,163
+London,230,305
+Madrid,175,500
+Parizs,250,360
+Roma,375,470

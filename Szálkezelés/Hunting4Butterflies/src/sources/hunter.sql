@@ -1,1 +1,0 @@
-CREATE TABLE HUNTER (hname varchar(50), score int)
