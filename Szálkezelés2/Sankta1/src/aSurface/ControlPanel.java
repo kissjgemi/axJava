@@ -6,7 +6,6 @@
 package aSurface;
 
 import static aBasis.Global.*;
-import aBasis.House;
 import aControl.Control;
 import java.awt.Font;
 import java.util.List;
@@ -86,24 +85,25 @@ public class ControlPanel extends javax.swing.JPanel {
         lstReceived = new javax.swing.JList<>();
         rdbHU = new javax.swing.JRadioButton();
         rdbEN = new javax.swing.JRadioButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(204, 255, 255));
         setMaximumSize(new java.awt.Dimension(250, 500));
         setMinimumSize(new java.awt.Dimension(250, 500));
-        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnStart.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btnStart.setText(" ");
+        btnStart.setMaximumSize(new java.awt.Dimension(220, 25));
+        btnStart.setMinimumSize(new java.awt.Dimension(220, 25));
+        btnStart.setPreferredSize(new java.awt.Dimension(220, 25));
         btnStart.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnStartActionPerformed(evt);
             }
         });
-        add(btnStart, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, 230, -1));
 
         lblAsk.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         lblAsk.setText("Kért");
-        add(lblAsk, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 54, 230, -1));
 
         lstAsked.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
@@ -112,11 +112,8 @@ public class ControlPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(lstAsked);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 77, 230, -1));
-
         lblReceive.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         lblReceive.setText("Kapott");
-        add(lblReceive, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 225, 230, -1));
 
         lstReceived.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
@@ -124,8 +121,6 @@ public class ControlPanel extends javax.swing.JPanel {
             public String getElementAt(int i) { return strings[i]; }
         });
         jScrollPane2.setViewportView(lstReceived);
-
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 248, 230, -1));
 
         buttonGroup1.add(rdbHU);
         rdbHU.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -136,7 +131,6 @@ public class ControlPanel extends javax.swing.JPanel {
                 rdbHUActionPerformed(evt);
             }
         });
-        add(rdbHU, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 460, -1, -1));
 
         rdbEN.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         rdbEN.setText("english");
@@ -146,7 +140,55 @@ public class ControlPanel extends javax.swing.JPanel {
                 rdbENActionPerformed(evt);
             }
         });
-        add(rdbEN, new org.netbeans.lib.awtextra.AbsoluteConstraints(167, 460, -1, -1));
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel1.setText(" ");
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(btnStart, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(rdbHU)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(rdbEN)))
+                        .addContainerGap())
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblAsk, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblReceive, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING))
+                        .addGap(0, 0, Short.MAX_VALUE))))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(11, 11, 11)
+                .addComponent(btnStart, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(lblAsk)
+                .addGap(6, 6, 6)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(lblReceive)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel1)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rdbHU)
+                    .addComponent(rdbEN))
+                .addContainerGap(36, Short.MAX_VALUE))
+        );
     }// </editor-fold>//GEN-END:initComponents
 
     private void rdbHUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdbHUActionPerformed
@@ -170,6 +212,7 @@ public class ControlPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnStart;
     private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel lblAsk;

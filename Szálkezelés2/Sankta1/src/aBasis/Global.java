@@ -31,7 +31,7 @@ public class Global {
     public static final String HouseGraphuc = SOURCES_URL + "haz.gif";
 
     //mainFrame
-    public static final String MAINFRAME_TITLE = "Mikulás";
+    public static final String MAINFRAME_TITLE = "Mikulás 1 - A körút";
     public static final int FRAME_WIDTH = 816;
     public static final int FRAME_HEIGHT = 538;
 

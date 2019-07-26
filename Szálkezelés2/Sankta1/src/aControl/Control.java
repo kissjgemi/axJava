@@ -60,7 +60,7 @@ public class Control {
     }
 
     private List<String> nameList = new ArrayList<>();
-    private List<String> receiverList = new ArrayList<>();
+    private final List<String> receiverList = new ArrayList<>();
     private final List<House> houseList = new ArrayList<>();
     private final List<GiftBox> giftBoxList = new ArrayList<>();
 

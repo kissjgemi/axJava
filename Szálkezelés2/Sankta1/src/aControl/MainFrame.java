@@ -35,7 +35,8 @@ public class MainFrame extends javax.swing.JFrame {
         initComponents();
         super.setTitle(MAINFRAME_TITLE);
         super.setLocationRelativeTo(null);
-        super.setMinimumSize(new Dimension(FRAME_WIDTH, FRAME_HEIGHT));
+        super.setSize(new Dimension(FRAME_WIDTH, FRAME_HEIGHT));
+        super.setResizable(false);
     }
 
     private void start() {
@@ -66,18 +67,6 @@ public class MainFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().add(controlPanel1, java.awt.BorderLayout.LINE_START);
-
-        javax.swing.GroupLayout graphityPanel1Layout = new javax.swing.GroupLayout(graphityPanel1);
-        graphityPanel1.setLayout(graphityPanel1Layout);
-        graphityPanel1Layout.setHorizontalGroup(
-            graphityPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 550, Short.MAX_VALUE)
-        );
-        graphityPanel1Layout.setVerticalGroup(
-            graphityPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 500, Short.MAX_VALUE)
-        );
-
         getContentPane().add(graphityPanel1, java.awt.BorderLayout.CENTER);
 
         pack();
