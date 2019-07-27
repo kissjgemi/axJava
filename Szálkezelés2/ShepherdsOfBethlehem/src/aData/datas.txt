@@ -1,8 +1,8 @@
-kisbárány
-sajt
-tojás
-tej
-túró
-vaj
-gyapjú
-takaró
+kisbárány, cosset
+sajt, chees
+tojás, egg
+tej, milk
+túró, cottage cheese
+vaj, butter
+gyapjú, wool
+takaró, blanket

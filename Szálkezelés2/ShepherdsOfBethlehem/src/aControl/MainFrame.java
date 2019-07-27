@@ -52,11 +52,12 @@ public class MainFrame extends javax.swing.JFrame {
         setControl(c);
         locale = new Locale("hu", "HU");
         rBundle = ResourceBundle.getBundle(BUNDLE, locale);
-        useLanguage();
         c.setup();
+        useLanguage();
     }
 
     private void useLanguage() {
+        System.out.println("Locale: > " + locale);
         c.setLocaleBundle();
     }
 

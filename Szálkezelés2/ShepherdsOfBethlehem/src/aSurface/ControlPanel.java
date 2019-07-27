@@ -12,6 +12,7 @@ import java.awt.Font;
 import java.util.List;
 import java.util.Locale;
 import java.util.ResourceBundle;
+import javax.swing.DefaultComboBoxModel;
 import javax.swing.DefaultListModel;
 
 /**
@@ -27,14 +28,21 @@ public class ControlPanel extends javax.swing.JPanel {
     }
 
     public void setTextLocale() {
+        lblList.setText(rBundle.getString("LBL_LIST"));
+        lblCombo.setText(rBundle.getString("LBL_COMBO"));
+        btnStart.setText(rBundle.getString("BTN_START"));
+        btnSave.setText(rBundle.getString("BTN_SAVE"));
     }
 
     public void setup() {
         System.out.println("controlPanel: "
                 + this.getWidth() + "x" + this.getHeight());
+        setStartButtonActivity(true);
+        setSaveButtonActivity(false);
     }
 
-    DefaultListModel<String> myModel = new DefaultListModel<>();
+    DefaultListModel<String> listModel = new DefaultListModel<>();
+    DefaultComboBoxModel<String> myModel = new DefaultComboBoxModel<>();
 
     /**
      * Creates new form ControlForm
@@ -43,18 +51,34 @@ public class ControlPanel extends javax.swing.JPanel {
         System.out.println("ControlPanel()");
         initComponents();
         super.setPreferredSize(new Dimension(CONTROL_WIDTH, CONTROL_HEIGHT));
+        lstShepherds.setModel(listModel);
+        comboGifts.setModel(myModel);
     }
 
-    public void setButtonActivity(boolean b) {
-        rdbEN.setEnabled(b);
-        rdbHU.setEnabled(b);
+    public void setStartButtonActivity(boolean b) {
+        btnStart.setEnabled(b);
+    }
+
+    public void setSaveButtonActivity(boolean b) {
+        btnSave.setEnabled(b);
     }
 
     public void fillMyList(List<String> list) {
-        myModel.clear();
+        myModel.removeAllElements();
         list.forEach((str) -> {
             myModel.addElement(str);
         });
+    }
+
+    public void fillListModel(List<String> list) {
+        listModel.removeAllElements();
+        list.forEach((str) -> {
+            listModel.addElement(str);
+        });
+    }
+
+    public String getGift() {
+        return comboGifts.getSelectedItem().toString();
     }
 
     private void useLanguage() {
@@ -74,6 +98,13 @@ public class ControlPanel extends javax.swing.JPanel {
         buttonGroup1 = new javax.swing.ButtonGroup();
         rdbHU = new javax.swing.JRadioButton();
         rdbEN = new javax.swing.JRadioButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        lstShepherds = new javax.swing.JList<>();
+        btnSave = new javax.swing.JButton();
+        lblList = new javax.swing.JLabel();
+        btnStart = new javax.swing.JButton();
+        comboGifts = new javax.swing.JComboBox<>();
+        lblCombo = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 204));
 
@@ -98,21 +129,75 @@ public class ControlPanel extends javax.swing.JPanel {
             }
         });
 
+        lstShepherds.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane1.setViewportView(lstShepherds);
+
+        btnSave.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btnSave.setText("jButton1");
+        btnSave.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSaveActionPerformed(evt);
+            }
+        });
+
+        lblList.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        lblList.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblList.setText("jLabel1");
+
+        btnStart.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btnStart.setText("jButton2");
+        btnStart.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnStartActionPerformed(evt);
+            }
+        });
+
+        comboGifts.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        comboGifts.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        lblCombo.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        lblCombo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblCombo.setText("jLabel2");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(rdbHU)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 234, Short.MAX_VALUE)
-                .addComponent(rdbEN)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnSave, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jScrollPane1)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(rdbHU)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 226, Short.MAX_VALUE)
+                        .addComponent(rdbEN))
+                    .addComponent(btnStart, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblList, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(comboGifts, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblCombo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(260, Short.MAX_VALUE)
+                .addContainerGap()
+                .addComponent(btnStart)
+                .addGap(18, 18, 18)
+                .addComponent(lblList)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 68, Short.MAX_VALUE)
+                .addComponent(lblCombo)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(comboGifts, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(btnSave)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(rdbHU)
                     .addComponent(rdbEN))
@@ -134,8 +219,23 @@ public class ControlPanel extends javax.swing.JPanel {
         useLanguage();
     }//GEN-LAST:event_rdbENActionPerformed
 
+    private void btnStartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStartActionPerformed
+        c.startProcess1();
+    }//GEN-LAST:event_btnStartActionPerformed
+
+    private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
+        c.finishProcess();
+    }//GEN-LAST:event_btnSaveActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnSave;
+    private javax.swing.JButton btnStart;
     private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JComboBox<String> comboGifts;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel lblCombo;
+    private javax.swing.JLabel lblList;
+    private javax.swing.JList<String> lstShepherds;
     private javax.swing.JRadioButton rdbEN;
     private javax.swing.JRadioButton rdbHU;
     // End of variables declaration//GEN-END:variables
