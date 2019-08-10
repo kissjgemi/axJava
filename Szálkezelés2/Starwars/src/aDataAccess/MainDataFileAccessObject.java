@@ -1,4 +1,4 @@
-package aData;
+package aDataAccess;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ import java.util.List;
  *
  * @author KissJGabi
  */
-public interface InputData {
+public interface MainDataFileAccessObject {
 
     public List<Object> inputList() throws Exception;
 }

@@ -6,14 +6,14 @@
 package aSurface;
 
 import static aBasis.Global.*;
+import aBasis.SpriteObject;
 import aControl.Control;
+import aModel.SortableListModel;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.util.List;
 import java.util.Locale;
 import java.util.ResourceBundle;
-import javax.swing.DefaultComboBoxModel;
-import javax.swing.DefaultListModel;
 
 /**
  *
@@ -28,15 +28,18 @@ public class ControlPanel extends javax.swing.JPanel {
     }
 
     public void setTextLocale() {
+        lblRacer.setText(rBundle.getString("LBL_RACER_TXT"));
+        btnTypeOne.setText(rBundle.getString("BTN_TYPE1_TXT"));
+        btnTypeTwo.setText(rBundle.getString("BTN_TYPE2_TXT"));
     }
 
     public void setup() {
         System.out.println("controlPanel: "
                 + this.getWidth() + "x" + this.getHeight());
+        setButtonActivity(false);
     }
 
-    DefaultListModel<String> listModel = new DefaultListModel<>();
-    DefaultComboBoxModel<Object> comboBoxModel = new DefaultComboBoxModel<>();
+    SortableListModel<SpriteObject> listModel = new SortableListModel<>();
 
     /**
      * Creates new form ControlForm
@@ -45,25 +48,32 @@ public class ControlPanel extends javax.swing.JPanel {
         System.out.println("ControlPanel()");
         initComponents();
         super.setPreferredSize(new Dimension(CONTROL_WIDTH, CONTROL_HEIGHT));
+        lstRacer.setModel(listModel);
+    }
+
+    public void setBtn1(boolean b) {
+        btnTypeOne.setEnabled(b);
+    }
+
+    public void setBtn2(boolean b) {
+        btnTypeTwo.setEnabled(b);
     }
 
     public void setButtonActivity(boolean b) {
-        rdbEN.setEnabled(b);
-        rdbHU.setEnabled(b);
+        setBtn1(b);
+        setBtn2(b);
     }
 
-    public void fillList(List<String> list) {
+    public void fillList(List<SpriteObject> list, boolean b) {
         listModel.clear();
-        list.forEach((str) -> {
-            listModel.addElement(str);
+        list.forEach((o) -> {
+            listModel.addElement(o, b);
         });
     }
 
-    public void fillComboBox(List<Object> list) {
-        comboBoxModel.removeAllElements();
-        list.forEach((obj) -> {
-            comboBoxModel.addElement(obj);
-        });
+    public void updateList(SpriteObject o) {
+        listModel.removeElement(o);
+        listModel.addElement(o, true);
     }
 
     private void useLanguage() {
@@ -83,6 +93,11 @@ public class ControlPanel extends javax.swing.JPanel {
         buttonGroup1 = new javax.swing.ButtonGroup();
         rdbHU = new javax.swing.JRadioButton();
         rdbEN = new javax.swing.JRadioButton();
+        lblRacer = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        lstRacer = new javax.swing.JList<>();
+        btnTypeTwo = new javax.swing.JButton();
+        btnTypeOne = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(255, 255, 204));
 
@@ -107,21 +122,60 @@ public class ControlPanel extends javax.swing.JPanel {
             }
         });
 
+        lblRacer.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblRacer.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblRacer.setText("jLabel1");
+
+        lstRacer.setModel(new javax.swing.AbstractListModel<SpriteObject>() {
+            SpriteObject[] o = {};
+            public int getSize() { return o.length; }
+            public SpriteObject getElementAt(int i) { return o[i]; }
+        });
+        jScrollPane1.setViewportView(lstRacer);
+
+        btnTypeTwo.setText("ButtonT2");
+        btnTypeTwo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTypeTwoActionPerformed(evt);
+            }
+        });
+
+        btnTypeOne.setText("ButtonT1");
+        btnTypeOne.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTypeOneActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(rdbHU)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 234, Short.MAX_VALUE)
-                .addComponent(rdbEN)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnTypeTwo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblRacer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(rdbHU)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 226, Short.MAX_VALUE)
+                        .addComponent(rdbEN))
+                    .addComponent(btnTypeOne, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(260, Short.MAX_VALUE)
+                .addContainerGap()
+                .addComponent(lblRacer)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 268, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(btnTypeOne)
+                .addGap(18, 18, 18)
+                .addComponent(btnTypeTwo)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(rdbHU)
                     .addComponent(rdbEN))
@@ -143,8 +197,21 @@ public class ControlPanel extends javax.swing.JPanel {
         useLanguage();
     }//GEN-LAST:event_rdbENActionPerformed
 
+    private void btnTypeOneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTypeOneActionPerformed
+        c.startRaceType1();
+    }//GEN-LAST:event_btnTypeOneActionPerformed
+
+    private void btnTypeTwoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTypeTwoActionPerformed
+        c.startRaceType2();
+    }//GEN-LAST:event_btnTypeTwoActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnTypeOne;
+    private javax.swing.JButton btnTypeTwo;
     private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel lblRacer;
+    private javax.swing.JList<SpriteObject> lstRacer;
     private javax.swing.JRadioButton rdbEN;
     private javax.swing.JRadioButton rdbHU;
     // End of variables declaration//GEN-END:variables

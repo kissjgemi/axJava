@@ -1,4 +1,4 @@
-package aData;
+package aDataAccess;
 
 import static aBasis.Global.*;
 import java.io.File;
@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author KissJGabi
  */
-public class FileInput implements InputData {
+public class MyDFAO implements MainDataFileAccessObject {
 
     private String inputSource;
     private File dataFile;
@@ -19,14 +19,15 @@ public class FileInput implements InputData {
     private enum Source {
         FIXED, CHOOSER
     }
-    private Source source;
 
-    public FileInput(String inputSource) {
+    private static Source source;
+
+    public MyDFAO(String inputSource) {
         this.inputSource = inputSource;
         source = Source.FIXED;
     }
 
-    public FileInput(File dataFile) {
+    public MyDFAO(File dataFile) {
         this.dataFile = dataFile;
         source = Source.CHOOSER;
     }
