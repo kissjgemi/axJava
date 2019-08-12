@@ -1,13 +1,4 @@
+Sun Aug 11 16:50:31 CEST 2019 : Apache Derby H�l�zati kiszolg�l� - 10.10.2.0 - (1582446) elindult �s k�sz a kapcsolatok fogad�s�ra a(z) {3} 1527 portj�n 
 ----------------------------------------------------------------
-Sun Jul 21 16:03:45 CEST 2019:
- Derby The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446) változat betöltése: a816c00e-016c-14d8-6d29-0000176e2220 példány
-a(z) G:\aB6main\000_Axjava\Szálkezelés\Aquarium1\src\derby\HALAK adatbázis-könyvtáron: sun.misc.Launcher$AppClassLoader@e53b93 
-
-java.vendor=Oracle Corporation
-java.runtime.version=1.8.0_212-b10
-user.dir=G:\aB6main\000_Axjava\Szálkezelés\Aquarium1
-os.name=Windows 7
-os.arch=x86
-os.version=6.1
-derby.system.home=G:\aB6main\000_Axjava\Szálkezelés\Aquarium1/src/derby
-Az adatbázis-osztálybetöltő elindult - derby.database.classpath=''
+Sun Aug 11 16:51:15 CEST 2019: Shutting down Derby engine
+----------------------------------------------------------------
