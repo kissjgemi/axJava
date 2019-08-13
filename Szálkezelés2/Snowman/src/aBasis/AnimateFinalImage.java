@@ -49,10 +49,10 @@ public class AnimateFinalImage extends Thread {
         imageHeight = 0;
         while (imageWidth < GRAPHITY_WIDTH) {
             c.refreshGraphity();
-            imageX -= 9;
-            imageWidth = GRAPHITY_WIDTH - imageX;
-            imageHeight += 7;
             sleepThread(SPRITE_SLEEPTIME_MAX);
+            imageWidth += 9;
+            imageX = GRAPHITY_WIDTH - imageWidth + 9;
+            imageHeight += 7;
         }
         c.finishFinale();
     }

@@ -52,8 +52,8 @@ public class Global {
     public static final int MEETING_RADIUS = 6;
     public static boolean SPRITE_STARTED = false;
     public static final int SPRITE_SIZE = 100;
-    public static final long SPRITE_SLEEPTIME_MIN = 40;
-    public static final long SPRITE_SLEEPTIME_MAX = 70;
+    public static final long SPRITE_SLEEPTIME_MIN = 10;
+    public static final long SPRITE_SLEEPTIME_MAX = 40;
     public static final String[] SPRITE_SOURCES = {
         SOURCES_URL + "hoember1.png",
         SOURCES_URL + "hoember2.png",
