@@ -22,6 +22,24 @@ public class Sprite extends Thread {
     private static int startID = 0;
     private static final int spriteWidth = SPRITE_SIZE;
     private static final int spriteHeight = SPRITE_SIZE;
+    private static int meeting_X = -1;
+    private static int meeting_Y = -1;
+
+    public static int getMeeting_X() {
+        return meeting_X;
+    }
+
+    public static void setMeeting_X(int meeting_X) {
+        Sprite.meeting_X = meeting_X;
+    }
+
+    public static int getMeeting_Y() {
+        return meeting_Y;
+    }
+
+    public static void setMeeting_Y(int meeting_Y) {
+        Sprite.meeting_Y = meeting_Y;
+    }
 
     public static void setStart(int startId) {
         Sprite.startID = startId;
@@ -73,8 +91,16 @@ public class Sprite extends Thread {
         this.spriteY = HOME_Y;
     }
 
+    public double getDistance() {
+        return Math.sqrt((HOME_X - Sprite.getMeeting_X())
+                * (HOME_X - Sprite.getMeeting_X())
+                + (HOME_Y - Sprite.getMeeting_Y())
+                * (HOME_Y - Sprite.getMeeting_Y()));
+    }
+
     public void drawGraphic(Graphics g) {
-        g.drawImage(spriteImage, (int) spriteX, (int) spriteY,
+        g.drawImage(spriteImage, (int) spriteX - spriteWidth / 2,
+                (int) spriteY - spriteHeight,
                 spriteWidth, spriteHeight, null);
     }
 
@@ -91,14 +117,19 @@ public class Sprite extends Thread {
 
     @Override
     public void run() {
-        spriteY = 0;
-        spriteX = 0;
-        int dx = 1;
-        int dy = 1;
-        while (spriteX < GRAPHITY_WIDTH) {
-            c.refreshGraphity();
+        long sleepTime = (long) (Math.random() * (SPRITE_SLEEPTIME_MAX
+                - SPRITE_SLEEPTIME_MIN) + SPRITE_SLEEPTIME_MIN);
+        double n = getDistance();
+        System.out.println("> " + n + " km");
+        int step = 0;
+        double dx = (Sprite.getMeeting_X() - HOME_X) / n;
+        double dy = (Sprite.getMeeting_Y() - HOME_Y) / n;
+        while (step < n) {
+            step++;
             spriteX += dx;
-            sleepThread(SPRITE_SLEEPTIME);
+            spriteY += dy;
+            c.refreshGraphity();
+            sleepThread(sleepTime);
         }
         c.deleteSpriteFromSelected(this);
     }

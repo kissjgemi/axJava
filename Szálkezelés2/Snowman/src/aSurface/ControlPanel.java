@@ -27,7 +27,7 @@ public class ControlPanel extends javax.swing.JPanel {
 
     public void setTextLocale() {
         lblHome.setText(rBundle.getString("LBL_SNOWMEN_TXT"));
-        lblArrived.setText(rBundle.getString("LBL_SELECTED_TXT"));
+        lblArrived.setText(rBundle.getString("LBL_ARRIVED_TXT"));
         btnSelect.setText(rBundle.getString("BTN_SELECT_TXT"));
         btnStart.setText(rBundle.getString("BTN_START_TXT"));
     }
@@ -222,6 +222,7 @@ public class ControlPanel extends javax.swing.JPanel {
 
     private void btnSelectActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSelectActionPerformed
         c.selectSnowmen(lstHome.getSelectedIndices());
+        lstHome.clearSelection();
     }//GEN-LAST:event_btnSelectActionPerformed
 
     private void btnStartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStartActionPerformed

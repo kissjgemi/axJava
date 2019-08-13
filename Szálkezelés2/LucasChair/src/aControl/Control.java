@@ -101,7 +101,6 @@ public class Control {
             CONTROLPANEL.removeAll();
             CONTROLPANEL.repaint();
             refreshGraphity();
-            state = PROCESS_STATE.EXIT;
         }
     }
 
@@ -157,7 +156,7 @@ public class Control {
                 break;
             }
             case FINALE: {
-
+                state = PROCESS_STATE.EXIT;
                 break;
             }
             default:

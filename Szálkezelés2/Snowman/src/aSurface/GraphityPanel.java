@@ -49,7 +49,7 @@ public class GraphityPanel extends javax.swing.JPanel {
 
     @Override
     protected void paintComponent(Graphics g) {
-        System.out.println("GraphityPanel.paintComponent > " + state);
+        //System.out.println("GraphityPanel.paintComponent > " + state);
         super.paintComponent(g);
         switch (state) {
             case PROLOG: {
@@ -86,13 +86,20 @@ public class GraphityPanel extends javax.swing.JPanel {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 formMouseClicked(evt);
             }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                formMousePressed(evt);
+            }
         });
         setLayout(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void formMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMouseClicked
-        c.clickOnGraphity(evt.getX(), evt.getY(), evt.getButton());
+
     }//GEN-LAST:event_formMouseClicked
+
+    private void formMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMousePressed
+        c.clickOnGraphity(evt.getX(), evt.getY(), evt.getButton());
+    }//GEN-LAST:event_formMousePressed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

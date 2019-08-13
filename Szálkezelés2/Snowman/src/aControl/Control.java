@@ -5,6 +5,7 @@
  */
 package aControl;
 
+import aBasis.AnimateFinalImage;
 import static aBasis.Global.*;
 import aBasis.Sprite;
 import aDataAccess.MyDFAO;
@@ -14,6 +15,8 @@ import java.awt.Graphics;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -29,7 +32,10 @@ public class Control {
 
     private List<Sprite> inputList;
     private List<Sprite> selectedList;
+    private List<Sprite> bufferList;
     private List<Sprite> arrivedList;
+
+    private AnimateFinalImage animateFinalImage = new AnimateFinalImage();
 
     public void setLocaleBundle() {
         MAINFRAME.setTextLocale();
@@ -46,51 +52,58 @@ public class Control {
         System.out.println("Control.setup()");
         inputList = new ArrayList<>();
         selectedList = new ArrayList<>();
+        bufferList = new ArrayList<>();
         arrivedList = new ArrayList<>();
         MAINFRAME.setup();
         CONTROLPANEL.setup();
         GRAPHITYPANEL.setup();
         setLocaleBundle();
         inputFromFile();
+        Sprite.setControl(this);
+        AnimateFinalImage.setControl(this);
         inputList.forEach((sprite) -> {
             CONTROLPANEL.fillList(sprite.getNAME());
         });
     }
 
     public void selectSnowmen(int[] list) {
-
+        if (list.length != 0
+                && Sprite.getMeeting_X() > 0
+                && Sprite.getMeeting_Y() > 0) {
+            CONTROLPANEL.setButtonStart(true);
+        }
+        for (int ii = list.length - 1; ii >= 0; ii--) {
+            Sprite s = inputList.get(list[ii]);
+            addSpriteToSelected(s);
+            deleteSpriteFromInput(s);
+        }
+        refreshGraphity();
     }
 
     public void startSelectedSnowmen() {
-
-    }
-
-    public void startProlog() {
-        System.out.println("Control.startProlog()");
-    }
-
-    public void finishProlog() {
-        System.out.println("Control.finishProlog()");
-    }
-
-    public void startMainProcess() {
-        System.out.println("Control.startMainProcess()");
-    }
-
-    public void finishMainProcess() {
-        System.out.println("Control.finishMainProcess()");
+        if (!selectedList.isEmpty()) {
+            SPRITE_STARTED = true;
+        }
+        selectedList.forEach((sprite) -> {
+            sprite.start();
+        });
+        CONTROLPANEL.setButtonActivity(false);
     }
 
     public void startFinale() {
         System.out.println("Control.startFinale()");
+        animateFinalImage.start();
     }
 
     public void finishFinale() {
         System.out.println("Control.finishFinale()");
+        state = PROCESS_STATE.FINALE;
+        refreshGraphity();
     }
 
     public void deleteSpriteFromInput(Sprite s) {
         inputList.remove(s);
+        CONTROLPANEL.deleteFromList(s.getNAME());
     }
 
     public void addSpriteToSelected(Sprite s) {
@@ -98,7 +111,22 @@ public class Control {
     }
 
     public void deleteSpriteFromSelected(Sprite s) {
-        selectedList.remove(s);
+        bufferList.add(s);
+        CONTROLPANEL.fillArrived(s.getNAME()
+                + " " + (int) s.getDistance() + DISTANCE_UNIT);
+        if (bufferList.size() == selectedList.size()) {
+            for (Sprite sprite : selectedList) {
+                addSpriteToArrived(sprite);
+            }
+            bufferList.clear();
+            selectedList.clear();
+        }
+        if (selectedList.isEmpty() && !inputList.isEmpty()) {
+            CONTROLPANEL.setButtonSelect(true);
+        }
+        if (selectedList.isEmpty() && inputList.isEmpty()) {
+            startFinale();
+        }
     }
 
     public void addSpriteToArrived(Sprite s) {
@@ -117,6 +145,22 @@ public class Control {
                 break;
             }
             case MAIN: {
+                selectedList.forEach((sprite) -> {
+                    sprite.drawGraphic(g);
+                });
+                arrivedList.forEach((sprite) -> {
+                    sprite.drawGraphic(g);
+                });
+                if (Sprite.getMeeting_X() > 0 && Sprite.getMeeting_Y() > 0) {
+                    g.setColor(MEETING_COLOR);
+                    g.fillOval(Sprite.getMeeting_X(),
+                            Sprite.getMeeting_Y(),
+                            MEETING_RADIUS,
+                            MEETING_RADIUS);
+                }
+                if (inputList.isEmpty() && selectedList.isEmpty()) {
+                    animateFinalImage.drawGraphic(g);
+                }
                 break;
             }
             case FINALE: {
@@ -132,10 +176,19 @@ public class Control {
         switch (state) {
             case PROLOG: {
                 state = PROCESS_STATE.MAIN;
+                CONTROLPANEL.setButtonSelect(true);
                 break;
             }
             case MAIN: {
-                state = PROCESS_STATE.FINALE;
+                if (!SPRITE_STARTED) {
+                    Sprite.setMeeting_X(x);
+                    Sprite.setMeeting_Y(y);
+                    refreshGraphity();
+                    if (!selectedList.isEmpty()) {
+                        CONTROLPANEL.setButtonStart(true);
+                    }
+                }
+                //state = PROCESS_STATE.FINALE;
                 break;
             }
             case FINALE: {

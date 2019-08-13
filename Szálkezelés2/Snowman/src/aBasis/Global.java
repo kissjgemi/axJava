@@ -5,6 +5,7 @@
  */
 package aBasis;
 
+import java.awt.Color;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
@@ -45,8 +46,14 @@ public class Global {
     public static final String FINAL_BG
             = SOURCES_URL + "graphityFinal.jpg";
 
+    //sprites
+    public static final String DISTANCE_UNIT = " km";
+    public static final Color MEETING_COLOR = Color.RED;
+    public static final int MEETING_RADIUS = 6;
+    public static boolean SPRITE_STARTED = false;
     public static final int SPRITE_SIZE = 100;
-    public static final long SPRITE_SLEEPTIME = 80;
+    public static final long SPRITE_SLEEPTIME_MIN = 40;
+    public static final long SPRITE_SLEEPTIME_MAX = 70;
     public static final String[] SPRITE_SOURCES = {
         SOURCES_URL + "hoember1.png",
         SOURCES_URL + "hoember2.png",
