@@ -1,0 +1,14 @@
+Szerb Szvatopluk;400;485
+Kárpáti Kamilla;580;190
+Aradi Aurél;480;395
+Székely Szilárd;655;365
+Csángó Csanád;850;310
+Tátrai Tamás;395;160
+Cseh Ceslav;175;95
+Plitvicei Pável;110;365
+Horvát Huba;185;445
+Bosnyák Baltazár;235;550
+Sógor Samu;155;210
+Borsodi Benő;470;190
+Román Rezső;710;545
+Kiskun Kelemen;395;325
