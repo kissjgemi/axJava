@@ -1,0 +1,52 @@
+Al Gore;2007;béke;Al_Gore_2007_beke.jpg
+Albert Camus;1957;irodalmi;Albert_Camus_1957_irodalmi.jpg
+Albert Schweitzer;1952;béke;Albert_Schweitzer_1952_beke.jpg
+Alexander Fleming;1945;orvosi;Alexander_Fleming_1945_orvosi.jpg
+Anatole France;1921;irodalmi;Anatole_France_1921_irodalmi.jpg
+Bárány Róbert;1914;orvosi;Barany_Robert_1914_orvosi.jpg
+Békésy György;1961;orvosi;Bekesy_Gyorgy_1961_orvosi.jpg
+Desmond Tutu;1984;béke;Desmond_Tutu_1984_beke.jpg
+Enrico Fermi;1938;fizikai;Enrico_Fermi_1938_fizika.jpg
+Ernest Hemingway;1954;irodalmi;Ernest_Hemingway_1954_irodalmi.jpg
+Ernest Rutherford;1908;kémiai;Ernest_Rutherford_1908_kemia.jpg
+Erwin Schrödinger;1933;fizikai;Erwin_Schrodinger_1933_fizika.jpg
+Frederic Joliot Curie;1935;kémiai;Frederic_Joliot_Curie_1935_kemia.jpg
+Gábor Dénes;1971;fizikai;Gabor_Denes_1971_fizika.jpg
+Günter Grass;1999;irodalmi;Gunter_Grass_1999_irodalmi.jpg
+Harsányi Janos;1994;közgazdasági;Harsanyi_Janos_1994_kozgazdasagi.jpg
+Henryk Sienkiewicz;1905;irodalmi;Henryk_Sienkiewicz_1905_irodalmi.jpg
+Herbert Simon;1978;közgazdasági;Herbert_Simon_1978_kozgazdasagi.jpg
+Herskó Ferenc;2004;kémiai;Hersko_Ferenc_2004_kemia.jpg
+Hevesy György;1943;kémiai;Hevesy_Gyorgy_1943_kemia.jpg
+Irene Joliot Curie;1935;kémiai;Irene_Joliot_Curie_1935_kemia.jpg
+Ivan Pavlov;1904;orvosi;Ivan_Pavlov_1904_orvosi.jpg
+Jean Tirole;2014;közgazdasági;Jean_Tirole_2014_kozgazdasagi.jpg
+John Nash;1994;közgazdasági;John_Nash_1994_kozgazdasagi.jpg
+John O Keefe;2014;orvosi;John_O_Keefe_2014_orvosi.jpg
+Kailas Szatjarti;2014;béke;Kailas_Szatjarti_2014_beke.jpg
+Kertész Imre;2002;irodalmi;Kertesz_Imre_2002_irodalmi.jpg
+Konrad Lorenz;1973;orvosi;Konrad_Lorenz_1973_orvosi.jpg
+Lénárd Fülöp;1905;fizikai;Lenard_Fulop_1905_fizika.jpg
+Malala Yousafzai;2014;béke;Malala_Yousafzai_2014_beke.jpg
+Marie Curie;1911;kémiai;Marie_Curie_1911_kemia.jpg
+Martin Luther King;1974;béke;Martin_Luther_King_1974_beke.jpg
+Max Born;1954;fizikai;Max_Born_1954_fizika.jpg
+Mihail Solohov;1965;irodalmi;Mihail_Solohov_1965_irodalmi.jpg
+Milton Friedman;1976;közgazdasági;Milton_Friedman_1976_kozgazdasagi.jpg
+Nelson Mandela;1993;béke;Nelson_Mandela_1993_beke.jpg
+Niels Bohr;1975;fizikai;Niels_Bohr_1975_fizika.jpg
+Oláh György;1995;kémiai;Olah_Gyorgy_1995_kemia.jpg
+Paul Dirac;1933;fizikai;Paul_Dirac_1933_fizika.jpg
+Paul Samuelson;1970;közgazdasági;Paul_Samuelson_1970_kozgazdasagi.jpg
+Peter Higgs;2013;fizikai;Peter_Higgs_2013_fizika.jpg
+Polányi János;1986;kémiai;Polanyi_Janos_1986_kemia.jpg
+Reinhard Selten;1994;közgazdasági;Reinhard_Selten_1994_kozgazdasagi.jpg
+Robert Koch;1905;orvosi;Robert_Koch_1905_orvosi.jpg
+Szent Györgyi Albert;1937;orvosi;Szent_Gyorgyi_Albert_1937_orvosi.jpg
+Teréz anya;1979;béke;Terez_anya_1979_beke.jpg
+Theodore Roosevelt;1906;béke;Theodore_Roosevelt_1906_beke.jpg
+Thomas Mann;1929;irodalmi;Thomas_Mann_1929_irodalmi.jpg
+Werner Heisenberg;1932;fizikai;Werner_Heisenberg_1932_fizika.jpg
+Wigner Jenő;1963;fizikai;Wigner_Jeno_1963_fizika.jpg
+Wilson Churchill;1953;irodalmi;Wilson_Churchill_1953_irodalmi.jpg
+Zsigmondy Richárd;1925;kémiai;Zsigmondy_Richard_1925_kemia.jpg
