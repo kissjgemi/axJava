@@ -1,0 +1,30 @@
+Bármily furcsa, a műszaki kar épülete mellett az egyik évben birkákat neveltek. Gondoljuk tovább a történetüket.
+Az induló felület két széle végig meg­marad, a középső rész változik, ill. a jobboldali listák tartalma.
+
+A középső részre kattintva több minden történhet: az első kattintáskor megjelenik egy szövegmező, amelyben szép komótosan, betűnként kiírva megjelenik Weöres Sándor verse. A vers a vers.txt fájlban található, innen kell beolvasni a program indulásakor. Ha kiíródott a vers, utána még várakozzon 1-2 másodpercig, majd tűnjön el a szövegmező, és a háttérkép is változzon meg. 
+A képen látható iskolába járnak (vagy nem járnak) majd a birkák.
+
+Ahogy szó volt róla, a felületre kattintásnak több funkciója is van. Ha nem először kattintunk (azaz már túl vagyunk a versen), akkor a kattintás helyén jelenjen meg egy-egy középre néző birka. (A kattintás helye a birka-kép közepe.)
+
+Az Indít gomb hatására a birkák véletlenszerűen és véletlen sebességgel vagy az iskolába indul­nak (a felület középpontja), vagy a panel hozzá­juk közelebb eső függőleges széle felé (és ki is mennek a képből – csak az iskolába járó birkák maradnak a felület közepén.) Az „iskolakerülő” birkáknak meg is kell fordulniuk, csak úgy tudnak kifelé menni. Amikor eldől, hogy ki milyen irányba indul, akkor kerüljön be az illető neve a megfelelő listába. Most a név csak a Birka szó + egy egyedi sorszám. (De ha kedve van hozzá, adhat nekik neveket is.)
+
+Mivel a vers szerint is csak egyszer volt a csoda, ezért az Indít gombot csak egyszer lehet megnyomni: csak akkor válik aktívvá, ha már legel legalább egy birka, és a birkák indítása után inaktívvá válik, de a kattintás hatására továbbra is le tudunk rakni legelésző birkákat.
+
+
+Javasolt méretek és ötletek:
+
+Méretek:
+
+Baloldali felület: 200 x 500, középső: 600 x 500, jobboldali 150 x 200, frame: 966 x 546.
+
+Birka kép mérete: 80 x 80.
+
+Egy kis segítség a vers megjelenítéséhez:
+
+Ha láthatatlanná / láthatóvá akarja tenni a textArea-t, akkor az alatta lévő jScrollPane példány láthatóságát kell beállítani. A jScrollPane láthatóvá tétele után lehet, hogy ki kell adni a this.revalidate(); parancsot (a this arra a panelre utal, amelyiken van a jScrollPane).
+
+A verset célszerű egyetlen stringként kezelni – beolvasáskor a beolvasott sorokból hozza létre ezt a stringet. Minden sor beolvasása után adjon hozzá a vershez még egy "\n"-t.
+
+A verset karakterenként írassa ki.
+
+Persze, ha más ötlete van, más megoldással is próbálkozhat.
