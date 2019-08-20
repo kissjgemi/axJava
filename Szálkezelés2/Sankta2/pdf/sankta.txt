@@ -1,0 +1,20 @@
+Mikulás 2. 
+
+
+
+Az előző feladat óta öregedett és kényelmesedett a Mikulás, már a manókkal dolgoztat. Szimulálja munkáját egy Java programmal.
+
+A felület baloldala egy 150 x 450-es vezérlő felület, mellette egy 650 x 450-es havas táj látható. A program indulásakor már megjelennek a felső listában azok a nevek, akik potenciálisan a Mikulás „ügyfelei”. (Egy fájlból olvassuk be őket.) Ekkor házakat és a manókat még nem lehet látni, csak a Mikulást. Azok kattintással kerülnek a felületre, de csak akkor, ha a hegyvonulat alatt kattintunk, és még nem indult el az ajándékozás. A kattintás helye a házat tartalmazó kép bal alsó sarkát jelöli ki. A manók a házakhoz tartoznak, ugyanakkor jelennek meg, amikor a házak, azok alatt, de a képernyő alján, egyforma magasságban. (Ha elég figyelmes, akkor a Mikulás vonalába kerülő manó „kikerüli” a Mikulást, vagyis följebb áll.)
+
+Az indító gombra kattintva indulnak útjukra a manók, ki-ki a saját házához. (Indulás után a gomb inaktívvá válik.)
+
+Amikor odaérnek, várnak valamennyit majd leraknak a ház mellé egy kis csomagot (a három lehetséges csomag közül véletlenül választják, hogy melyiket). Miután letették a csomagot, a baloldali alsó listában megjelenik a megajándékozott neve. (A nevet a fönti listából választjuk, mindenki csak egyszer kaphat ajándékot.)
+
+Ezután a manók visszafordulnak, és már üres kézzel térnek vissza a Mikuláshoz (a képernyő jobb alsó sarka), majd eltűnnek. Ugyanannyi idő alatt teszik meg az utat, mint amennyit a házaknál várakoztak. (Nem várják meg egymást, ki-ki dolga végeztével fordul.)
+
+A csomag a ház jobb alsó sarkához kerül, a manókép középpontja a ház jobboldali széle. 
+
+Javasolt méretek: ház: 60 magas, 60 széles; Mikulás: 120 magas, 120 széles, csomagok mindegyike 30 magas, 30 széles, manók: 50 széles, 70 magas, a manók indulási magassága a kép aljától manó-magassággal följebb.
+
+A hegyhatár 100 egység távolságra van a felület felső határától. De NE drótozza be fixen az adatokat!
+
