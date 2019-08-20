@@ -1,0 +1,10 @@
+Ez a Mikulás állandóan változik. Most meg modernizálódik (igaz, kicsit régi számítógépet használ, de sebaj). Weben rendeli meg az ajándékokat. Segítsen neki!
+
+A 700 x 500 -as belső méretű felület jobboldalán egy 150 pixel széles terület a „webshop”, itt lehet kiválasztani egy ComboBox-ból, hogy milyen ajándékot rendel. Választáskor az ajándék képe megjelenik a ComboBox mellett, a Rendel gomb hatására pedig „odamegy” a Mikuláshoz (vízszintesen, véletlen tempóban), majd kicsit vár a Mikulás ölében, és eltűnik, a kép jobboldalán pedig megjelenik egy új ajándék.
+
+A rendelés eredménye azonnal jelenjen meg a számlán, vagyis az ajándék neve mellett jelenjen meg az is, hogy eddig hány példányt rendelt belőle. Amíg az ajándék oda nem ér a Mikuláshoz, addig ne tudjon újabbat rendelni.
+
+Ha a Bezár gombra kattintunk, akkor többet már ne tudjon rendelni, és a Mikulás is induljon útnak a jobb alsó sarokban lévő város felé.
+
+A Fájlba gomb hatására mentsük el fájlba (vagy adatbázisba) a számlát. 
+
