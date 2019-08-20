@@ -6,13 +6,9 @@
 package aBasis;
 
 import java.awt.Image;
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.ImageIcon;
 
 /**
@@ -36,7 +32,7 @@ public class Global {
     public static boolean enableButtons = false;
 
     public static final String SOURCES_URL = "/aSource/";
-    public static final String DATA_SOURCE = "src/aData/datas.txt";
+    public static final String DATA_SOURCE = "/aData/datas.txt";
 
     //leftPanel
     public static final int LEFT_WIDTH = 200;
@@ -90,26 +86,23 @@ public class Global {
 
     public static List<String> getText() {
         TEXT = new ArrayList<>();
-        try {
-            Scanner sc = new Scanner(new File(DATA_SOURCE), CODE_PAGE);
-            String sor;
-            while (sc.hasNextLine()) {
-                sor = sc.nextLine();
-                if (!sor.isEmpty()) {
-                    TEXT.add(sor);
-                    TOTAL_TEXT += sor;
-                    if (sc.hasNextLine()) {
-                        TOTAL_TEXT += "\n";
-                    }
-                } else {
-                    if (sc.hasNextLine()) {
-                        TEXT.add("");
-                        TOTAL_TEXT += sor + "\n";
-                    }
+        Scanner sc = new Scanner(
+                Global.class.getResourceAsStream(DATA_SOURCE), CODE_PAGE);
+        String sor;
+        while (sc.hasNextLine()) {
+            sor = sc.nextLine();
+            if (!sor.isEmpty()) {
+                TEXT.add(sor);
+                TOTAL_TEXT += sor;
+                if (sc.hasNextLine()) {
+                    TOTAL_TEXT += "\n";
+                }
+            } else {
+                if (sc.hasNextLine()) {
+                    TEXT.add("");
+                    TOTAL_TEXT += sor + "\n";
                 }
             }
-        } catch (FileNotFoundException e) {
-            Logger.getLogger(Global.class.getName()).log(Level.SEVERE, null, e);
         }
         return TEXT;
     }
