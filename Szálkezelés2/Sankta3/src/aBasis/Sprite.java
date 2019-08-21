@@ -36,6 +36,13 @@ public class Sprite extends Thread {
         this.spriteY = y;
     }
 
+    private double targetX, targetY;
+
+    public void setTargetXY(int x, int y) {
+        this.targetX = x;
+        this.targetY = y;
+    }
+
     private final Image image;
     private final String name;
     private int number;
@@ -58,7 +65,7 @@ public class Sprite extends Thread {
                 SPRITE_WIDTH, SPRITE_HEIGHT, null);
     }
 
-    public double getDistance(double x1, double y1, int x2, int y2) {
+    public double getDistance(double x1, double y1, double x2, double y2) {
         return Math.sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
     }
 
@@ -76,8 +83,6 @@ public class Sprite extends Thread {
 
     @Override
     public void run() {
-        int targetX = SPRITE_WIDTH;
-        int targetY = SPRITE_HEIGHT;
         double n = getDistance(spriteX, spriteY, targetX, targetY);
         double dx = (targetX - spriteX) / n;
         double dy = (targetY - spriteY) / n;

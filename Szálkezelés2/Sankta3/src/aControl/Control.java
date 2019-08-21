@@ -33,8 +33,6 @@ public class Control {
     private Sprite actualSprite;
     private Sprite originalSprite;
 
-    private final Global g = new Global();
-
     public Control(MainFrame mf, ControlPanel cp, GraphityPanel gp) {
         this.MAINFRAME = mf;
         this.CONTROLPANEL = cp;
@@ -45,8 +43,8 @@ public class Control {
         System.out.println("Control.setup()");
         MAINFRAME.setup();
         MAINFRAME.setControl(this);
-        imageList = new ArrayList<>(g.getSpriteImages());
-        comboList = new ArrayList<>(g.getResourceFiles());
+        imageList = Global.getSpriteImages();
+        comboList = new ArrayList<>(Global.getResourceFiles());
         spriteList = new ArrayList<>();
         bill = new ArrayList<>();
         for (int ii = 0; ii < comboList.size(); ii++) {
@@ -77,6 +75,7 @@ public class Control {
                 actualSprite = new Sprite(sprite.getImage(),
                         sprite.getSpriteName());
                 actualSprite.setSpriteXY(SPRITE_START_X, SPRITE_START_Y);
+                actualSprite.setTargetXY(SPRITE_TARGET_X, SPRITE_TARGET_Y);
                 actualSprite.setNumber(sprite.getNumber());
                 break;
             }

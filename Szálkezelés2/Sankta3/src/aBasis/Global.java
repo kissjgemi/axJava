@@ -22,6 +22,9 @@ import javax.swing.ImageIcon;
  */
 public class Global {
 
+    public Global() {
+    }
+
     public static final String CODE_PAGE = "UTF-8";
 
     public static enum PROCESS_STATE {
@@ -46,28 +49,28 @@ public class Global {
     public static final String SOURCES_URL = "/aSource/";
     public static final String SPRITES_URL = SOURCES_URL + "sprites/";
 
-    public List<Image> getSpriteImages() {
+    public static List<Image> getSpriteImages() {
         List<Image> toReturn = new ArrayList<>();
         getResourceFiles().forEach((str) -> {
             System.out.println(">> " + str);
             toReturn.add(new ImageIcon(
-                    this.getClass().getResource(SPRITES_URL + str)).getImage());
+                    Global.class.getResource(SPRITES_URL + str)).getImage());
         });
         return toReturn;
     }
 
-    private ClassLoader getContextClassLoader() {
+    private static ClassLoader getContextClassLoader() {
         return Thread.currentThread().getContextClassLoader();
     }
 
-    private InputStream getResourceAsStream(String resource) {
+    private static InputStream getResourceAsStream(String resource) {
         final InputStream in
                 = getContextClassLoader().getResourceAsStream(resource);
 
-        return in == null ? getClass().getResourceAsStream(resource) : in;
+        return in == null ? Global.class.getResourceAsStream(resource) : in;
     }
 
-    public List<String> getResourceFiles() {
+    public static List<String> getResourceFiles() {
         List<String> filenames = new ArrayList<>();
         try (
                 InputStream in
@@ -106,10 +109,22 @@ public class Global {
     public static final Image GRAPHITY_FINALE = new ImageIcon(
             Global.class.getResource(GRAPHITYFINALE_BG)).getImage();
 
+    public static final String ACTOR_URL = SOURCES_URL + "actor.gif";
+    public static final Image ACTOR = new ImageIcon(
+            Global.class.getResource(ACTOR_URL)).getImage();
+    public static final int ACTOR_WIDTH = 120;
+    public static final int ACTOR_HEIGHT = 120;
+    public static final int ACTOR_START_X = 0;
+    public static final int ACTOR_START_Y = 0;
+    public static final int ACTOR_TARGET_X = GRAPHITY_WIDTH - ACTOR_WIDTH;
+    public static final int ACTOR_TARGET_Y = GRAPHITY_HEIGHT - ACTOR_HEIGHT;
+
     public static final int SPRITE_WIDTH = 80;
     public static final int SPRITE_HEIGHT = 80;
     public static final int SPRITE_START_X = GRAPHITY_WIDTH - SPRITE_WIDTH;
     public static final int SPRITE_START_Y = SPRITE_HEIGHT;
+    public static final int SPRITE_TARGET_X = SPRITE_WIDTH;
+    public static final int SPRITE_TARGET_Y = SPRITE_HEIGHT;
     public static final long SPRITE_SLEEPTIME_MAX = 5;
     public static final long SPRITE_SLEEPTIME_MIN = 5;
 }
