@@ -43,12 +43,19 @@ public class Sprite extends Thread {
         this.targetY = y;
     }
 
+    private int faceWidth, faceHeight;
+
+    public void setfaceDimension(int x, int y) {
+        this.faceWidth = x;
+        this.faceHeight = y;
+    }
+
     private final Image image;
-    private final String name;
+    private final String spriteName;
     private int number;
 
     public String getSpriteName() {
-        return name;
+        return spriteName;
     }
 
     public Image getImage() {
@@ -57,12 +64,13 @@ public class Sprite extends Thread {
 
     public Sprite(Image image, String name) {
         this.image = image;
-        this.name = name;
+        this.spriteName = name;
+        number = 0;
     }
 
     public void drawGraphic(Graphics g) {
         g.drawImage(image, (int) spriteX, (int) spriteY,
-                SPRITE_WIDTH, SPRITE_HEIGHT, null);
+                faceWidth, faceHeight, null);
     }
 
     public double getDistance(double x1, double y1, double x2, double y2) {
@@ -95,7 +103,16 @@ public class Sprite extends Thread {
             sleepThread(sleepTime);
         }
         sleepThread((long) (n / 4 * sleepTime));
-        c.restartProlog();
+        switch (state) {
+            case PROLOG: {
+                c.restartProlog();
+                break;
+            }
+            case MAIN: {
+                c.finishMainProcess();
+                break;
+            }
+        }
     }
 
     private void sleepThread(long sleepTime) {
@@ -110,7 +127,7 @@ public class Sprite extends Thread {
     public int hashCode() {
         int hash = 7;
         hash = 17 * hash + Objects.hashCode(this.image);
-        hash = 17 * hash + Objects.hashCode(this.name);
+        hash = 17 * hash + Objects.hashCode(this.spriteName);
         return hash;
     }
 
@@ -126,7 +143,7 @@ public class Sprite extends Thread {
             return false;
         }
         final Sprite other = (Sprite) obj;
-        if (!Objects.equals(this.name, other.name)) {
+        if (!Objects.equals(this.spriteName, other.spriteName)) {
             return false;
         }
         return Objects.equals(this.image, other.image);
@@ -134,9 +151,6 @@ public class Sprite extends Thread {
 
     @Override
     public String toString() {
-        if (number > 0) {
-            return name + ": " + number;
-        }
-        return name;
+        return getSpriteName() + ": " + number;
     }
 }

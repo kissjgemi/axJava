@@ -1,0 +1,5 @@
+auto: 0
+baba: 1
+csokimiki: 0
+konyv: 0
+maci: 0

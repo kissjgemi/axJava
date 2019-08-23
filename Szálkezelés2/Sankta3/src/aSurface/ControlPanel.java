@@ -210,7 +210,7 @@ public class ControlPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_btnFinishActionPerformed
 
     private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
-        // TODO add your handling code here:
+        c.startFinale();
     }//GEN-LAST:event_btnSaveActionPerformed
 
     private void comboOrderItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_comboOrderItemStateChanged

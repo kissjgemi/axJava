@@ -28,7 +28,6 @@ public class Control {
     private List<Image> imageList;
     private List<Sprite> spriteList;
     private List<String> comboList;
-    private List<Sprite> bill;
 
     private Sprite actualSprite;
     private Sprite originalSprite;
@@ -44,17 +43,20 @@ public class Control {
         MAINFRAME.setup();
         MAINFRAME.setControl(this);
         imageList = Global.getSpriteImages();
-        comboList = new ArrayList<>(Global.getResourceFiles());
+        comboList = Global.getResourceFiles();
         spriteList = new ArrayList<>();
-        bill = new ArrayList<>();
         for (int ii = 0; ii < comboList.size(); ii++) {
-            Sprite s = new Sprite(imageList.get(ii), comboList.get(ii));
+            String str = comboList.get(ii);
+            str = str.substring(0, str.indexOf('.'));
+            Sprite s = new Sprite(imageList.get(ii), str);
             spriteList.add(s);
             s.setSpriteXY(SPRITE_START_X, SPRITE_START_Y);
+            s.setTargetXY(SPRITE_TARGET_X, SPRITE_TARGET_Y);
+            s.setfaceDimension(SPRITE_WIDTH, SPRITE_HEIGHT);
         }
         CONTROLPANEL.addBlock(CONTROL_CHOOSE_TXT);
         for (String str : comboList) {
-            CONTROLPANEL.addBlock(str);
+            CONTROLPANEL.addBlock(str.substring(0, str.indexOf('.')));
         }
         CONTROLPANEL.setButtonOrder(true);
         Sprite.setControl(this);
@@ -76,6 +78,7 @@ public class Control {
                         sprite.getSpriteName());
                 actualSprite.setSpriteXY(SPRITE_START_X, SPRITE_START_Y);
                 actualSprite.setTargetXY(SPRITE_TARGET_X, SPRITE_TARGET_Y);
+                actualSprite.setfaceDimension(SPRITE_WIDTH, SPRITE_HEIGHT);
                 actualSprite.setNumber(sprite.getNumber());
                 break;
             }
@@ -99,16 +102,22 @@ public class Control {
         state = PROCESS_STATE.MAIN;
         CONTROLPANEL.setButtonActivity(false);
         CONTROLPANEL.setButtonSave(true);
+        actualSprite = new Sprite(ACTOR, ACTOR_NAME);
+        actualSprite.setSpriteXY(ACTOR_START_X, ACTOR_START_Y);
+        actualSprite.setTargetXY(ACTOR_TARGET_X, ACTOR_TARGET_Y);
+        actualSprite.setfaceDimension(ACTOR_WIDTH, ACTOR_HEIGHT);
+        actualSprite.start();
         refreshGraphity();
     }
 
-    public void finishMainProcess(Sprite s) {
+    public void finishMainProcess() {
         System.out.println("Control.finishMainProcess()");
-
+        state = PROCESS_STATE.EPILOG;
     }
 
-    public void startFinale(Sprite s) {
+    public void startFinale() {
         System.out.println("Control.startFinale()");
+        Global.writeFile(spriteList);
 
     }
 
@@ -132,7 +141,9 @@ public class Control {
                 break;
             }
             case MAIN: {
-
+                if (actualSprite != null) {
+                    actualSprite.drawGraphic(g);
+                }
                 break;
             }
             case EPILOG: {
@@ -153,8 +164,6 @@ public class Control {
                 break;
             }
             case MAIN: {
-                state = PROCESS_STATE.EPILOG;
-                refreshGraphity();
                 break;
             }
             case EPILOG: {
