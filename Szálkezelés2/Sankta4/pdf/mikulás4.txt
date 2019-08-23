@@ -1,0 +1,19 @@
+Most meg arra támad kedve, hogy rénszarvasaival a levegőbe szálljon. Örökítse meg ezt egy Java programmal!
+
+Egy 950 x 600-as belső méretű felület jobboldali 150 pixel széles részén látjuk azoknak a gyerekeknek a listáját, akik ajándékot kértek a Mikulástól (adatfájlból).
+
+Mielőtt elindulna, a Mikulás megtervezi az útját, azaz rajzoljuk meg azt az egér mozgatásával. Ezután az Indulás gombra kattintva útjára indul. (Ha még nincs útvonal, akkor adjon figyelmeztető üzenetet, és egynél többször ne indulhasson el.)
+
+Az ajándékok a földre potyognak (azaz megállnak a képernyő alján). Amelyik gyereknek már ledobta az ajándékát, annak neve a kérők listájából kerüljön át a kapók listájába. Ügyeljen rá, hogy mire a Mikulás az út végére ér, addigra minden gyereknek ledobja az ajándékát.
+
+Az ajándékosztás ezt jelenti: Az útvonal bizonyos pontjain (legjobb, ha egyenletesen oszlanak el ezek a pontok) véletlenszerűen kiválasztja egy gyerek nevét a még meg nem ajándékozottak közül, és véletlenszerűen hozzárendel egy ajándékot. 
+
+Javasolt méretek: 
+
+csillag: 20 pixel sugarú
+
+rénszarvasszán (mikulas.png): szélesség: 120, magasság: 100 pixel
+
+ajándékok: szélesség: 30, magasság: 30 pixel.
+
+
