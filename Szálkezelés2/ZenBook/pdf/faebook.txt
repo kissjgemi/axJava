@@ -1,0 +1,21 @@
+Egy magára valamit is adó feladatgyűjtemény nem lehet meg facebook nélkül. Írjon a facebook szimulálására egy Java programot.
+
+A baloldalon egy 600 x 450-es felület látható a közösségi háló tagjaival, jobboldalon pedig egy 150 x 450-es felületen olvashatóak a nevek, illetve az itt lévő gombokkal lehet üzeneteket küldeni. A neveket és a hozzájuk tartozó koordinátákat induláskor egy adatfájlból (vagy adatbázisból) lehet betölteni. Ekkor minden ember véletlenszerűen hozzárendelődik egy csoporthoz (minden emberhez hozzárendeljük a három szín valamelyikét – most elég három, de úgy oldja meg, hogy elvileg akárhány lehet). Ez a kezdőkép fogad bennünket, vagyis jobboldalon megjelenik a regisztráltak névsora, az ábrán pedig mindenki fejénél egy, a rá jellemző színnel megrajzolt pötty. 
+
+A facebook-on természetesen keresni is lehet, a fenti szövegmezőbe beírva a keresett nevet, a keres gomb hatására vagy megtaláljuk az illetőt – ekkor fejénél jelenjen meg a színére jellemző animált pötty, a listában pedig az ismerőseinek névsora (a vele azonos színűek), és majd ő kezdeményezheti az üzeneteket. Ha nincs ilyen ember, akkor természetesen ezt is jelezze..
+
+Az illető a fejére kattintva is legyen kiválasztható, és ugyanaz történjen vele, mintha a szövegmezőben keresnénk rá.
+
+Kétféle üzenetet kezdeményezhet: a körüzenet esetén az összes ismerősének elküld egy bitet (0 vagy 1). Ha odaért az ismerőshöz, akkor eltűnik a képről. (Ha egy bitnél hosszabb üzenetet akar, akkor sokszor kell megnyomni a gombot. :)).
+
+A személyes üzenet a listán kiválasztott személy­nek küldhető (egyszeres kiválasztás). Ebben az esetben az illető is küld egy bitnyi üzenetet, és vele egy időben a partnere is. Természetesen itt is sokszor lehet megnyomni a gombot.
+
+Javasolt méretek:
+
+A felső kék csík magassága 40 egység, a pöttyök sugara 5, a bulleteket tartalmazó kép 25 x 25-ös.
+
+Ha esetleg szükség van rá, a kék: (59, 89, 153), a szürke: (237, 237, 245), de nem muszáj pont ilyen színeket használni.
+
+Ha netalántán nagyon elcsúsznának a fejekhez képest a pöttyök, akkor módosítsa az adatfájlban megadott koordinátákat (egy pici segéd-eseménnyel lekérheti az egérkattintások helyét, és így megnézheti a saját felületéhez alkalmazkodó koordinátákat).
+
+
