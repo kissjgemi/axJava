@@ -49,7 +49,7 @@ public class GraphityPanel extends javax.swing.JPanel {
      * Creates new form GraphityPanel
      */
     public GraphityPanel() {
-        System.out.println("MiddlePanel()");
+        System.out.println("GraphityPanel()");
         initComponents();
         super.setPreferredSize(new Dimension(GRAPHITY_WIDTH, GRAPHITY_HEIGHT));
     }
@@ -72,7 +72,7 @@ public class GraphityPanel extends javax.swing.JPanel {
                         (GRAPHITY_WIDTH - width) / 2, 3 * height / 4);
                 break;
             }
-            case EPILOG:
+            //case EPILOG:
             case EXIT: {
                 g.drawImage(GRAPHITY_FINALE, 0, 0,
                         this.getWidth(), this.getHeight(), this);

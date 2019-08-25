@@ -6,8 +6,8 @@
 package aSurface;
 
 import static aBasis.Global.*;
-import aBasis.Pubby;
-import aBasis.Sprite;
+import aBasis.Actor;
+import aBasis.LittleThing;
 import aControl.Control;
 import java.awt.Dimension;
 import java.util.List;
@@ -40,8 +40,8 @@ public class ControlPanel extends javax.swing.JPanel {
         return this.getHeight();
     }
 
-    private final DefaultListModel<Pubby> listModel;
-    private final DefaultComboBoxModel<Sprite> comboBoxModel;
+    private final DefaultListModel<Actor> listModel;
+    private final DefaultComboBoxModel<LittleThing> comboBoxModel;
 
     /**
      * Creates new form ControlPanel
@@ -74,12 +74,18 @@ public class ControlPanel extends javax.swing.JPanel {
         setButtonClose(b);
     }
 
-    public void fillList(List<Pubby> list) {
+    public void setActivity(boolean b) {
+        setButtonActivity(b);
+        comboList.setEnabled(b);
+        lstList.setEnabled(b);
+    }
+
+    public void fillList(List<Actor> list) {
         listModel.clear();
         list.forEach(listModel::addElement);
     }
 
-    public void fillCombo(List<Sprite> list) {
+    public void fillCombo(List<LittleThing> list) {
         comboBoxModel.removeAllElements();
         list.forEach(comboBoxModel::addElement);
     }
@@ -114,7 +120,7 @@ public class ControlPanel extends javax.swing.JPanel {
         lblCombo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCombo.setText("comboLabel");
 
-        comboList.setModel(new javax.swing.DefaultComboBoxModel<>(new Sprite[] {  }));
+        comboList.setModel(new javax.swing.DefaultComboBoxModel<>(new LittleThing[] {  }));
 
         lblList.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         lblList.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -135,11 +141,12 @@ public class ControlPanel extends javax.swing.JPanel {
             }
         });
 
-        lstList.setModel(new javax.swing.AbstractListModel<Pubby>() {
-            Pubby[] p = { };
+        lstList.setModel(new javax.swing.AbstractListModel<aBasis.Actor>() {
+            aBasis.Actor[] p = { };
             public int getSize() { return p.length; }
-            public Pubby getElementAt(int i) { return p[i]; }
+            public aBasis.Actor getElementAt(int i) { return p[i]; }
         });
+        lstList.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         jScrollPane1.setViewportView(lstList);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -184,7 +191,10 @@ public class ControlPanel extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnStartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStartActionPerformed
-        c.startSpriteMainProcess((Sprite) comboList.getSelectedItem());
+        if (!lstList.isSelectionEmpty()) {
+            c.startSpriteMainProcess((LittleThing) comboList.getSelectedItem(),
+                    lstList.getSelectedValue());
+        }
     }//GEN-LAST:event_btnStartActionPerformed
 
     private void btnCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCloseActionPerformed
@@ -195,13 +205,13 @@ public class ControlPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnClose;
     private javax.swing.JButton btnStart;
-    private javax.swing.JComboBox<Sprite> comboList;
+    private javax.swing.JComboBox<LittleThing> comboList;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblCombo;
     private javax.swing.JLabel lblList;
     private javax.swing.JLabel lblTitle;
-    private javax.swing.JList<Pubby> lstList;
+    private javax.swing.JList<aBasis.Actor> lstList;
     // End of variables declaration//GEN-END:variables
 }

@@ -69,11 +69,7 @@ public class Global {
             = SOURCES_URL + "aGraphity3Finale.jpg";
     public static final Image GRAPHITY_FINALE = new ImageIcon(
             Global.class.getResource(GRAPHITYFINALE_BG)).getImage();
-
-    public static final int SPRITE_WIDTH = 50;
-    public static final int SPRITE_HEIGHT = 50;
-    public static final long SPRITE_SLEEPTIME_MAX = 8;
-    public static final long SPRITE_SLEEPTIME_MIN = 8;
+    public static final int ANIMATION_STEPS = 40;
 
     public static final String LOGO_URL = SOURCES_URL + "aLogo.gif";
     public static final Image LOGO = new ImageIcon(
@@ -83,6 +79,16 @@ public class Global {
     public static final int LOGO_X = 0;
     public static final int LOGO_Y = 0;
 
+    public static final String VALUE_UNIT = " Ft";
+
+    public static final int SPRITE_WIDTH = 50;
+    public static final int SPRITE_HEIGHT = 50;
+    public static final int SPRITE_STARTX = SPRITE_WIDTH / 2;
+    public static final int SPRITE_STARTY = GRAPHITY_HEIGHT / 2;
+    public static final long SPRITE_SLEEPTIME_MAX = 8;
+    public static final long SPRITE_SLEEPTIME_MIN = 8;
+
+    public static final String ACTOR_NAME = "Pubby";
     public static final String ACTOR_URL = SOURCES_URL + "actor.gif";
     public static final Image ACTOR = new ImageIcon(
             Global.class.getResource(ACTOR_URL)).getImage();
