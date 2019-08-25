@@ -1,0 +1,5 @@
+bor;bor.png;200
+kávé;kave.png;150
+koktél;koktel.png;300
+ásványviz;asvanyviz.png;100
+sör;sor.png;200

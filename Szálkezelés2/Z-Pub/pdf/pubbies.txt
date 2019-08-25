@@ -1,0 +1,16 @@
+Ha már ilyen ügyesen végigküzdötte magát ezeken a feladatokon, végül megérdemel egy kis kocsmázást.
+
+A 750 x 600-as kocsma jobboldali 600 pixel széles részén van a kocsmai vendégtér, ami kezdetben üres. A felületre kattintva, a kattintás, mint középpont körül megjelenik egy-egy vendég, akik felkerülnek a baloldali vendégek listájába is vendeg_1, vendeg_2, stb. néven. (Egyedi sorszám!)
+
+Ugyancsak a baloldalon egy combobox-ba kerül az italok listája. A program elején automatikusan olvassa be az italneveket tartalmazó fájlt. (Fájlszerkezet: ital neve;ital képének neve;ára.)
+
+A rendel gombra kattintva lehet rendelni, ekkor a kiválasztott vendég megkapja a kiválasztott italt, mégpedig úgy, hogy a pincér „bedobja” az ajtón, azaz a vendégtér bal oldalának közepéről véletlen sebességgel elindul az ital a kiválasztott vendéghez, és előtte megáll. (Az előtte azt jelenti, hogy vízszintesen a kép közepén, függőlegesen pedig az italkép közepe az emberkép aljával lesz egy vonalban.)
+
+Természetesen rendelés után is jöhet újabb ember. 
+
+A bezár gombra kattintva azonban már nem jöhet senki. Ekkor eltűnnek az emberek is és az italok is, és a bal felső sarokból fokozatosan megnövekszik az ábrán látható kép.
+
+Javasolt méretek: 
+
+Az emberkép szélessége is magassága is 100 pixel, az italok egységesen 50 x 50-es méretűek.
+
