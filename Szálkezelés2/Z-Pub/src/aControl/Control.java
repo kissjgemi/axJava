@@ -91,6 +91,8 @@ public class Control {
         s.setTargetXY(target.getActorX() + (ACTOR_WIDTH - SPRITE_WIDTH) / 2,
                 target.getActorY() + ACTOR_HEIGHT - SPRITE_HEIGHT);
         spriteList.add(s);
+        target.incActorValue(thing.getValue());
+        CONTROLPANEL.fillList(actorList);
         executorService.submit(s);
     }
 
