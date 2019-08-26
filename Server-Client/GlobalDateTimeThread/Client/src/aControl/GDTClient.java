@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
+import java.nio.charset.StandardCharsets;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
@@ -32,7 +33,8 @@ public class GDTClient {
 
         try (Socket socket = new Socket(serverAddress, port);
                 BufferedReader in = new BufferedReader(
-                        new InputStreamReader(socket.getInputStream()));
+                        new InputStreamReader(socket.getInputStream(),
+                                StandardCharsets.UTF_8));
                 PrintWriter out = new PrintWriter(
                         socket.getOutputStream(), true)) {
             out.println(language);
