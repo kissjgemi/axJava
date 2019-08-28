@@ -7,6 +7,8 @@ package aControl;
 
 import static aGlobal.Global.*;
 import java.awt.Dimension;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 /**
  *
@@ -44,6 +46,18 @@ public class MainFrame extends javax.swing.JFrame {
 
     private void start() {
         this.setVisible(true);
+
+        this.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                System.out.println("WindowClosing");
+                c.closeClients();
+                if (c.getClientList().isEmpty()) {
+                    dispose();
+                }
+            }
+        });
+
         this.c = new Control(this, controlPanel1, graphityPanel1);
         setControl(c);
         c.setup();
@@ -68,11 +82,11 @@ public class MainFrame extends javax.swing.JFrame {
         graphityPanel1.setLayout(graphityPanel1Layout);
         graphityPanel1Layout.setHorizontalGroup(
             graphityPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 351, Short.MAX_VALUE)
+            .addGap(0, 561, Short.MAX_VALUE)
         );
         graphityPanel1Layout.setVerticalGroup(
             graphityPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 397, Short.MAX_VALUE)
+            .addGap(0, 525, Short.MAX_VALUE)
         );
 
         getContentPane().add(graphityPanel1, java.awt.BorderLayout.CENTER);

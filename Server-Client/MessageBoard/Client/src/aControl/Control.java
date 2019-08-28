@@ -32,6 +32,10 @@ public class Control {
 
     private List<MB6Client> clientList;
 
+    public List<MB6Client> getClientList() {
+        return clientList;
+    }
+
     private MB6Client mb6Client;
 
     private ExecutorService executorService;
@@ -92,14 +96,14 @@ public class Control {
         clientList.remove(client);
     }
 
-    private void closeClients() {
+    public void closeClients() {
         for (MB6Client client : clientList) {
             System.out.println("GOING OFFLINE> " + client.getUser());
             client.setOnline(false);
         }
     }
 
-    private void exitPrgram() {
+    public void exitPrgram() {
         System.out.println("Control.exitPrgram()");
         System.exit(0);
     }

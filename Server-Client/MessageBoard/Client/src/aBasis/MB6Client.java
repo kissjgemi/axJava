@@ -100,6 +100,7 @@ public class MB6Client extends Thread {
             }
             System.out.println("> " + closeConnect);
             out.println(closeConnect);
+            in.close();
             out.close();
             socket.close();
         } catch (IOException ex) {

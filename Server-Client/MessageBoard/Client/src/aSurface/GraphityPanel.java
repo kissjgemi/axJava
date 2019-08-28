@@ -99,29 +99,45 @@ public class GraphityPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextArea2 = new javax.swing.JTextArea();
+
         addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 formMousePressed(evt);
             }
         });
+        setLayout(null);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 579, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 394, Short.MAX_VALUE)
-        );
+        jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        jTextArea1.setRows(5);
+        jTextArea1.setText("1. SERVER [START] először, \n2. KLIENS gépek bekapcsolása\n2.1 felhasználók csatlakozása\n2.2 üzenetküldés\n2.2 kilépés\n3. KLIENS gépek bezárása\n4. SERVER beárása \n\nSERVER a VIRTUÁLIS GÉPBEN(GUEST)\nA. CLIENT a HOST-ban\nIP cím: 192.168.0.40\n\nB. CLIENT a GUEST-ben\nIP cím: 127.0.0.1 (localhost)");
+        jScrollPane1.setViewportView(jTextArea1);
+
+        add(jScrollPane1);
+        jScrollPane1.setBounds(0, 340, 266, 257);
+
+        jTextArea2.setColumns(20);
+        jTextArea2.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        jTextArea2.setRows(5);
+        jTextArea2.setText("SERVER a HOST GÉPEN\n\nA VIRTUALBOX-ban\nKÉT hálókártya van\n1. NAT\n2. Bridge-lt\n\nCLIENT a HOST-ban\nIP cím: 127.0.0.1 (localhost)\n\nCLIENT a GUEST-ben\nIP cím: 10.0.2.2 (helyi átjáró)\n");
+        jScrollPane2.setViewportView(jTextArea2);
+
+        add(jScrollPane2);
+        jScrollPane2.setBounds(340, 340, 266, 257);
     }// </editor-fold>//GEN-END:initComponents
 
     private void formMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMousePressed
         c.clickOnGraphity(evt.getX(), evt.getY(), evt.getButton());
     }//GEN-LAST:event_formMousePressed
 
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea2;
     // End of variables declaration//GEN-END:variables
 }

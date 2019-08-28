@@ -74,9 +74,15 @@ public class ControlPanel extends javax.swing.JPanel {
         btnSend.setEnabled(b);
     }
 
-    public void setButtonActivity(boolean b) {
+    private void setButtonActivity(boolean b) {
         setButtonConnect(b);
         setButtonSend(b);
+    }
+
+    private void setInputActivity(boolean b) {
+        txtServerIP.setEnabled(b);
+        txtServerPort.setEnabled(b);
+        txtUserName.setEnabled(b);
     }
 
     public void setAbortString(String str) {
@@ -225,6 +231,7 @@ public class ControlPanel extends javax.swing.JPanel {
         }
         setConnectButtonText();
         setButtonSend(isConnected);
+        setInputActivity(!isConnected);
     }//GEN-LAST:event_btnConnectActionPerformed
 
     private void btnSendActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSendActionPerformed

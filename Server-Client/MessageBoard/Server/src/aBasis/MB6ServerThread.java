@@ -6,6 +6,7 @@
 package aBasis;
 
 import aControl.Control;
+import static aGlobal.Global.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -14,7 +15,6 @@ import java.net.Socket;
 import java.nio.charset.StandardCharsets;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.time.format.FormatStyle;
 import java.util.Locale;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -67,9 +67,9 @@ public class MB6ServerThread extends Thread {
             user.setUserName(in.readLine());
 
             LocalDateTime today = LocalDateTime.now();
+            String DATE_FORMATTER = "yyyy-MM-dd HH:mm:ss";
             DateTimeFormatter dtf
-                    = DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL);
-            dtf = dtf.withLocale(locale);
+                    = DateTimeFormatter.ofPattern(DATE_FORMATTER, locale);
 
             String nowString = today.format(dtf);
             out.println(nowString);
@@ -77,6 +77,9 @@ public class MB6ServerThread extends Thread {
             System.out.println("abortThread> " + nowString);
 
             c.addUser(user);
+            user.setLastMessage(CLIENT_CONNECTED);
+            c.addMessage(user);
+
             while (isRunning) {
                 user.setLastMessage(in.readLine());
                 if (user.getLastMessage().equals(user.getAbortConnectString())) {
@@ -88,7 +91,7 @@ public class MB6ServerThread extends Thread {
             in.close();
             out.close();
             socket.close();
-            user.setLastMessage("kilépett");
+            user.setLastMessage(CLIENT_HAS_LEFT);
             c.addMessage(user);
             c.threadFinished(user);
         } catch (IOException ex) {

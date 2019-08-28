@@ -50,6 +50,8 @@ public class Global {
 
     public static final String SERVER_IP_TXT = getMyLocalHost();
     public static final String SERVER_PORT_TXT = "44444";
+    public static final String CLIENT_CONNECTED = "kapcsolódott";
+    public static final String CLIENT_HAS_LEFT = "kilépett";
 
     //mainframe
     public static final String MAINFRAME_TITLE = "MessageBoard - Client";
