@@ -54,7 +54,7 @@ public class Global {
     public static final String CLIENT_HAS_LEFT = "kilépett";
 
     //mainframe
-    public static final String MAINFRAME_TITLE = "MessageBoard - Client";
+    public static final String MAINFRAME_TITLE = "MessageBoard - Server";
 
     //controlPanel
     public static final int CONTROL_WIDTH = 300;
