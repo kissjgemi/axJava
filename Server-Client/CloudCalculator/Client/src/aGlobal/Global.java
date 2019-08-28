@@ -47,7 +47,7 @@ public class Global {
     public static final String CLIENT_MSGE_TXT = "Üzenet...";
 
     //mainframe
-    public static final String MAINFRAME_TITLE = "MessageBoard - Client";
+    public static final String MAINFRAME_TITLE = "CloudCalculator - Client";
 
     //controlPanel
     public static final int CONTROL_WIDTH = 250;

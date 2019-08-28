@@ -71,16 +71,15 @@ public class CB6ServerThread extends Thread {
     }
 
     private String serverAnswer() {
-        String toReturn = "";
+        String toReturn = "Error: ";
         int question;
         try {
             question = Integer.valueOf(user.getLastMessage());
-            toReturn += question * question;
+            return "" + question * question;
         } catch (NumberFormatException nfe) {
-            toReturn = "Error: " + nfe.getMessage();
-            System.out.println(toReturn);
+            //System.out.println(toReturn + nfe.getMessage());
+            return toReturn;
         }
-        return toReturn;
     }
 
     @Override
@@ -104,8 +103,8 @@ public class CB6ServerThread extends Thread {
                 } else {
                     c.listMessage(user);
                     user.setLastMessage(serverAnswer());
-                    out.println(user.getLastMessage());
                     c.listMessage(user);
+                    out.println(user.getLastMessage());
                 }
             }
             in.close();
