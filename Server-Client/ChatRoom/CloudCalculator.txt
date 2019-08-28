@@ -1,0 +1,14 @@
+Írjon egy egyszerű kliens-szerver alkalmazást. A kliens grafikus felületű legyen, melyen az alábbi grafikus komponensek szerepeljenek:
+
+– beviteli mező a szerver IP címének a részére
+
+– beviteli mező a szerver port részére
+
+– beviteli mező a szám részére
+
+– címke az üzenetek megjelenítéséhez
+
+– nyomógomb: kapcsolódás és üzenet elküldése a szervernek
+
+A szerver olvassa be a klienstől kapott (egész) számot, és küldje vissza a négyzetét. 
+
