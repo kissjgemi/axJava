@@ -1,0 +1,10 @@
+Budapest;298;195
+Pécs;245;320
+Sopron;151;175
+Eger;374;162
+Szeged;360;307
+Pozsony;183;134
+Eszék;274;368
+Arad;432;312
+Szolnok;362;220
+Kaposvár;219;295
