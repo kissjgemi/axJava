@@ -1,6 +1,6 @@
 /* create database */
 
-DROP DATABASE  `classicmodels`;
+DROP DATABASE IF EXISTS `classicmodels`;
 
 CREATE DATABASE `classicmodels` 
 DEFAULT CHARACTER SET utf8mb4 
