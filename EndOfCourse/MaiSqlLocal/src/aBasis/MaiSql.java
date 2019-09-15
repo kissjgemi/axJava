@@ -27,7 +27,6 @@ public class MaiSql {
     private final String maiUrl;
     private final String maiUser;
     private final String maiPswd;
-    private final String maiDatabase;
     private final String maiCharSet;
     private final String maiCollate;
 
@@ -41,10 +40,6 @@ public class MaiSql {
 
     public String getMaiPswd() {
         return maiPswd;
-    }
-
-    public String getMaiDatabase() {
-        return maiDatabase;
     }
 
     public String getMaiCharSet() {
@@ -72,66 +67,97 @@ public class MaiSql {
         return rs;
     }
 
-    public MaiSql(String maiUrl, String maiUser, String maiPswd,
-            String maiDatabase, String maiCharSet, String maiCollate) {
+    private boolean connected = false;
+
+    public boolean isConnected() {
+        return connected;
+    }
+
+    private String maiDatabase;
+
+    public String getMaiDatabase() {
+        return maiDatabase;
+    }
+
+    public void setMaiDatabase(String maiDatabase) {
+        this.maiDatabase = maiDatabase;
+    }
+
+    public MaiSql(String maiUrl, String maiUser,
+            String maiPswd, String maiCharSet, String maiCollate) {
         this.maiUrl = maiUrl;
         this.maiUser = maiUser;
         this.maiPswd = maiPswd;
-        this.maiDatabase = maiDatabase;
         this.maiCharSet = maiCharSet;
         this.maiCollate = maiCollate;
-
+        this.maiDatabase = null;
     }
 
-    public void connectAsRoot() {
+    public String connectAsRoot() {
+        String toReturn;
         try {
             con = DriverManager.getConnection(
                     URL, USER, PSWD);
             stmt = con.createStatement();
-            System.out.println(connectRootMessage + "\n");
+            connected = true;
+            toReturn = connectRootMessage + "\n";
+            System.out.println(toReturn);
         } catch (SQLException ex) {
-            System.out.println(ex.getMessage() + "\n");
+            toReturn = ex.getMessage() + "\n";
+            System.out.println(toReturn);
         }
+        return toReturn;
     }
 
-    public void dropDataBase() {
+    public String dropDataBase(String database) {
+        String toReturn;
         try {
             con = DriverManager.getConnection(
                     maiUrl, maiUser, maiPswd);
             stmt = con.createStatement();
-            stmt.executeUpdate(dropDataBaseQuery + maiDatabase);
-            System.out.println(dropDataBaseMessage + maiDatabase + "\n");
+            stmt.executeUpdate(dropDataBaseQuery + database);
+            toReturn = dropDataBaseMessage + database + "\n";
+            System.out.println(toReturn);
         } catch (SQLException ex) {
-            System.out.println(ex.getMessage() + "\n");
+            toReturn = ex.getMessage() + "\n";
+            System.out.println(toReturn);
         }
+        return toReturn;
     }
 
-    public int createDataBase() {
-        int toRerurn = -1;
+    public int createDataBase(String database) {
+        int toReturn = -1;
         try {
             con = DriverManager.getConnection(
                     URL, USER, PSWD);
             stmt = con.createStatement();
-            toRerurn = stmt.executeUpdate(
-                    createDataBaseQuery + maiDatabase + maiCharSet + maiCollate);
+            toReturn = stmt.executeUpdate(
+                    createDataBaseQuery + database + maiCharSet + maiCollate);
         } catch (SQLException ex) {
             System.out.println(ex.getMessage() + "\n");
         }
-        return toRerurn;
+        return toReturn;
     }
 
-    public void openDataBase() {
+    public String openDataBase(String database) {
+        String toReturn;
         try {
             con = DriverManager.getConnection(
-                    (maiUrl + "/" + maiDatabase), maiUser, maiPswd);
+                    (maiUrl + "/" + database), maiUser, maiPswd);
             stmt = con.createStatement();
-            System.out.println(openDataBaseMessage + maiDatabase + "\n");
+            connected = true;
+            toReturn = openDataBaseMessage + database + "\n";
+            maiDatabase = database;
+            System.out.println(toReturn);
         } catch (SQLException ex) {
-            System.out.println(ex.getMessage() + "\n");
+            toReturn = ex.getMessage() + "\n";
+            System.out.println(toReturn);
         }
+        return toReturn;
     }
 
-    public void showDataBases() {
+    public List<String> showDataBases() {
+        List<String> toReturn = new ArrayList<>();
         String query = showDataBasesQuery;
         try {
             rs = stmt.executeQuery(query);
@@ -139,41 +165,94 @@ public class MaiSql {
             while (rs.next()) {
                 String database = rs.getString(1);
                 System.out.println(database);
+                toReturn.add(database);
             }
             rs.close();
         } catch (SQLException ex) {
             System.out.println(ex.getMessage() + "\n");
         }
-        System.out.println("");
+        System.out.println("> " + toReturn + "\n");
+        return toReturn;
     }
 
     private int countRecords(String table) throws SQLException {
         String query = countRecordsQuery;
-        ResultSet res = stmt.executeQuery(query + table);
-        while (res.next()) {
-            return res.getInt(1);
+        try (ResultSet res = stmt.executeQuery(query + table)) {
+            while (res.next()) {
+                return res.getInt(1);
+            }
         }
-        res.close();
         return -1;
     }
 
-    public void showTables() {
-        List<String> tables = new ArrayList<>();
+    public List<String> showTables() {
+        List<String> toReturn = new ArrayList<>();
         String query = showTablesQuery;
         try {
             rs = stmt.executeQuery(query);
             System.out.println(showTablesQuery + ":");
+            String table;
             while (rs.next()) {
-                tables.add(rs.getString(1));
+                table = rs.getString(1);
+                toReturn.add(table);
             }
             rs.close();
-            for (String table : tables) {
-                System.out.println(table + ": " + countRecords(table));
+            for (String t : toReturn) {
+                System.out.println(t + ": " + countRecords(t));
             }
         } catch (SQLException ex) {
             System.out.println(ex.getMessage() + "\n");
         }
         System.out.println("");
+        return toReturn;
+    }
+
+    public List<String> showFields(String table) {
+        List<String> toReturn = new ArrayList<>();
+        String query = showFieldsQuery + table;
+        try {
+            rs = stmt.executeQuery(query);
+            System.out.println(showFieldsQuery + table + ":");
+            String field;
+            while (rs.next()) {
+                field = rs.getString(1);
+                System.out.println("fieldname> " + field);
+                field += REGEX_FIELDS + rs.getString(2);
+                field += REGEX_FIELDS + rs.getString(3);
+                field += REGEX_FIELDS + rs.getString(4);
+                field += REGEX_FIELDS + rs.getString(5);
+                field += REGEX_FIELDS + rs.getString(6);
+                toReturn.add(field);
+            }
+            rs.close();
+        } catch (SQLException ex) {
+            System.out.println(ex.getMessage() + "\n");
+        }
+        System.out.println("");
+        return toReturn;
+    }
+
+    public List<String> showOneField(String field, String table) {
+        List<String> toReturn = new ArrayList<>();
+        String query = SELECT + field + FROM + table;
+        try {
+            rs = stmt.executeQuery(query);
+            System.out.println(showFieldsQuery + table + ":");
+            String row;
+            while (rs.next()) {
+                row = rs.getString(field);
+                if (row == null) {
+                    row = "NULL";
+                }
+                System.out.println("> " + row);
+                toReturn.add(row);
+            }
+            rs.close();
+        } catch (SQLException ex) {
+            System.out.println(ex.getMessage() + "\n");
+        }
+        System.out.println("");
+        return toReturn;
     }
 
     public void fillUpSqlFile(String path) {
@@ -205,17 +284,23 @@ public class MaiSql {
         }
     }
 
-    public void closeConnection() {
-        try {
-            con.close();
-        } catch (SQLException sqlEx1) {
-            System.err.println(sqlEx1.getMessage() + "\n");
-        }
+    public String closeConnection() {
+        String toReturn;
         try {
             stmt.close();
         } catch (SQLException sqlEx2) {
-            System.err.println(sqlEx2.getMessage() + "\n");
+            toReturn = sqlEx2.getMessage() + "\n";
+            System.err.println(toReturn);
         }
-        System.out.println(closeConnectMessage + maiDatabase + "\n");
+        try {
+            con.close();
+            toReturn = closeConnectMessage + maiDatabase + "\n";
+            System.out.println(toReturn);
+        } catch (SQLException sqlEx1) {
+            toReturn = sqlEx1.getMessage() + "\n";
+            System.err.println(toReturn);
+        }
+        connected = false;
+        return toReturn;
     }
 }
